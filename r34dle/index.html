@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<a href="/index.html" style="
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 999;
+  font-weight: bold;
+  font-family: sans-serif;
+">Home</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rule34 Wordle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="hamburger">&#9776;</div>
+  <div id="sidebar">
+    <label for="category-filter">Category:</label>
+    <select id="category-filter">
+      <option value="mixed">All Categories</option>
+      <option value="eastern">Eastern Media</option>
+      <option value="gaming">Gaming</option>
+      <option value="western">Western Media</option> 
+    </select>
+  
+    <label for="series-filter">Series:</label>
+    <select id="series-filter">
+      <option value="all">All Series</option>
+    </select>
+  
+    <hr class="sidebar-separator">
+    <hr />
+    <button id="daily-btn">Daily Challenge</button>
+    <button id="rules-btn">Rules</button>
+  </div>
+  
+  
+
+  
+
+  <!-- Game UI -->
+  <div id="game">
+    <p id="character-name">Loading character...</p>
+    <p id="character-series"></p>
+    <div id="guess-history"></div>
+    <input type="number" id="guess-input" placeholder="Enter your guess" />
+    <button id="submit-guess">Submit</button>
+    <p id="feedback"></p>
+    <p id="attempts-left"></p>
+    <p id="streak">Streak: 0</p>
+    <p id="longest-streak"></p>
+    <p id="longest">Longest (All): 0</p> <!-- stays here -->
+    <button id="restart-btn" style="display: none;">Restart</button>
+  </div>
+
+  <!-- Footer -->
+  <footer id="credits">
+    <p>
+      Support me on <a href="https://ko-fi.com/doubletheblack" target="_blank">Ko-fi</a> |
+      Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

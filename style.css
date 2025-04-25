@@ -1,0 +1,65 @@
+body {
+    font-family: Inter, sans-serif;
+    background: #1e1e1e;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .game-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .game-card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    transition: border 0.3s ease, transform 0.2s ease;
+  }
+  
+  .game-card:hover {
+    border: 2px solid crimson;
+    transform: scale(1.05);
+  }
+
+  /* Base card style */
+.game-card {
+    background: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid transparent;
+    transition: border 0.3s ease, transform 0.2s ease, background 0.3s ease;
+  }
+  
+  /* Hover animations */
+  .game-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Unique hover colors */
+  .game-card.higher-lower:hover {
+    border-color: crimson;
+    background-color: rgba(220, 20, 60, 0.2);
+  }
+  
+  .game-card.r34dle:hover {
+    border-color: violet;
+    background-color: rgba(238, 130, 238, 0.2);
+  }
+  
+  .game-card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
