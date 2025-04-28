@@ -8,61 +8,53 @@ let isAnimating = false;
 
 
 const seenPairs = new Set();
-
+const preloadedPostCounts = {};
 const postCountCache = JSON.parse(localStorage.getItem("postCountCache") || "{}");
 
 (async function preloadPostCounts() {
-    try {
-      const [easternRes, gamingRes, westernRes] = await Promise.all([
-        fetch("eastern_media_characters.json"),
-        fetch("gaming_characters.json"),
-        fetch("western_media_characters.json")
-      ]);
+  try {
+    const [easternRes, gamingRes, westernRes] = await Promise.all([
+      fetch("eastern_media_characters.json"),
+      fetch("gaming_characters.json"),
+      fetch("western_media_characters.json")
+    ]);
 
-      const easternData = (await easternRes.json()).characters;
-      const gamingData = (await gamingRes.json()).characters;
-      const westernData = (await westernRes.json()).characters;
+    const [easternCountsRes, gamingCountsRes, westernCountsRes] = await Promise.all([
+      fetch("eastern_media_count.json"),
+      fetch("gaming_count.json"),
+      fetch("western_media_count.json")
+    ]);
 
-      characters = [
-        ...easternData.map(c => ({ ...c, category: "Eastern Media" })),
-        ...gamingData.map(c => ({ ...c, category: "Gaming" })),
-        ...westernData.map(c => ({ ...c, category: "Western Media" }))
-      ];
-      
-      console.log("Characters preloaded for background cache:", characters.length);
+    const easternData = (await easternRes.json()).characters;
+    const gamingData = (await gamingRes.json()).characters;
+    const westernData = (await westernRes.json()).characters;
 
-      populateSeriesOptions();
+    const easternCounts = (await easternCountsRes.json()).characters;
+    const gamingCounts = (await gamingCountsRes.json()).characters;
+    const westernCounts = (await westernCountsRes.json()).characters;
 
-      const retryQueue = [];
+    characters = [
+      ...easternData.map(c => ({ ...c, category: "Eastern Media" })),
+      ...gamingData.map(c => ({ ...c, category: "Gaming" })),
+      ...westernData.map(c => ({ ...c, category: "Western Media" }))
+    ];
+    
+    // Build preloadedPostCounts
+    [...easternCounts, ...gamingCounts, ...westernCounts].forEach(entry => {
+      preloadedPostCounts[entry.name] = entry.count;
+    });
 
-      for (let i = 0; i < characters.length; i++) {
-        const char = characters[i];
-        if (postCountCache[char.name] !== undefined) continue;
+    console.log("✅ Preloaded character counts:", Object.keys(preloadedPostCounts).length);
 
-        try {
-          const count = await fetchPostCount(char.name);
-          console.log(`Cached [${i + 1}/${characters.length}]: ${char.name} → ${count}`);
-        } catch (err) {
-          retryQueue.push(char.name);
-        }
-      }
+    populateSeriesOptions();
+    
+    // (Optionally remove your "retryQueue" stuff if you want, or keep it. I'll explain below.)
 
-      while (retryQueue.length > 0) {
-        const name = retryQueue.shift();
-        try {
-          const count = await fetchPostCount(name);
-          console.log(`✅ Retry success: ${name} → ${count}`);
-        } catch (err) {
-          console.warn(`⏳ Retry failed again for ${name}, re-queuing...`);
-          retryQueue.push(name);
-          await new Promise(r => setTimeout(r, 1000));
-        }
-      }
-
-    } catch (error) {
-      console.error("Failed to preload characters:", error);
-    }
+  } catch (error) {
+    console.error("Failed to preload characters or counts:", error);
+  }
 })();
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const settingsButton = document.getElementById("settingsButton");
@@ -90,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
     seenPairs.clear();
     currentStreak = 0;
     veryHardButton.textContent = veryHardMode ? "Disable Very Hard Mode" : "Enable Very Hard Mode";
-    document.body.classList.toggle("very-hard-mode", veryHardMode); // <-- this toggles the new class
+    document.body.classList.toggle("very-hard-mode", veryHardMode);
     alert(`Very Hard Mode is now ${veryHardMode ? "ENABLED 🔥" : "DISABLED"}`);
   });
   
@@ -120,7 +112,7 @@ document.querySelectorAll("input[name='category']").forEach(radio => {
     const advancedOptions = document.getElementById("advancedOptions");
     if (radio.value === "advanced") {
       advancedOptions.style.display = "block";
-      updateAdvancedSeriesCount(); // update immediately
+      updateAdvancedSeriesCount(); 
     } else {
       advancedOptions.style.display = "none";
       document.getElementById("selectedSeriesCount").style.display = "none";
@@ -233,7 +225,7 @@ function animateCount(element, target, duration = 800, callback) {
       requestAnimationFrame(update);
     } else {
       element.textContent = target;
-      if (callback) callback(); // ✅ invoke when done
+      if (callback) callback(); 
     }
   }
 
@@ -267,7 +259,7 @@ function copyShareResult() {
     }
   }
 
-  const message = `${emoji} ${modeTitle} - ${categoryName}${seriesInfo}\nStreak: ${currentStreak}\n${"🟩".repeat(currentStreak)}${"⬛".repeat(Math.max(0, 8 - currentStreak))}\nhttps://yourgame.url`;
+  const message = `${emoji} ${modeTitle} - ${categoryName}${seriesInfo}\nStreak: ${currentStreak}\n${"🟩".repeat(currentStreak)}${"⬛".repeat(Math.max(0, 8 - currentStreak))}\nhttps://doubletheblack.com/34higherlower/index.html`;
 
   navigator.clipboard.writeText(message).then(() => {
     alert("Score copied to clipboard!");
@@ -367,6 +359,13 @@ async function fetchPostCount(characterName, retries = 3) {
     return postCountCache[characterName];
   }
 
+  if (preloadedPostCounts[characterName] !== undefined) {
+    const count = preloadedPostCounts[characterName];
+    postCountCache[characterName] = count;
+    localStorage.setItem("postCountCache", JSON.stringify(postCountCache));
+    return count;
+  }
+
   const url = `https://api.rule34.xxx/index.php?page=dapi&s=tag&q=index&name=${characterName}`;
 
   try {
@@ -388,6 +387,7 @@ async function fetchPostCount(characterName, retries = 3) {
     return 0;
   }
 }
+
 
 function withinVeryHardRange(a, b) {
   const diff = Math.abs(a - b);
@@ -426,6 +426,15 @@ function getTwoUniqueCharacters() {
   return shuffled.slice(0, 2);
 }
 
+function downloadCache() {
+  const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(postCountCache));
+  const dlAnchor = document.createElement("a");
+  dlAnchor.setAttribute("href", dataStr);
+  dlAnchor.setAttribute("download", "postCountCache.json");
+  dlAnchor.click();
+}
+
+
 async function getValidCharacters(limit = 50) {
   const tempValidCharacters = [];
   const total = Math.min(limit, characters.length);
@@ -457,7 +466,6 @@ async function startGame(category = lastCategory, seriesList = lastAdvancedSerie
   resultEl.textContent = "Loading characters...";
   currentStreak = 0;
 
-  // Hide the start button
   document.getElementById("startButton").style.display = "none";
 
   let filtered = [];
@@ -541,9 +549,6 @@ function searchCharacter(name, series) {
   window.open(`https://www.google.com/search?q=${encoded}`, "_blank");
 }
 
-
-
-
 document.getElementById("clearCache").addEventListener("click", () => {
   localStorage.removeItem("postCountCache");
   Object.keys(postCountCache).forEach(key => delete postCountCache[key]);
@@ -560,7 +565,6 @@ function getTwoDistinctColors() {
   const shuffled = colors.sort(() => 0.5 - Math.random());
   return [shuffled[0], shuffled.find(color => color !== shuffled[0])];
 }
-
 
 function checkAnswer(choiceCount, otherCount, chosenName) {
   const shareButton = document.getElementById("shareButton");
@@ -666,18 +670,13 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
   }  
 }
 
-
-
 function restartGame() {
   console.log("Restarting game with previous filters...");
   seenPairs.clear();
-  isAnimating = false; // ✅ allow round to proceed again
+  isAnimating = false; 
   document.body.classList.toggle("very-hard-mode", veryHardMode);
   startGame(lastCategory, lastAdvancedSeries);
 }
-
-
-
 
 async function getValidCharactersFromList(charList, onProgress) {
   const temp = [];
@@ -712,4 +711,3 @@ async function getValidCharactersFromList(charList, onProgress) {
 
   return temp;
 }
-
