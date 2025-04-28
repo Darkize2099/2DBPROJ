@@ -98,20 +98,39 @@ function getDailyCharacter() {
   }
   
 
-function displayCharacter(name) {
-  const display = document.getElementById("character-name");
-  const seriesDisplay = document.getElementById("character-series");
-  display.textContent = name.replace(/_/g, " ");
-  const character = characters.find(c => c.name === name);
-  seriesDisplay.textContent = character ? `Series: ${character.series}` : "";
-  const longestDisplay = document.getElementById("longest");
-  if (character) {
-    const streak = longestStreaks[character.series] || 0;
-    longestDisplay.textContent = `Longest (${character.series}): ${streak}`;
-  } else {
-    longestDisplay.textContent = "";
+  function displayCharacter(name) {
+    const display = document.getElementById("character-name");
+    const seriesDisplay = document.getElementById("character-series");
+  
+    const character = characters.find(c => c.name === name);
+  
+    // Set character name
+    display.innerHTML = `
+      ${name.replace(/_/g, " ")}
+    `;
+  
+    // Set series text
+    seriesDisplay.textContent = character ? `Series: ${character.series}` : "";
+  
+    // Add click listener to Search button
+    const searchBtn = document.getElementById("search-btn");
+    if (searchBtn && character) {
+      searchBtn.addEventListener("click", () => {
+        const searchQuery = `${name.replace(/_/g, " ")} from ${character.series}`;
+        const encodedQuery = encodeURIComponent(searchQuery);
+        window.open(`https://www.google.com/search?q=${encodedQuery}`, "_blank");
+      });
+    }
+  
+    // Longest Streak
+    const longestDisplay = document.getElementById("longest");
+    if (character) {
+      const streak = longestStreaks[character.series] || 0;
+      longestDisplay.textContent = `Longest (${character.series}): ${streak}`;
+    } else {
+      longestDisplay.textContent = "";
+    }
   }
-}
 
 async function fetchPostCount() {
   const searchName = currentCharacter.alias || currentCharacter.name;

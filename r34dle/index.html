@@ -19,7 +19,8 @@
   <title>Rule34 Wordle</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+ 
 </head>
 <body>
 
@@ -52,8 +53,11 @@
     <p id="character-name">Loading character...</p>
     <p id="character-series"></p>
     <div id="guess-history"></div>
-    <input type="number" id="guess-input" placeholder="Enter your guess" />
-    <button id="submit-guess">Submit</button>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: nowrap;">
+      <input type="number" id="guess-input" placeholder="Enter your guess" />
+      <button id="submit-guess">Submit</button>
+      <button id="search-btn">🔍</button>
+    </div>
     <p id="feedback"></p>
     <p id="attempts-left"></p>
     <p id="streak">Streak: 0</p>

@@ -5,6 +5,8 @@ let veryHardMode = false;
 let lastCategory = "mixed";
 let lastAdvancedSeries = [];
 let isAnimating = false;
+let startedFromSettings = false;
+
 
 
 const seenPairs = new Set();
@@ -56,6 +58,7 @@ const postCountCache = JSON.parse(localStorage.getItem("postCountCache") || "{}"
 })();
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const settingsButton = document.getElementById("settingsButton");
   const settingsPanel = document.getElementById("settingsPanel");
@@ -101,6 +104,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+function encodeCharacterNameForSearch(name) {
+  return name
+    .replace(/'/g, "%26%23039%3B")
+    .replace(/\+/g, "%2B")
+    .replace(/ū/g, "%C5%AB")
+    .replace(/ö/g, "%26ouml%3B");
+}
+
+
 document.addEventListener("change", (e) => {
   if (e.target.classList.contains("seriesCheckbox")) {
     updateAdvancedSeriesCount();
@@ -144,6 +156,8 @@ document.getElementById("applySettings").addEventListener("click", () => {
     return;
   }
 
+  
+
   const progressBar = document.getElementById("progressBar");
   const progressContainer = document.getElementById("progressBarContainer");
   progressContainer.style.display = "block";
@@ -164,9 +178,22 @@ document.getElementById("applySettings").addEventListener("click", () => {
     lastAdvancedSeries = selectedSeries || [];
     currentStreak = 0;
     document.getElementById("settingsPanel").classList.remove("open");
+    document.getElementById("startButton").style.display = "none"; 
     showNextRound();
+
   });
 });
+
+function decodeCharacterName(name) {
+  return decodeURIComponent(
+    name
+      .replace(/%26%23039%3B/g, "'")
+      .replace(/%2B/g, "+")
+      .replace(/%C5%AB/g, "ū")
+      .replace(/%26ouml%3B/g, "ö")
+  );
+}
+
 
 function updateAdvancedSeriesCount() {
   const selected = Array.from(document.querySelectorAll(".seriesCheckbox:checked"));
@@ -355,6 +382,7 @@ function populateSeriesOptions() {
 
 
 async function fetchPostCount(characterName, retries = 3) {
+  const encodedName = encodeCharacterNameForSearch(characterName); 
   if (postCountCache[characterName] !== undefined) {
     return postCountCache[characterName];
   }
@@ -500,7 +528,10 @@ async function startGame(category = lastCategory, seriesList = lastAdvancedSerie
   if (!validCharacters || validCharacters.length < 2) {
     resultEl.textContent = "No valid characters found!";
     if (!isAnimating) {
-      document.getElementById("startButton").style.display = "inline-block";
+      if (!startedFromSettings) {
+        document.getElementById("startButton").style.display = "inline-block";
+      }
+      
     }
     return;
   }
@@ -529,13 +560,13 @@ function showNextRound() {
   document.getElementById("choices").innerHTML = `
   <div class="choice-group">
     <button class="choice" onclick="checkAnswer(${char1.count}, ${char2.count}, '${char1.name}')">
-      ${char1.name.replace(/_/g, ' ')}<br><small>${char1.series}</small>
+     ${decodeCharacterName(char1.name).replace(/_/g, ' ')}<br><small>${char1.series}</small>
     </button>
     <button class="search-button" onclick="searchCharacter('${char1.name}', '${char1.series}')">🔍</button>
   </div>
   <div class="choice-group">
     <button class="choice" onclick="checkAnswer(${char2.count}, ${char1.count}, '${char2.name}')">
-      ${char2.name.replace(/_/g, ' ')}<br><small>${char2.series}</small>
+      ${decodeCharacterName(char2.name).replace(/_/g, ' ')}<br><small>${char2.series}</small>
     </button>
     <button class="search-button" onclick="searchCharacter('${char2.name}', '${char2.series}')">🔍</button>
   </div>
@@ -544,7 +575,7 @@ function showNextRound() {
 }
 
 function searchCharacter(name, series) {
-  const searchQuery = `${name.replace(/_/g, ' ')} from ${series}`;
+  const searchQuery = `${decodeCharacterName(name).replace(/_/g, ' ')} from ${series}`;
   const encoded = encodeURIComponent(searchQuery);
   window.open(`https://www.google.com/search?q=${encoded}`, "_blank");
 }
@@ -573,12 +604,12 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
   if (isAnimating) return;
   isAnimating = true;
 
-  const chosenText = `${chosenName.replace(/_/g, ' ')} has ${choiceCount} posts.`;
+  const chosenText = `${decodeCharacterName(chosenName).replace(/_/g, ' ')} has ${choiceCount} posts.`;
   const otherChar = validCharacters.find(c => c.count === otherCount);
   const otherText = otherChar ? `${otherChar.name.replace(/_/g, ' ')} has ${otherCount} posts.` : '';
 
-  const chosenNameDisplay = chosenName.replace(/_/g, ' ');
-  const otherNameDisplay = otherChar ? otherChar.name.replace(/_/g, ' ') : '';
+  const chosenNameDisplay = decodeCharacterName(chosenName).replace(/_/g, ' ');
+  const otherNameDisplay = otherChar ? decodeCharacterName(otherChar.name).replace(/_/g, ' ') : '';
 
   const [color1, color2] = getTwoDistinctColors();
   const colorClass1 = `color-${color1}`;
@@ -587,13 +618,6 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
   if (choiceCount >= otherCount) {
     currentStreak++;
     document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
-    const chosenNameDisplay = chosenName.replace(/_/g, ' ');
-    const otherChar = validCharacters.find(c => c.count === otherCount);
-    const otherNameDisplay = otherChar ? otherChar.name.replace(/_/g, ' ') : '';
-    
-    const [color1, color2] = getTwoDistinctColors();
-    const colorClass1 = `color-${color1}`;
-    const colorClass2 = `color-${color2}`;
     
     feedbackText.innerHTML = `
       <div style="display: flex; justify-content: center; gap: 40px;">
@@ -601,39 +625,29 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
         <div><strong>${otherNameDisplay}</strong><br><span class="count ${colorClass2}" id="otherCount">0</span> posts</div>
       </div>
     `;
-    
-  
-  if (otherChar) {
-    const chosenEl = document.getElementById("chosenCount");
-    const otherEl = document.getElementById("otherCount");
-  
-    animateCount(chosenEl, choiceCount);
-    animateCount(otherEl, otherCount, 800, () => {
-      document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
-      setTimeout(() => {
-        isAnimating = false;
-        nextButton.disabled = false;
-        nextButton.style.display = "inline-block";
-        shareButton.style.display = "none";
-        document.getElementById("choices").innerHTML = "";
-      }, );
-    });
- 
-  }
-  
-    document.getElementById("choices").innerHTML = ""; 
+
+    if (otherChar) {
+      const chosenEl = document.getElementById("chosenCount");
+      const otherEl = document.getElementById("otherCount");
+      animateCount(chosenEl, choiceCount);
+      animateCount(otherEl, otherCount, 800, () => {
+        document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
+        setTimeout(() => {
+          isAnimating = false;
+          nextButton.disabled = false;
+          nextButton.style.display = "inline-block";
+          shareButton.style.display = "none";
+          document.getElementById("choices").innerHTML = "";
+        }, 0);
+      });
+    }
+
+    document.getElementById("choices").innerHTML = "";
     nextButton.style.display = "inline-block";
     shareButton.style.display = "none";
+
   } else {
     document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
-    const chosenNameDisplay = chosenName.replace(/_/g, ' ');
-    const otherChar = validCharacters.find(c => c.count === otherCount);
-    const otherNameDisplay = otherChar ? otherChar.name.replace(/_/g, ' ') : '';
-    
-    
-    const [color1, color2] = getTwoDistinctColors();
-    const colorClass1 = `color-${color1}`;
-    const colorClass2 = `color-${color2}`;
     
     feedbackText.innerHTML = `
       <div style="display: flex; justify-content: center; gap: 40px;">
@@ -641,42 +655,52 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
         <div><strong>${otherNameDisplay}</strong><br><span class="count ${colorClass2}" id="otherCount">0</span> posts</div>
       </div>
     `;
-    
-    
-  
-    
-  if (otherChar) {
-    const chosenEl = document.getElementById("chosenCount");
-    const otherEl = document.getElementById("otherCount");
-  
-    animateCount(chosenEl, choiceCount);
-    animateCount(otherEl, otherCount, 800, () => {
-      document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
-      setTimeout(() => {
-        isAnimating = false;
-        shareButton.style.display = "inline-block";
-        nextButton.style.display = "none";
-        document.getElementById("startButton").style.display = "inline-block";
-      }, );      
-    });    
-    
-    
-  }  
-    
+
+    if (otherChar) {
+      const chosenEl = document.getElementById("chosenCount");
+      const otherEl = document.getElementById("otherCount");
+      animateCount(chosenEl, choiceCount);
+      animateCount(otherEl, otherCount, 800, () => {
+        document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
+        setTimeout(() => {
+          isAnimating = false;
+          shareButton.style.display = "inline-block";
+          nextButton.style.display = "none";
+          if (!startedFromSettings) {
+            document.getElementById("startButton").style.display = "inline-block";
+          }
+        }, 0);
+      });
+    }
+
     document.getElementById("choices").innerHTML = `<button onclick="restartGame()">Restart</button>`;
     shareButton.style.display = "inline-block";
     nextButton.style.display = "none";
-    document.getElementById("startButton").style.display = "inline-block"; 
-  }  
+    if (!startedFromSettings) {
+      document.getElementById("startButton").style.display = "inline-block";
+    }
+  }
 }
+
 
 function restartGame() {
   console.log("Restarting game with previous filters...");
   seenPairs.clear();
-  isAnimating = false; 
+  isAnimating = false;
+  startedFromSettings = false; // Reset it here
+
   document.body.classList.toggle("very-hard-mode", veryHardMode);
+
+  document.getElementById("startButton").style.display = "none";
+  document.getElementById("shareButton").style.display = "none";
+  document.getElementById("nextButton").style.display = "none";
+  document.getElementById("choices").innerHTML = "";
+  document.getElementById("feedbackText").textContent = "";
+  document.getElementById("result").textContent = "Loading characters...";
+
   startGame(lastCategory, lastAdvancedSeries);
 }
+
 
 async function getValidCharactersFromList(charList, onProgress) {
   const temp = [];
