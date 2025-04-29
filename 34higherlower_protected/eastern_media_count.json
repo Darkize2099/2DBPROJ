@@ -1,0 +1,3399 @@
+{
+    "characters": [
+        {
+            "name": "dragon_ball",
+            "series": "Anime",
+            "count": 105448
+        },
+        {
+            "name": "one_piece",
+            "series": "Anime",
+            "count": 100895
+        },
+        {
+            "name": "naruto_(series)",
+            "series": "Anime",
+            "count": 91705
+        },
+        {
+            "name": "bleach",
+            "series": "Anime",
+            "count": 58947
+        },
+        {
+            "name": "yu_yu_hakusho",
+            "series": "Anime",
+            "count": 1079
+        },
+        {
+            "name": "hunter_x_hunter",
+            "series": "Anime",
+            "count": 5161
+        },
+        {
+            "name": "rurouni_kenshin",
+            "series": "Anime",
+            "count": 477
+        },
+        {
+            "name": "jojo%26%23039%3Bs_bizarre_adventure",
+            "series": "Anime",
+            "count": 38488
+        },
+        {
+            "name": "hokuto_no_ken",
+            "series": "Anime",
+            "count": 301
+        },
+        {
+            "name": "mobile_suit_gundam",
+            "series": "Anime",
+            "count": 975
+        },
+        {
+            "name": "neon_genesis_evangelion",
+            "series": "Anime",
+            "count": 24780
+        },
+        {
+            "name": "cowboy_bebop",
+            "series": "Anime",
+            "count": 1721
+        },
+        {
+            "name": "trigun",
+            "series": "Anime",
+            "count": 602
+        },
+        {
+            "name": "serial_experiments_lain",
+            "series": "Anime",
+            "count": 207
+        },
+        {
+            "name": "ghost_in_the_shell",
+            "series": "Anime",
+            "count": 3259
+        },
+        {
+            "name": "attack_on_titan",
+            "series": "Anime",
+            "count": 21635
+        },
+        {
+            "name": "demon_slayer",
+            "series": "Anime",
+            "count": 30287
+        },
+        {
+            "name": "jujutsu_kaisen",
+            "series": "Anime",
+            "count": 23502
+        },
+        {
+            "name": "my_hero_academia",
+            "series": "Anime",
+            "count": 116807
+        },
+        {
+            "name": "chainsaw_man",
+            "series": "Anime",
+            "count": 38295
+        },
+        {
+            "name": "tokyo_revengers",
+            "series": "Anime",
+            "count": 2894
+        },
+        {
+            "name": "vinland_saga",
+            "series": "Anime",
+            "count": 289
+        },
+        {
+            "name": "black_clover",
+            "series": "Anime",
+            "count": 9433
+        },
+        {
+            "name": "fire_force",
+            "series": "Anime",
+            "count": 2549
+        },
+        {
+            "name": "one_punch_man",
+            "series": "Anime",
+            "count": 185
+        },
+        {
+            "name": "the_rising_of_the_shield_hero",
+            "series": "Anime",
+            "count": 2131
+        },
+        {
+            "name": "that_time_i_got_reincarnated_as_a_slime",
+            "series": "Anime",
+            "count": 1020
+        },
+        {
+            "name": "re:zero_kara_hajimeru_isekai_seikatsu",
+            "series": "Anime",
+            "count": 17096
+        },
+        {
+            "name": "mushoku_tensei",
+            "series": "Anime",
+            "count": 7300
+        },
+        {
+            "name": "sword_art_online",
+            "series": "Anime",
+            "count": 12635
+        },
+        {
+            "name": "fairy_tail",
+            "series": "Anime",
+            "count": 34785
+        },
+        {
+            "name": "the_seven_deadly_sins",
+            "series": "Anime",
+            "count": 1308
+        },
+        {
+            "name": "dr.stone",
+            "series": "Anime",
+            "count": 1685
+        },
+        {
+            "name": "blue_lock",
+            "series": "Anime",
+            "count": 876
+        },
+        {
+            "name": "death_note",
+            "series": "Anime",
+            "count": 1380
+        },
+        {
+            "name": "code_geass",
+            "series": "Anime",
+            "count": 10398
+        },
+        {
+            "name": "psycho-pass",
+            "series": "Anime",
+            "count": 273
+        },
+        {
+            "name": "steins;gate",
+            "series": "Anime",
+            "count": 1893
+        },
+        {
+            "name": "erased_(anime)",
+            "series": "Anime",
+            "count": 127
+        },
+        {
+            "name": "monster_hunter",
+            "series": "Anime",
+            "count": 21260
+        },
+        {
+            "name": "paranoia_agent",
+            "series": "Anime",
+            "count": 8
+        },
+        {
+            "name": "the_promised_neverland",
+            "series": "Anime",
+            "count": 111
+        },
+        {
+            "name": "higurashi_no_naku_koro_ni",
+            "series": "Anime",
+            "count": 1659
+        },
+        {
+            "name": "your_lie_in_april",
+            "series": "Anime",
+            "count": 73
+        },
+        {
+            "name": "clannad",
+            "series": "Anime",
+            "count": 1071
+        },
+        {
+            "name": "toradora!",
+            "series": "Anime",
+            "count": 579
+        },
+        {
+            "name": "kimi_ni_todoke",
+            "series": "Anime",
+            "count": 36
+        },
+        {
+            "name": "fruits_basket",
+            "series": "Anime",
+            "count": 126
+        },
+        {
+            "name": "anohana:_the_flower_we_saw_that_day",
+            "series": "Anime",
+            "count": 878
+        },
+        {
+            "name": "nichijou",
+            "series": "Anime",
+            "count": 771
+        },
+        {
+            "name": "gintama",
+            "series": "Anime",
+            "count": 9391
+        },
+        {
+            "name": "kono_subarashii_sekai_ni_shukufuku_wo!",
+            "series": "Anime",
+            "count": 26785
+        },
+        {
+            "name": "hataraku_maou-sama!",
+            "series": "Anime",
+            "count": 569
+        },
+        {
+            "name": "kaguya-sama_wa_kokurasetai_~tensai-tachi_no_renai_zunousen~",
+            "series": "Anime",
+            "count": 9255
+        },
+        {
+            "name": "saiki_kusuo_no_psi_nan",
+            "series": "Anime",
+            "count": 188
+        },
+        {
+            "name": "non_non_biyori",
+            "series": "Anime",
+            "count": 186
+        },
+        {
+            "name": "barakamon",
+            "series": "Anime",
+            "count": 26
+        },
+        {
+            "name": "haikyuu!!",
+            "series": "Anime",
+            "count": 2690
+        },
+        {
+            "name": "kuroko_no_basuke",
+            "series": "Anime",
+            "count": 1835
+        },
+        {
+            "name": "slam_dunk",
+            "series": "Anime",
+            "count": 144
+        },
+        {
+            "name": "yuri!!!_on_ice",
+            "series": "Anime",
+            "count": 671
+        },
+        {
+            "name": "ace_of_diamond",
+            "series": "Anime",
+            "count": 263
+        },
+        {
+            "name": "hajime_no_ippo",
+            "series": "Anime",
+            "count": 126
+        },
+        {
+            "name": "free!",
+            "series": "Anime",
+            "count": 1382
+        },
+        {
+            "name": "prince_of_tennis",
+            "series": "Anime",
+            "count": 245
+        },
+        {
+            "name": "fullmetal_alchemist",
+            "series": "Anime",
+            "count": 4736
+        },
+        {
+            "name": "magi:_the_labyrinth_of_magic",
+            "series": "Anime",
+            "count": 903
+        },
+        {
+            "name": "made_in_abyss",
+            "series": "Anime",
+            "count": 3458
+        },
+        {
+            "name": "the_ancient_magus_bride",
+            "series": "Anime",
+            "count": 628
+        },
+        {
+            "name": "spice_and_wolf",
+            "series": "Anime",
+            "count": 2738
+        },
+        {
+            "name": "overlord_(maruyama)",
+            "series": "Anime",
+            "count": 8705
+        },
+        {
+            "name": "no_game_no_life",
+            "series": "Anime",
+            "count": 532
+        },
+        {
+            "name": "log_horizon",
+            "series": "Anime",
+            "count": 195
+        },
+        {
+            "name": "another",
+            "series": "Anime",
+            "count": 737
+        },
+        {
+            "name": "tokyo_ghoul",
+            "series": "Anime",
+            "count": 1402
+        },
+        {
+            "name": "devilman_crybaby",
+            "series": "Anime",
+            "count": 262
+        },
+        {
+            "name": "parasyte_the_maxim",
+            "series": "Anime",
+            "count": 69
+        },
+        {
+            "name": "highschool_of_the_dead",
+            "series": "Anime",
+            "count": 3694
+        },
+        {
+            "name": "d.gray-man",
+            "series": "Anime",
+            "count": 514
+        },
+        {
+            "name": "elfen_lied",
+            "series": "Anime",
+            "count": 481
+        },
+        {
+            "name": "hellsing_ultimate",
+            "series": "Anime",
+            "count": 221
+        },
+        {
+            "name": "berserk",
+            "series": "Anime",
+            "count": 2070
+        },
+        {
+            "name": "high_school_dxd",
+            "series": "Anime",
+            "count": 16435
+        },
+        {
+            "name": "to_love-ru",
+            "series": "Anime",
+            "count": 8782
+        },
+        {
+            "name": "sekirei",
+            "series": "Anime",
+            "count": 1042
+        },
+        {
+            "name": "rosario%2Bvampire",
+            "series": "Anime",
+            "count": 1370
+        },
+        {
+            "name": "sora_no_otoshimono",
+            "series": "Anime",
+            "count": 788
+        },
+        {
+            "name": "monster_musume_no_iru_nichijou",
+            "series": "Anime",
+            "count": 7361
+        },
+        {
+            "name": "shinmai_maou_no_testament",
+            "series": "Anime",
+            "count": 1260
+        },
+        {
+            "name": "hajimete_no_gal",
+            "series": "Anime",
+            "count": 599
+        },
+        {
+            "name": "golden_boy",
+            "series": "Anime",
+            "count": 259
+        },
+        {
+            "name": "bokutachi_wa_benkyou_ga_dekinai",
+            "series": "Anime",
+            "count": 520
+        },
+        {
+            "name": "nande_koko_ni_sensei_ga!?",
+            "series": "Anime",
+            "count": 194
+        },
+        {
+            "name": "sono_bisque_doll_wa_koi_wo_suru",
+            "series": "Anime",
+            "count": 12132
+        },
+        {
+            "name": "shimoneta_to_iu_gainen_ga_sonzai_shinai_taikutsu_na_sekai",
+            "series": "Anime",
+            "count": 648
+        },
+        {
+            "name": "ikkitousen",
+            "series": "Anime",
+            "count": 2776
+        },
+        {
+            "name": "maken-ki!",
+            "series": "Anime",
+            "count": 785
+        },
+        {
+            "name": "ladies_versus_butlers!",
+            "series": "Anime",
+            "count": 202
+        },
+        {
+            "name": "kill_la_kill",
+            "series": "Anime",
+            "count": 17160
+        },
+        {
+            "name": "shuffle!",
+            "series": "Anime",
+            "count": 469
+        },
+        {
+            "name": "strike_the_blood",
+            "series": "Anime",
+            "count": 449
+        },
+        {
+            "name": "son_goku",
+            "series": "Dragon Ball",
+            "count": 12768
+        },
+        {
+            "name": "vegeta",
+            "series": "Dragon Ball",
+            "count": 3870
+        },
+        {
+            "name": "vegito",
+            "series": "Dragon Ball",
+            "count": 406
+        },
+        {
+            "name": "gogeta",
+            "series": "Dragon Ball",
+            "count": 375
+        },
+        {
+            "name": "son_gohan",
+            "series": "Dragon Ball",
+            "count": 4786
+        },
+        {
+            "name": "piccolo",
+            "series": "Dragon Ball",
+            "count": 637
+        },
+        {
+            "name": "krillin",
+            "series": "Dragon Ball",
+            "count": 3436
+        },
+        {
+            "name": "bulma_briefs",
+            "series": "Dragon Ball",
+            "count": 16693
+        },
+        {
+            "name": "trunks_briefs",
+            "series": "Dragon Ball",
+            "count": 1954
+        },
+        {
+            "name": "son_goten",
+            "series": "Dragon Ball",
+            "count": 1113
+        },
+        {
+            "name": "android_18",
+            "series": "Dragon Ball",
+            "count": 21203
+        },
+        {
+            "name": "android_21",
+            "series": "Dragon Ball",
+            "count": 6045
+        },
+        {
+            "name": "frieza",
+            "series": "Dragon Ball",
+            "count": 866
+        },
+        {
+            "name": "cell_(dragon_ball)",
+            "series": "Dragon Ball",
+            "count": 1492
+        },
+        {
+            "name": "majin_android_21",
+            "series": "Dragon Ball",
+            "count": 3535
+        },
+        {
+            "name": "majin_buu",
+            "series": "Dragon Ball",
+            "count": 986
+        },
+        {
+            "name": "beerus",
+            "series": "Dragon Ball",
+            "count": 4538
+        },
+        {
+            "name": "whis",
+            "series": "Dragon Ball",
+            "count": 350
+        },
+        {
+            "name": "zen-oh",
+            "series": "Dragon Ball",
+            "count": 23
+        },
+        {
+            "name": "yamcha",
+            "series": "Dragon Ball",
+            "count": 511
+        },
+        {
+            "name": "tien_shinhan",
+            "series": "Dragon Ball",
+            "count": 203
+        },
+        {
+            "name": "chiaotzu",
+            "series": "Dragon Ball",
+            "count": 42
+        },
+        {
+            "name": "master_roshi",
+            "series": "Dragon Ball",
+            "count": 1995
+        },
+        {
+            "name": "chichi",
+            "series": "Dragon Ball",
+            "count": 10157
+        },
+        {
+            "name": "videl",
+            "series": "Dragon Ball",
+            "count": 7494
+        },
+        {
+            "name": "pan_(dragon_ball)",
+            "series": "Dragon Ball",
+            "count": 1713
+        },
+        {
+            "name": "mr._satan",
+            "series": "Dragon Ball",
+            "count": 291
+        },
+        {
+            "name": "android_17",
+            "series": "Dragon Ball",
+            "count": 658
+        },
+        {
+            "name": "captain_ginyu",
+            "series": "Dragon Ball",
+            "count": 228
+        },
+        {
+            "name": "porunga",
+            "series": "Dragon Ball",
+            "count": 112
+        },
+        {
+            "name": "shenron",
+            "series": "Dragon Ball",
+            "count": 176
+        },
+        {
+            "name": "bardock",
+            "series": "Dragon Ball",
+            "count": 390
+        },
+        {
+            "name": "raditz",
+            "series": "Dragon Ball",
+            "count": 235
+        },
+        {
+            "name": "future_trunks",
+            "series": "Dragon Ball",
+            "count": 537
+        },
+        {
+            "name": "goku_black",
+            "series": "Dragon Ball",
+            "count": 295
+        },
+        {
+            "name": "zamasu",
+            "series": "Dragon Ball",
+            "count": 295
+        },
+        {
+            "name": "jiren",
+            "series": "Dragon Ball",
+            "count": 145
+        },
+        {
+            "name": "toppo",
+            "series": "Dragon Ball",
+            "count": 26
+        },
+        {
+            "name": "caulifla",
+            "series": "Dragon Ball",
+            "count": 5154
+        },
+        {
+            "name": "kale",
+            "series": "Dragon Ball",
+            "count": 3312
+        },
+        {
+            "name": "kefla",
+            "series": "Dragon Ball",
+            "count": 4788
+        },
+        {
+            "name": "cabba",
+            "series": "Dragon Ball",
+            "count": 879
+        },
+        {
+            "name": "daishinkan",
+            "series": "Dragon Ball",
+            "count": 70
+        },
+        {
+            "name": "gine",
+            "series": "Dragon Ball",
+            "count": 760
+        },
+        {
+            "name": "arale_norimaki",
+            "series": "Dragon Ball",
+            "count": 93
+        },
+        {
+            "name": "nappa",
+            "series": "Dragon Ball",
+            "count": 247
+        },
+        {
+            "name": "turles",
+            "series": "Dragon Ball",
+            "count": 107
+        },
+        {
+            "name": "broly",
+            "series": "Dragon Ball",
+            "count": 1572
+        },
+        {
+            "name": "paragus",
+            "series": "Dragon Ball",
+            "count": 30
+        },
+        {
+            "name": "king_vegeta",
+            "series": "Dragon Ball",
+            "count": 69
+        },
+        {
+            "name": "tarble",
+            "series": "Dragon Ball",
+            "count": 14
+        },
+        {
+            "name": "king_cold",
+            "series": "Dragon Ball",
+            "count": 58
+        },
+        {
+            "name": "cooler_(dragon_ball)",
+            "series": "Dragon Ball",
+            "count": 216
+        },
+        {
+            "name": "zarbon",
+            "series": "Dragon Ball",
+            "count": 181
+        },
+        {
+            "name": "dodoria",
+            "series": "Dragon Ball",
+            "count": 58
+        },
+        {
+            "name": "jeice",
+            "series": "Dragon Ball",
+            "count": 70
+        },
+        {
+            "name": "burter",
+            "series": "Dragon Ball",
+            "count": 82
+        },
+        {
+            "name": "recoome",
+            "series": "Dragon Ball",
+            "count": 55
+        },
+        {
+            "name": "guldo",
+            "series": "Dragon Ball",
+            "count": 35
+        },
+        {
+            "name": "android_13",
+            "series": "Dragon Ball",
+            "count": 7
+        },
+        {
+            "name": "android_14",
+            "series": "Dragon Ball",
+            "count": 2
+        },
+        {
+            "name": "android_15",
+            "series": "Dragon Ball",
+            "count": 2
+        },
+        {
+            "name": "android_16",
+            "series": "Dragon Ball",
+            "count": 80
+        },
+        {
+            "name": "super_buu",
+            "series": "Dragon Ball",
+            "count": 285
+        },
+        {
+            "name": "shin_(dragon_ball)",
+            "series": "Dragon Ball",
+            "count": 68
+        },
+        {
+            "name": "kibito",
+            "series": "Dragon Ball",
+            "count": 13
+        },
+        {
+            "name": "champa",
+            "series": "Dragon Ball",
+            "count": 1294
+        },
+        {
+            "name": "vados",
+            "series": "Dragon Ball",
+            "count": 1534
+        },
+        {
+            "name": "frost_(mortal_kombat)",
+            "series": "Dragon Ball",
+            "count": 334
+        },
+        {
+            "name": "botamo",
+            "series": "Dragon Ball",
+            "count": 53
+        },
+        {
+            "name": "jaco_the_galactic_patrolman",
+            "series": "Dragon Ball",
+            "count": 94
+        },
+        {
+            "name": "mai_(dragon_ball)",
+            "series": "Dragon Ball",
+            "count": 688
+        },
+        {
+            "name": "launch",
+            "series": "Dragon Ball",
+            "count": 1402
+        },
+        {
+            "name": "yajirobe",
+            "series": "Dragon Ball",
+            "count": 76
+        },
+        {
+            "name": "korin_(dragon_ball)",
+            "series": "Dragon Ball",
+            "count": 42
+        },
+        {
+            "name": "dende",
+            "series": "Dragon Ball",
+            "count": 18
+        },
+        {
+            "name": "monkey_d_luffy",
+            "series": "One Piece",
+            "count": 7751
+        },
+        {
+            "name": "roronoa_zoro",
+            "series": "One Piece",
+            "count": 3462
+        },
+        {
+            "name": "nami_(one_piece)",
+            "series": "One Piece",
+            "count": 36872
+        },
+        {
+            "name": "usopp",
+            "series": "One Piece",
+            "count": 952
+        },
+        {
+            "name": "vinsmoke_sanji",
+            "series": "One Piece",
+            "count": 2220
+        },
+        {
+            "name": "tony_tony_chopper",
+            "series": "One Piece",
+            "count": 2058
+        },
+        {
+            "name": "nico_robin",
+            "series": "One Piece",
+            "count": 21767
+        },
+        {
+            "name": "franky",
+            "series": "One Piece",
+            "count": 372
+        },
+        {
+            "name": "vinsmoke_reiju",
+            "series": "One Piece",
+            "count": 1047
+        },
+        {
+            "name": "brook_(one_piece)",
+            "series": "One Piece",
+            "count": 159
+        },
+        {
+            "name": "jinbe",
+            "series": "One Piece",
+            "count": 515
+        },
+        {
+            "name": "going_merry",
+            "series": "One Piece",
+            "count": 17
+        },
+        {
+            "name": "thousand_sunny",
+            "series": "One Piece",
+            "count": 120
+        },
+        {
+            "name": "nefertari_vivi",
+            "series": "One Piece",
+            "count": 2709
+        },
+        {
+            "name": "karoo",
+            "series": "One Piece",
+            "count": 33
+        },
+        {
+            "name": "laboon",
+            "series": "One Piece",
+            "count": 1
+        },
+        {
+            "name": "trafalgar_law",
+            "series": "One Piece",
+            "count": 2045
+        },
+        {
+            "name": "bepo_(one_piece)",
+            "series": "One Piece",
+            "count": 32
+        },
+        {
+            "name": "eustass_kid",
+            "series": "One Piece",
+            "count": 155
+        },
+        {
+            "name": "basil_hawkins",
+            "series": "One Piece",
+            "count": 11
+        },
+        {
+            "name": "x_drake",
+            "series": "One Piece",
+            "count": 58
+        },
+        {
+            "name": "killer_(one_piece)",
+            "series": "One Piece",
+            "count": 41
+        },
+        {
+            "name": "scratchmen_apoo",
+            "series": "One Piece",
+            "count": 5
+        },
+        {
+            "name": "jewelry_bonney",
+            "series": "One Piece",
+            "count": 746
+        },
+        {
+            "name": "boa_hancock",
+            "series": "One Piece",
+            "count": 11362
+        },
+        {
+            "name": "blackbeard",
+            "series": "One Piece",
+            "count": 1395
+        },
+        {
+            "name": "monkey_d_garp",
+            "series": "One Piece",
+            "count": 156
+        },
+        {
+            "name": "smoker_(one_piece)",
+            "series": "One Piece",
+            "count": 345
+        },
+        {
+            "name": "tashigi",
+            "series": "One Piece",
+            "count": 590
+        },
+        {
+            "name": "koby_(one_piece)",
+            "series": "One Piece",
+            "count": 91
+        },
+        {
+            "name": "helmeppo",
+            "series": "One Piece",
+            "count": 10
+        },
+        {
+            "name": "sentomaru",
+            "series": "One Piece",
+            "count": 5
+        },
+        {
+            "name": "spandam",
+            "series": "One Piece",
+            "count": 67
+        },
+        {
+            "name": "hina_(one_piece)",
+            "series": "One Piece",
+            "count": 201
+        },
+        {
+            "name": "dracule_mihawk",
+            "series": "One Piece",
+            "count": 218
+        },
+        {
+            "name": "bartholomew_kuma",
+            "series": "One Piece",
+            "count": 37
+        },
+        {
+            "name": "donquixote_doflamingo",
+            "series": "One Piece",
+            "count": 592
+        },
+        {
+            "name": "donquixote_rosinante",
+            "series": "One Piece",
+            "count": 476
+        },
+        {
+            "name": "sir_crocodile",
+            "series": "One Piece",
+            "count": 301
+        },
+        {
+            "name": "gecko_moria",
+            "series": "One Piece",
+            "count": 33
+        },
+        {
+            "name": "shanks",
+            "series": "One Piece",
+            "count": 136
+        },
+        {
+            "name": "buggy_the_clown",
+            "series": "One Piece",
+            "count": 190
+        },
+        {
+            "name": "edward_newgate",
+            "series": "One Piece",
+            "count": 69
+        },
+        {
+            "name": "charlotte_linlin",
+            "series": "One Piece",
+            "count": 116
+        },
+        {
+            "name": "kaido_(one_piece)",
+            "series": "One Piece",
+            "count": 197
+        },
+        {
+            "name": "marco_(one_piece)",
+            "series": "One Piece",
+            "count": 69
+        },
+        {
+            "name": "queen_(one_piece)",
+            "series": "One Piece",
+            "count": 26
+        },
+        {
+            "name": "king_(one_piece)",
+            "series": "One Piece",
+            "count": 98
+        },
+        {
+            "name": "jack_(one_piece)",
+            "series": "One Piece",
+            "count": 5
+        },
+        {
+            "name": "monkey_d_dragon",
+            "series": "One Piece",
+            "count": 10
+        },
+        {
+            "name": "sabo_(one_piece)",
+            "series": "One Piece",
+            "count": 94
+        },
+        {
+            "name": "koala_(one_piece)",
+            "series": "One Piece",
+            "count": 363
+        },
+        {
+            "name": "emporio_ivankov",
+            "series": "One Piece",
+            "count": 26
+        },
+        {
+            "name": "inazuma_(one_piece)",
+            "series": "One Piece",
+            "count": 5
+        },
+        {
+            "name": "yamato_(one_piece)",
+            "series": "One Piece",
+            "count": 7156
+        },
+        {
+            "name": "hack_(one_piece)",
+            "series": "One Piece",
+            "count": 3
+        },
+        {
+            "name": "belo_betty",
+            "series": "One Piece",
+            "count": 47
+        },
+        {
+            "name": "kozuki_oden",
+            "series": "One Piece",
+            "count": 30
+        },
+        {
+            "name": "kozuki_momonosuke",
+            "series": "One Piece",
+            "count": 160
+        },
+        {
+            "name": "kinemon",
+            "series": "One Piece",
+            "count": 13
+        },
+        {
+            "name": "raizo",
+            "series": "One Piece",
+            "count": 12
+        },
+        {
+            "name": "kawamatsu_(one_piece)",
+            "series": "One Piece",
+            "count": 9
+        },
+        {
+            "name": "denjirou_(one_piece)",
+            "series": "One Piece",
+            "count": 17
+        },
+        {
+            "name": "shirahoshi",
+            "series": "One Piece",
+            "count": 444
+        },
+        {
+            "name": "hody_jones",
+            "series": "One Piece",
+            "count": 19
+        },
+        {
+            "name": "arlong",
+            "series": "One Piece",
+            "count": 156
+        },
+        {
+            "name": "fisher_tiger",
+            "series": "One Piece",
+            "count": 2
+        },
+        {
+            "name": "vander_decken_ix",
+            "series": "One Piece",
+            "count": 13
+        },
+        {
+            "name": "conis",
+            "series": "One Piece",
+            "count": 77
+        },
+        {
+            "name": "portgas_d_ace",
+            "series": "One Piece",
+            "count": 434
+        },
+        {
+            "name": "bon_clay",
+            "series": "One Piece",
+            "count": 103
+        },
+        {
+            "name": "uzumaki_naruto",
+            "series": "Naruto (series)",
+            "count": 27577
+        },
+        {
+            "name": "sasuke_uchiha",
+            "series": "Naruto (series)",
+            "count": 6738
+        },
+        {
+            "name": "uzumaki_boruto",
+            "series": "Naruto (series)",
+            "count": 5207
+        },
+        {
+            "name": "sarada_uchiha",
+            "series": "Naruto (series)",
+            "count": 9178
+        },
+        {
+            "name": "jigen_(boruto)",
+            "series": "Naruto (series)",
+            "count": 5
+        },
+        {
+            "name": "delta_(boruto)",
+            "series": "Naruto (series)",
+            "count": 469
+        },
+        {
+            "name": "boro_(naruto)",
+            "series": "Naruto (series)",
+            "count": 3
+        },
+        {
+            "name": "otsutsuki_kaguya",
+            "series": "Naruto (series)",
+            "count": 1150
+        },
+        {
+            "name": "sakura_haruno",
+            "series": "Naruto (series)",
+            "count": 28940
+        },
+        {
+            "name": "hatake_kakashi",
+            "series": "Naruto (series)",
+            "count": 2587
+        },
+        {
+            "name": "uchiha_itachi",
+            "series": "Naruto (series)",
+            "count": 1342
+        },
+        {
+            "name": "uchiha_madara",
+            "series": "Naruto (series)",
+            "count": 346
+        },
+        {
+            "name": "uchiha_obito",
+            "series": "Naruto (series)",
+            "count": 729
+        },
+        {
+            "name": "namikaze_minato",
+            "series": "Naruto (series)",
+            "count": 934
+        },
+        {
+            "name": "jiraiya",
+            "series": "Naruto (series)",
+            "count": 2124
+        },
+        {
+            "name": "tsunade",
+            "series": "Naruto (series)",
+            "count": 24909
+        },
+        {
+            "name": "orochimaru",
+            "series": "Naruto (series)",
+            "count": 568
+        },
+        {
+            "name": "gaara",
+            "series": "Naruto (series)",
+            "count": 769
+        },
+        {
+            "name": "rock_lee",
+            "series": "Naruto (series)",
+            "count": 656
+        },
+        {
+            "name": "hyuuga_hinata",
+            "series": "Naruto (series)",
+            "count": 30326
+        },
+        {
+            "name": "nara_shikamaru",
+            "series": "Naruto (series)",
+            "count": 1733
+        },
+        {
+            "name": "akimichi_chouji",
+            "series": "Naruto (series)",
+            "count": 738
+        },
+        {
+            "name": "inuzuka_kiba",
+            "series": "Naruto (series)",
+            "count": 2079
+        },
+        {
+            "name": "aburame_shino",
+            "series": "Naruto (series)",
+            "count": 201
+        },
+        {
+            "name": "temari",
+            "series": "Naruto (series)",
+            "count": 5023
+        },
+        {
+            "name": "kankuro",
+            "series": "Naruto (series)",
+            "count": 173
+        },
+        {
+            "name": "uzumaki_kushina",
+            "series": "Naruto (series)",
+            "count": 6716
+        },
+        {
+            "name": "killer_bee",
+            "series": "Naruto (series)",
+            "count": 584
+        },
+        {
+            "name": "yamato_(naruto)",
+            "series": "Naruto (series)",
+            "count": 133
+        },
+        {
+            "name": "sarutobi_konohamaru",
+            "series": "Naruto (series)",
+            "count": 802
+        },
+        {
+            "name": "ino_yamanaka",
+            "series": "Naruto (series)",
+            "count": 11605
+        },
+        {
+            "name": "hyuuga_hanabi",
+            "series": "Naruto (series)",
+            "count": 4374
+        },
+        {
+            "name": "nohara_rin",
+            "series": "Naruto (series)",
+            "count": 449
+        },
+        {
+            "name": "sarutobi_asuma",
+            "series": "Naruto (series)",
+            "count": 1206
+        },
+        {
+            "name": "might_guy",
+            "series": "Naruto (series)",
+            "count": 312
+        },
+        {
+            "name": "tenten",
+            "series": "Naruto (series)",
+            "count": 4621
+        },
+        {
+            "name": "shimura_danzou",
+            "series": "Naruto (series)",
+            "count": 32
+        },
+        {
+            "name": "sarutobi_hiruzen",
+            "series": "Naruto (series)",
+            "count": 74
+        },
+        {
+            "name": "senju_hashirama",
+            "series": "Naruto (series)",
+            "count": 99
+        },
+        {
+            "name": "senju_tobirama",
+            "series": "Naruto (series)",
+            "count": 85
+        },
+        {
+            "name": "pain_(naruto)",
+            "series": "Naruto (series)",
+            "count": 264
+        },
+        {
+            "name": "konan",
+            "series": "Naruto (series)",
+            "count": 3139
+        },
+        {
+            "name": "deidara",
+            "series": "Naruto (series)",
+            "count": 1025
+        },
+        {
+            "name": "hoshigaki_kisame",
+            "series": "Naruto (series)",
+            "count": 289
+        },
+        {
+            "name": "sasori",
+            "series": "Naruto (series)",
+            "count": 226
+        },
+        {
+            "name": "hidan",
+            "series": "Naruto (series)",
+            "count": 344
+        },
+        {
+            "name": "kakuzu",
+            "series": "Naruto (series)",
+            "count": 330
+        },
+        {
+            "name": "akatsuki_(naruto)",
+            "series": "Naruto (series)",
+            "count": 1456
+        },
+        {
+            "name": "momochi_zabuza",
+            "series": "Naruto (series)",
+            "count": 196
+        },
+        {
+            "name": "haku_(naruto)",
+            "series": "Naruto (series)",
+            "count": 752
+        },
+        {
+            "name": "kimimaro",
+            "series": "Naruto (series)",
+            "count": 36
+        },
+        {
+            "name": "karin",
+            "series": "Naruto (series)",
+            "count": 44
+        },
+        {
+            "name": "uchiha_shisui",
+            "series": "Naruto (series)",
+            "count": 121
+        },
+        {
+            "name": "otsutsuki_momoshiki",
+            "series": "Naruto (series)",
+            "count": 37
+        },
+        {
+            "name": "otsutsuki_kinshiki",
+            "series": "Naruto (series)",
+            "count": 7
+        },
+        {
+            "name": "mitsuki_(naruto)",
+            "series": "Naruto (series)",
+            "count": 270
+        },
+        {
+            "name": "ichigo_kurosaki",
+            "series": "Bleach",
+            "count": 4477
+        },
+        {
+            "name": "kuchiki_rukia",
+            "series": "Bleach",
+            "count": 7534
+        },
+        {
+            "name": "inoue_orihime",
+            "series": "Bleach",
+            "count": 10554
+        },
+        {
+            "name": "uryu_ishida",
+            "series": "Bleach",
+            "count": 179
+        },
+        {
+            "name": "yasutora_sado",
+            "series": "Bleach",
+            "count": 530
+        },
+        {
+            "name": "kisuke_urahara",
+            "series": "Bleach",
+            "count": 320
+        },
+        {
+            "name": "shihouin_yoruichi",
+            "series": "Bleach",
+            "count": 11971
+        },
+        {
+            "name": "genry%C5%ABsai_shigekuni_yamamoto",
+            "series": "Bleach",
+            "count": 14
+        },
+        {
+            "name": "kyoraku_shunsui",
+            "series": "Bleach",
+            "count": 79
+        },
+        {
+            "name": "ukitake_jyuushiro",
+            "series": "Bleach",
+            "count": 26
+        },
+        {
+            "name": "kuchiki_byakuya",
+            "series": "Bleach",
+            "count": 153
+        },
+        {
+            "name": "kenpachi_zaraki",
+            "series": "Bleach",
+            "count": 119
+        },
+        {
+            "name": "toshiro_hitsugaya",
+            "series": "Bleach",
+            "count": 750
+        },
+        {
+            "name": "kurotsuchi_mayuri",
+            "series": "Bleach",
+            "count": 107
+        },
+        {
+            "name": "sajin_komamura",
+            "series": "Bleach",
+            "count": 305
+        },
+        {
+            "name": "aizen_sousuke",
+            "series": "Bleach",
+            "count": 176
+        },
+        {
+            "name": "ichimaru_gin",
+            "series": "Bleach",
+            "count": 128
+        },
+        {
+            "name": "unohana_retsu",
+            "series": "Bleach",
+            "count": 2626
+        },
+        {
+            "name": "sui-feng",
+            "series": "Bleach",
+            "count": 630
+        },
+        {
+            "name": "matsumoto_rangiku",
+            "series": "Bleach",
+            "count": 10438
+        },
+        {
+            "name": "renji_abarai",
+            "series": "Bleach",
+            "count": 517
+        },
+        {
+            "name": "madarame_ikkaku",
+            "series": "Bleach",
+            "count": 66
+        },
+        {
+            "name": "kusajishi_yachiru",
+            "series": "Bleach",
+            "count": 106
+        },
+        {
+            "name": "ichibe_hyosube",
+            "series": "Bleach",
+            "count": 8
+        },
+        {
+            "name": "shutara_senjumaru",
+            "series": "Bleach",
+            "count": 184
+        },
+        {
+            "name": "hikifune_kirio",
+            "series": "Bleach",
+            "count": 221
+        },
+        {
+            "name": "ulquiorra_cifer",
+            "series": "Bleach",
+            "count": 260
+        },
+        {
+            "name": "grimmjow_jaegerjaquez",
+            "series": "Bleach",
+            "count": 318
+        },
+        {
+            "name": "coyote_starrk",
+            "series": "Bleach",
+            "count": 30
+        },
+        {
+            "name": "tier_harribel",
+            "series": "Bleach",
+            "count": 86
+        },
+        {
+            "name": "nnoitra_gilga",
+            "series": "Bleach",
+            "count": 50
+        },
+        {
+            "name": "szayelaporro_granz",
+            "series": "Bleach",
+            "count": 75
+        },
+        {
+            "name": "aaroniero_arruruerie",
+            "series": "Bleach",
+            "count": 9
+        },
+        {
+            "name": "yammy_llargo",
+            "series": "Bleach",
+            "count": 68
+        },
+        {
+            "name": "luppi_antenor",
+            "series": "Bleach",
+            "count": 38
+        },
+        {
+            "name": "wonderweiss_margera",
+            "series": "Bleach",
+            "count": 8
+        },
+        {
+            "name": "yhwach",
+            "series": "Bleach",
+            "count": 62
+        },
+        {
+            "name": "jugram_haschwalth",
+            "series": "Bleach",
+            "count": 16
+        },
+        {
+            "name": "ishida_uryuu",
+            "series": "Bleach",
+            "count": 22
+        },
+        {
+            "name": "bazz-b",
+            "series": "Bleach",
+            "count": 8
+        },
+        {
+            "name": "askin_nakk_le_vaar",
+            "series": "Bleach",
+            "count": 12
+        },
+        {
+            "name": "lille_barro",
+            "series": "Bleach",
+            "count": 3
+        },
+        {
+            "name": "bambietta_basterbine",
+            "series": "Bleach",
+            "count": 1024
+        },
+        {
+            "name": "yoshino_soma",
+            "series": "Bleach",
+            "count": 4
+        },
+        {
+            "name": "izuku_midoriya",
+            "series": "My Hero Academia",
+            "count": 18498
+        },
+        {
+            "name": "katsuki_bakugou",
+            "series": "My Hero Academia",
+            "count": 7357
+        },
+        {
+            "name": "shouto_todoroki",
+            "series": "My Hero Academia",
+            "count": 3124
+        },
+        {
+            "name": "uraraka_ochako",
+            "series": "My Hero Academia",
+            "count": 4553
+        },
+        {
+            "name": "tenya_iida",
+            "series": "My Hero Academia",
+            "count": 568
+        },
+        {
+            "name": "eijirou_kirishima",
+            "series": "My Hero Academia",
+            "count": 2671
+        },
+        {
+            "name": "tsuyu_asui",
+            "series": "My Hero Academia",
+            "count": 9049
+        },
+        {
+            "name": "momo_yaoyorozu",
+            "series": "My Hero Academia",
+            "count": 11436
+        },
+        {
+            "name": "fumikage_tokoyami",
+            "series": "My Hero Academia",
+            "count": 311
+        },
+        {
+            "name": "denki_kaminari",
+            "series": "My Hero Academia",
+            "count": 1241
+        },
+        {
+            "name": "mina_ashido",
+            "series": "My Hero Academia",
+            "count": 10157
+        },
+        {
+            "name": "jirou_kyouka",
+            "series": "My Hero Academia",
+            "count": 847
+        },
+        {
+            "name": "mezo_shoji",
+            "series": "My Hero Academia",
+            "count": 104
+        },
+        {
+            "name": "mashirao_ojiro",
+            "series": "My Hero Academia",
+            "count": 97
+        },
+        {
+            "name": "hanta_sero",
+            "series": "My Hero Academia",
+            "count": 230
+        },
+        {
+            "name": "aoyama_yuuga",
+            "series": "My Hero Academia",
+            "count": 120
+        },
+        {
+            "name": "koji_koda",
+            "series": "My Hero Academia",
+            "count": 156
+        },
+        {
+            "name": "rikido_sato",
+            "series": "My Hero Academia",
+            "count": 75
+        },
+        {
+            "name": "hagakure_tooru_(visible)",
+            "series": "My Hero Academia",
+            "count": 610
+        },
+        {
+            "name": "shouta_aizawa",
+            "series": "My Hero Academia",
+            "count": 880
+        },
+        {
+            "name": "inko_midoriya",
+            "series": "My Hero Academia",
+            "count": 2616
+        },
+        {
+            "name": "mitsuki_bakugou",
+            "series": "My Hero Academia",
+            "count": 3632
+        },
+        {
+            "name": "all_might",
+            "series": "My Hero Academia",
+            "count": 898
+        },
+        {
+            "name": "hizashi_yamada",
+            "series": "My Hero Academia",
+            "count": 139
+        },
+        {
+            "name": "nemuri_kayama",
+            "series": "My Hero Academia",
+            "count": 2217
+        },
+        {
+            "name": "kurose_anan",
+            "series": "My Hero Academia",
+            "count": 18
+        },
+        {
+            "name": "hound_dog_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 14
+        },
+        {
+            "name": "neito_monoma",
+            "series": "My Hero Academia",
+            "count": 112
+        },
+        {
+            "name": "itsuka_kendou",
+            "series": "My Hero Academia",
+            "count": 1133
+        },
+        {
+            "name": "tetsutetsu_tetsutetsu",
+            "series": "My Hero Academia",
+            "count": 159
+        },
+        {
+            "name": "ibara_shiozaki",
+            "series": "My Hero Academia",
+            "count": 273
+        },
+        {
+            "name": "jurota_shishida",
+            "series": "My Hero Academia",
+            "count": 74
+        },
+        {
+            "name": "komori_kinoko",
+            "series": "My Hero Academia",
+            "count": 478
+        },
+        {
+            "name": "tsuburaba_kousei",
+            "series": "My Hero Academia",
+            "count": 12
+        },
+        {
+            "name": "reiko_yanagi",
+            "series": "My Hero Academia",
+            "count": 267
+        },
+        {
+            "name": "tokage_setsuna",
+            "series": "My Hero Academia",
+            "count": 586
+        },
+        {
+            "name": "endeavor_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 2045
+        },
+        {
+            "name": "keigo_takami",
+            "series": "My Hero Academia",
+            "count": 792
+        },
+        {
+            "name": "rumi_usagiyama",
+            "series": "My Hero Academia",
+            "count": 15863
+        },
+        {
+            "name": "hakamada_tsunagu",
+            "series": "My Hero Academia",
+            "count": 20
+        },
+        {
+            "name": "kamihara_shinya",
+            "series": "My Hero Academia",
+            "count": 17
+        },
+        {
+            "name": "yuu_takeyama",
+            "series": "My Hero Academia",
+            "count": 2320
+        },
+        {
+            "name": "kamui_woods",
+            "series": "My Hero Academia",
+            "count": 35
+        },
+        {
+            "name": "tatsuma_ryuuko",
+            "series": "My Hero Academia",
+            "count": 540
+        },
+        {
+            "name": "fatgum",
+            "series": "My Hero Academia",
+            "count": 221
+        },
+        {
+            "name": "gran_torino",
+            "series": "My Hero Academia",
+            "count": 12
+        },
+        {
+            "name": "gang_orca",
+            "series": "My Hero Academia",
+            "count": 100
+        },
+        {
+            "name": "nighteye",
+            "series": "My Hero Academia",
+            "count": 18
+        },
+        {
+            "name": "shigaraki_tomura",
+            "series": "My Hero Academia",
+            "count": 410
+        },
+        {
+            "name": "kurogiri",
+            "series": "My Hero Academia",
+            "count": 21
+        },
+        {
+            "name": "dabi",
+            "series": "My Hero Academia",
+            "count": 736
+        },
+        {
+            "name": "himiko_toga",
+            "series": "My Hero Academia",
+            "count": 8943
+        },
+        {
+            "name": "twice",
+            "series": "My Hero Academia",
+            "count": 157
+        },
+        {
+            "name": "spinner_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 83
+        },
+        {
+            "name": "geten",
+            "series": "My Hero Academia",
+            "count": 28
+        },
+        {
+            "name": "skeptic_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 11
+        },
+        {
+            "name": "chitose_kizuki",
+            "series": "My Hero Academia",
+            "count": 41
+        },
+        {
+            "name": "nomu",
+            "series": "My Hero Academia",
+            "count": 1846
+        },
+        {
+            "name": "lady_nagant",
+            "series": "My Hero Academia",
+            "count": 1418
+        },
+        {
+            "name": "shino_sousaki",
+            "series": "My Hero Academia",
+            "count": 337
+        },
+        {
+            "name": "imasuji_gouto",
+            "series": "My Hero Academia",
+            "count": 21
+        },
+        {
+            "name": "shinsou_hitoshi",
+            "series": "My Hero Academia",
+            "count": 111
+        },
+        {
+            "name": "chizome_akaguro",
+            "series": "My Hero Academia",
+            "count": 7
+        },
+        {
+            "name": "stain_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 14
+        },
+        {
+            "name": "all_for_one",
+            "series": "My Hero Academia",
+            "count": 83
+        },
+        {
+            "name": "mirio_togata",
+            "series": "My Hero Academia",
+            "count": 667
+        },
+        {
+            "name": "tamaki_amajiki",
+            "series": "My Hero Academia",
+            "count": 283
+        },
+        {
+            "name": "nejire_hado",
+            "series": "My Hero Academia",
+            "count": 3662
+        },
+        {
+            "name": "mei_hatsume",
+            "series": "My Hero Academia",
+            "count": 1525
+        },
+        {
+            "name": "melissa_shield",
+            "series": "My Hero Academia",
+            "count": 317
+        },
+        {
+            "name": "rei_todoroki",
+            "series": "My Hero Academia",
+            "count": 169
+        },
+        {
+            "name": "natsuo_todoroki",
+            "series": "My Hero Academia",
+            "count": 157
+        },
+        {
+            "name": "fuyumi_todoroki",
+            "series": "My Hero Academia",
+            "count": 476
+        },
+        {
+            "name": "masaru_bakugou",
+            "series": "My Hero Academia",
+            "count": 88
+        },
+        {
+            "name": "kota_izumi",
+            "series": "My Hero Academia",
+            "count": 28
+        },
+        {
+            "name": "eri_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 304
+        },
+        {
+            "name": "la_brava_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 927
+        },
+        {
+            "name": "gentle_criminal",
+            "series": "My Hero Academia",
+            "count": 41
+        },
+        {
+            "name": "star_and_stripe_(my_hero_academia)",
+            "series": "My Hero Academia",
+            "count": 251
+        },
+        {
+            "name": "rody_soul",
+            "series": "My Hero Academia",
+            "count": 19
+        },
+        {
+            "name": "chojuro_kon",
+            "series": "My Hero Academia",
+            "count": 7
+        },
+        {
+            "name": "nana_shimura",
+            "series": "My Hero Academia",
+            "count": 544
+        },
+        {
+            "name": "hatsune_miku",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 23466
+        },
+        {
+            "name": "kagamine_rin",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 2211
+        },
+        {
+            "name": "kagamine_len",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 1295
+        },
+        {
+            "name": "megurine_luka",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 2223
+        },
+        {
+            "name": "kaito_(vocaloid)",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 433
+        },
+        {
+            "name": "meiko_(vocaloid)",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 154
+        },
+        {
+            "name": "gumi",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 384
+        },
+        {
+            "name": "vy1",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 5
+        },
+        {
+            "name": "yuzuki_yukari",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 1054
+        },
+        {
+            "name": "aoki_lapis",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 10
+        },
+        {
+            "name": "seeu",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 21
+        },
+        {
+            "name": "mayu",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 13
+        },
+        {
+            "name": "hiyama_kiyoteru",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 12
+        },
+        {
+            "name": "tonio",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 8
+        },
+        {
+            "name": "avanna",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 1
+        },
+        {
+            "name": "fukase",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 24
+        },
+        {
+            "name": "maika_(vocaloid)",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 11
+        },
+        {
+            "name": "dex_(vocaloid)",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 13
+        },
+        {
+            "name": "kasane_teto",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 1238
+        },
+        {
+            "name": "defoko",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 20
+        },
+        {
+            "name": "sukone_tei",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 15
+        },
+        {
+            "name": "namine_ritsu",
+            "series": "Vocaloid/UTAUloid/Voisona",
+            "count": 24
+        },
+        {
+            "name": "jonathan_joestar",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 1001
+        },
+        {
+            "name": "joseph_joestar",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 3653
+        },
+        {
+            "name": "jotaro_kujo",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 10189
+        },
+        {
+            "name": "josuke_higashikata",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 3065
+        },
+        {
+            "name": "giorno_giovanna",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 1373
+        },
+        {
+            "name": "jolyne_kujo",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 3892
+        },
+        {
+            "name": "johnny_joestar",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 743
+        },
+        {
+            "name": "josuke_higashikata_(jojolion)",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 150
+        },
+        {
+            "name": "jodio_joestar",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 35
+        },
+        {
+            "name": "robert_edward_o_speedwagon",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 309
+        },
+        {
+            "name": "william_antonio_zeppeli",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 39
+        },
+        {
+            "name": "erina_pendleton",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 188
+        },
+        {
+            "name": "caesar_zeppeli",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 2185
+        },
+        {
+            "name": "lisa_lisa",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 528
+        },
+        {
+            "name": "mohammed_avdol",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 590
+        },
+        {
+            "name": "noriaki_kakyoin",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 4240
+        },
+        {
+            "name": "jean_pierre_polnareff",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 638
+        },
+        {
+            "name": "iggy_(jjba)",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 386
+        },
+        {
+            "name": "koichi_hirose",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 264
+        },
+        {
+            "name": "okuyasu_nijimura",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 420
+        },
+        {
+            "name": "rohan_kishibe",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 1853
+        },
+        {
+            "name": "yukako_yamagishi",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 261
+        },
+        {
+            "name": "tomoko_higashikata",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 333
+        },
+        {
+            "name": "bruno_buccellati",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 742
+        },
+        {
+            "name": "leone_abbacchio",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 505
+        },
+        {
+            "name": "guido_mista",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 1408
+        },
+        {
+            "name": "narancia_ghirga",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 634
+        },
+        {
+            "name": "pannacotta_fugo",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 412
+        },
+        {
+            "name": "trish_una",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 1143
+        },
+        {
+            "name": "ermes_costello",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 705
+        },
+        {
+            "name": "weather_report",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 100
+        },
+        {
+            "name": "narciso_anasui",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 267
+        },
+        {
+            "name": "foo_fighters",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 700
+        },
+        {
+            "name": "gyro_zeppeli",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 558
+        },
+        {
+            "name": "lucy_steel",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 61
+        },
+        {
+            "name": "hot_pants",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 780
+        },
+        {
+            "name": "mountain_tim",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 9
+        },
+        {
+            "name": "diego_brando",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 330
+        },
+        {
+            "name": "yasuho_hirose",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 326
+        },
+        {
+            "name": "rai_mamezuku",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 10
+        },
+        {
+            "name": "tsurugi_higashikata",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 5
+        },
+        {
+            "name": "dragona_joestar",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 75
+        },
+        {
+            "name": "paco_laburantes",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 7
+        },
+        {
+            "name": "usagi_aloha%26%23039%3Boe",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 6
+        },
+        {
+            "name": "dio_brando",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 4297
+        },
+        {
+            "name": "kars",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 355
+        },
+        {
+            "name": "esidisi",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 99
+        },
+        {
+            "name": "wamuu",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 142
+        },
+        {
+            "name": "vanilla_ice",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 237
+        },
+        {
+            "name": "hol_horse",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 78
+        },
+        {
+            "name": "yoshikage_kira",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 735
+        },
+        {
+            "name": "diavolo",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 722
+        },
+        {
+            "name": "vinegar_doppio",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 526
+        },
+        {
+            "name": "risotto_nero",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 1482
+        },
+        {
+            "name": "enrico_pucci",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 565
+        },
+        {
+            "name": "funny_valentine",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 130
+        },
+        {
+            "name": "tooru_(jjba)",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 16
+        },
+        {
+            "name": "jobin_higashikata",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 20
+        },
+        {
+            "name": "star_platinum",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 704
+        },
+        {
+            "name": "crazy_diamond",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 112
+        },
+        {
+            "name": "gold_experience",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 74
+        },
+        {
+            "name": "stone_free",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 199
+        },
+        {
+            "name": "tusk_(jjba)",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 31
+        },
+        {
+            "name": "wonder_of_u",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 12
+        },
+        {
+            "name": "tonio_trussardi",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 8
+        },
+        {
+            "name": "aya_tsuji",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 20
+        },
+        {
+            "name": "mikitaka_hazekura",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 31
+        },
+        {
+            "name": "shigekiyo_yangu",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 12
+        },
+        {
+            "name": "mariah_(jjba)",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 206
+        },
+        {
+            "name": "pet_shop_(jjba)",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 24
+        },
+        {
+            "name": "yellow_temperance",
+            "series": "JoJo's Bizarre Adventure",
+            "count": 11
+        },
+        {
+            "name": "kamado_tanjirou",
+            "series": "Demon Slayer",
+            "count": 2720
+        },
+        {
+            "name": "kamado_nezuko",
+            "series": "Demon Slayer",
+            "count": 5364
+        },
+        {
+            "name": "zenitsu_agatsuma",
+            "series": "Demon Slayer",
+            "count": 890
+        },
+        {
+            "name": "inosuke_hashibira",
+            "series": "Demon Slayer",
+            "count": 851
+        },
+        {
+            "name": "tsuyuri_kanao",
+            "series": "Demon Slayer",
+            "count": 983
+        },
+        {
+            "name": "genya_shinazugawa",
+            "series": "Demon Slayer",
+            "count": 185
+        },
+        {
+            "name": "tomioka_giyuu",
+            "series": "Demon Slayer",
+            "count": 872
+        },
+        {
+            "name": "kochou_shinobu",
+            "series": "Demon Slayer",
+            "count": 6821
+        },
+        {
+            "name": "rengoku_kyoujurou",
+            "series": "Demon Slayer",
+            "count": 715
+        },
+        {
+            "name": "uzui_tengen",
+            "series": "Demon Slayer",
+            "count": 947
+        },
+        {
+            "name": "kanroji_mitsuri",
+            "series": "Demon Slayer",
+            "count": 8171
+        },
+        {
+            "name": "muichiro_tokitou",
+            "series": "Demon Slayer",
+            "count": 625
+        },
+        {
+            "name": "himejima_gyomei",
+            "series": "Demon Slayer",
+            "count": 291
+        },
+        {
+            "name": "sanemi_shinazugawa",
+            "series": "Demon Slayer",
+            "count": 410
+        },
+        {
+            "name": "iguro_obanai",
+            "series": "Demon Slayer",
+            "count": 448
+        },
+        {
+            "name": "kokushibo",
+            "series": "Demon Slayer",
+            "count": 186
+        },
+        {
+            "name": "douma",
+            "series": "Demon Slayer",
+            "count": 686
+        },
+        {
+            "name": "akaza_(kimetsu_no_yaiba)",
+            "series": "Demon Slayer",
+            "count": 339
+        },
+        {
+            "name": "hantengu",
+            "series": "Demon Slayer",
+            "count": 1071
+        },
+        {
+            "name": "nakime",
+            "series": "Demon Slayer",
+            "count": 86
+        },
+        {
+            "name": "gyokko",
+            "series": "Demon Slayer",
+            "count": 49
+        },
+        {
+            "name": "kaigaku",
+            "series": "Demon Slayer",
+            "count": 124
+        },
+        {
+            "name": "daki_(kimetsu_no_yaiba)",
+            "series": "Demon Slayer",
+            "count": 1516
+        },
+        {
+            "name": "gyutaro",
+            "series": "Demon Slayer",
+            "count": 187
+        },
+        {
+            "name": "muzan_kibutsuji",
+            "series": "Demon Slayer",
+            "count": 637
+        },
+        {
+            "name": "enmu",
+            "series": "Demon Slayer",
+            "count": 225
+        },
+        {
+            "name": "kyogai",
+            "series": "Demon Slayer",
+            "count": 2
+        },
+        {
+            "name": "tamayo_(kimetsu_no_yaiba)",
+            "series": "Demon Slayer",
+            "count": 162
+        },
+        {
+            "name": "yushiro_(kimetsu_no_yaiba)",
+            "series": "Demon Slayer",
+            "count": 34
+        },
+        {
+            "name": "ubuyashiki_kagaya",
+            "series": "Demon Slayer",
+            "count": 22
+        },
+        {
+            "name": "makomo",
+            "series": "Demon Slayer",
+            "count": 46
+        },
+        {
+            "name": "itadori_yuuji",
+            "series": "Jujutsu Kaisen",
+            "count": 2616
+        },
+        {
+            "name": "fushiguro_megumi",
+            "series": "Jujutsu Kaisen",
+            "count": 1721
+        },
+        {
+            "name": "kugisaki_nobara",
+            "series": "Jujutsu Kaisen",
+            "count": 7870
+        },
+        {
+            "name": "satoru_gojo",
+            "series": "Jujutsu Kaisen",
+            "count": 4351
+        },
+        {
+            "name": "yuta_okkotsu",
+            "series": "Jujutsu Kaisen",
+            "count": 338
+        },
+        {
+            "name": "zenin_maki",
+            "series": "Jujutsu Kaisen",
+            "count": 2971
+        },
+        {
+            "name": "toge_inumaki",
+            "series": "Jujutsu Kaisen",
+            "count": 106
+        },
+        {
+            "name": "panda_(jujutsu_kaisen)",
+            "series": "Jujutsu Kaisen",
+            "count": 31
+        },
+        {
+            "name": "hakari_kinji",
+            "series": "Jujutsu Kaisen",
+            "count": 59
+        },
+        {
+            "name": "hoshi_kirara",
+            "series": "Jujutsu Kaisen",
+            "count": 53
+        },
+        {
+            "name": "utahime_iori",
+            "series": "Jujutsu Kaisen",
+            "count": 582
+        },
+        {
+            "name": "masamichi_yaga",
+            "series": "Jujutsu Kaisen",
+            "count": 38
+        },
+        {
+            "name": "shoko_ieiri",
+            "series": "Jujutsu Kaisen",
+            "count": 386
+        },
+        {
+            "name": "akari_nitta",
+            "series": "Jujutsu Kaisen",
+            "count": 27
+        },
+        {
+            "name": "aoi_todo",
+            "series": "Jujutsu Kaisen",
+            "count": 89
+        },
+        {
+            "name": "kasumi_miwa",
+            "series": "Jujutsu Kaisen",
+            "count": 603
+        },
+        {
+            "name": "noritoshi_kamo",
+            "series": "Jujutsu Kaisen",
+            "count": 9
+        },
+        {
+            "name": "mechamaru",
+            "series": "Jujutsu Kaisen",
+            "count": 19
+        },
+        {
+            "name": "ryoumen_sukuna_(jujutsu_kaisen)",
+            "series": "Jujutsu Kaisen",
+            "count": 1739
+        },
+        {
+            "name": "mahito_(jujutsu_kaisen)",
+            "series": "Jujutsu Kaisen",
+            "count": 253
+        },
+        {
+            "name": "jogo_(jujutsu_kaisen)",
+            "series": "Jujutsu Kaisen",
+            "count": 28
+        },
+        {
+            "name": "suguru_geto",
+            "series": "Jujutsu Kaisen",
+            "count": 1264
+        },
+        {
+            "name": "uraume",
+            "series": "Jujutsu Kaisen",
+            "count": 197
+        },
+        {
+            "name": "haruta_shigemo",
+            "series": "Jujutsu Kaisen",
+            "count": 37
+        },
+        {
+            "name": "zenin_naoya",
+            "series": "Jujutsu Kaisen",
+            "count": 79
+        },
+        {
+            "name": "toji_fushiguro",
+            "series": "Jujutsu Kaisen",
+            "count": 1012
+        },
+        {
+            "name": "yuki_tsukumo",
+            "series": "Jujutsu Kaisen",
+            "count": 633
+        },
+        {
+            "name": "miguel_oduol",
+            "series": "Jujutsu Kaisen",
+            "count": 48
+        },
+        {
+            "name": "takuma_ino",
+            "series": "Jujutsu Kaisen",
+            "count": 17
+        },
+        {
+            "name": "kento_nanami",
+            "series": "Jujutsu Kaisen",
+            "count": 874
+        },
+        {
+            "name": "amanai_riko",
+            "series": "Jujutsu Kaisen",
+            "count": 148
+        },
+        {
+            "name": "mei_mei_(jujutsu_kaisen)",
+            "series": "Jujutsu Kaisen",
+            "count": 1658
+        },
+        {
+            "name": "satou_kazuma",
+            "series": "KonoSuba",
+            "count": 3411
+        },
+        {
+            "name": "aqua_(konosuba)",
+            "series": "KonoSuba",
+            "count": 10891
+        },
+        {
+            "name": "megumin",
+            "series": "KonoSuba",
+            "count": 7784
+        },
+        {
+            "name": "darkness_(konosuba)",
+            "series": "KonoSuba",
+            "count": 6272
+        },
+        {
+            "name": "denji_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 4143
+        },
+        {
+            "name": "pochita_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 479
+        },
+        {
+            "name": "makima_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 16554
+        },
+        {
+            "name": "hayakawa_aki",
+            "series": "Chainsaw Man",
+            "count": 585
+        },
+        {
+            "name": "power_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 8560
+        },
+        {
+            "name": "himeno_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 3043
+        },
+        {
+            "name": "kishibe_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 77
+        },
+        {
+            "name": "higashiyama_kobeni",
+            "series": "Chainsaw Man",
+            "count": 5358
+        },
+        {
+            "name": "hirokazu_arai_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 45
+        },
+        {
+            "name": "reze_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 1719
+        },
+        {
+            "name": "quanxi_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 418
+        },
+        {
+            "name": "katana_man",
+            "series": "Chainsaw Man",
+            "count": 94
+        },
+        {
+            "name": "cosmo_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 47
+        },
+        {
+            "name": "pingtsi_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 37
+        },
+        {
+            "name": "tsugihagi_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 33
+        },
+        {
+            "name": "long_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 32
+        },
+        {
+            "name": "gun_devil_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 21
+        },
+        {
+            "name": "ghost_devil_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 75
+        },
+        {
+            "name": "blood_devil_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 27
+        },
+        {
+            "name": "angel_devil_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 310
+        },
+        {
+            "name": "fox_devil_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 19
+        },
+        {
+            "name": "sawatari_akane",
+            "series": "Chainsaw Man",
+            "count": 200
+        },
+        {
+            "name": "santa_claus_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 34
+        },
+        {
+            "name": "mitaka_asa",
+            "series": "Chainsaw Man",
+            "count": 2078
+        },
+        {
+            "name": "yoru_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 1989
+        },
+        {
+            "name": "yuko_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 23
+        },
+        {
+            "name": "fami_(chainsaw_man)",
+            "series": "Chainsaw Man",
+            "count": 79
+        },
+        {
+            "name": "hirofumi_yoshida",
+            "series": "Chainsaw Man",
+            "count": 127
+        },
+        {
+            "name": "matoi_ryuuko",
+            "series": "Kill la Kill",
+            "count": 9526
+        },
+        {
+            "name": "kiryuuin_satsuki",
+            "series": "Kill la Kill",
+            "count": 6698
+        },
+        {
+            "name": "senketsu",
+            "series": "Kill la Kill",
+            "count": 2214
+        },
+        {
+            "name": "mankanshoku_mako",
+            "series": "Kill la Kill",
+            "count": 1238
+        },
+        {
+            "name": "sanageyama_uzu",
+            "series": "Kill la Kill",
+            "count": 104
+        },
+        {
+            "name": "gamagoori_ira",
+            "series": "Kill la Kill",
+            "count": 354
+        },
+        {
+            "name": "jakuzure_nonon",
+            "series": "Kill la Kill",
+            "count": 1037
+        },
+        {
+            "name": "inumuta_houka",
+            "series": "Kill la Kill",
+            "count": 65
+        },
+        {
+            "name": "kiryuuin_ragyou",
+            "series": "Kill la Kill",
+            "count": 735
+        },
+        {
+            "name": "harime_nui",
+            "series": "Kill la Kill",
+            "count": 609
+        },
+        {
+            "name": "vash_the_stampede",
+            "series": "Trigun",
+            "count": 329
+        },
+        {
+            "name": "nicholas_d_wolfwood",
+            "series": "Trigun",
+            "count": 259
+        },
+        {
+            "name": "meryl_stryfe",
+            "series": "Trigun",
+            "count": 137
+        },
+        {
+            "name": "milly_thompson",
+            "series": "Trigun",
+            "count": 117
+        },
+        {
+            "name": "millions_knives",
+            "series": "Trigun",
+            "count": 92
+        },
+        {
+            "name": "legato_bluesummers",
+            "series": "Trigun",
+            "count": 35
+        },
+        {
+            "name": "saitama",
+            "series": "One Punch Man",
+            "count": 2332
+        },
+        {
+            "name": "genos",
+            "series": "One Punch Man",
+            "count": 325
+        },
+        {
+            "name": "speed-o%26%23039%3B-sound_sonic",
+            "series": "One Punch Man",
+            "count": 450
+        },
+        {
+            "name": "tatsumaki",
+            "series": "One Punch Man",
+            "count": 13884
+        },
+        {
+            "name": "bang_(one-punch_man)",
+            "series": "One Punch Man",
+            "count": 11
+        },
+        {
+            "name": "child_emperor",
+            "series": "One Punch Man",
+            "count": 16
+        },
+        {
+            "name": "king_(one-punch_man)",
+            "series": "One Punch Man",
+            "count": 62
+        },
+        {
+            "name": "zombieman",
+            "series": "One Punch Man",
+            "count": 12
+        },
+        {
+            "name": "drive_knight_(one-punch_man)",
+            "series": "One Punch Man",
+            "count": 3
+        },
+        {
+            "name": "superalloy_darkshine",
+            "series": "One Punch Man",
+            "count": 44
+        },
+        {
+            "name": "watchdog_man",
+            "series": "One Punch Man",
+            "count": 4
+        },
+        {
+            "name": "flashy_flash",
+            "series": "One Punch Man",
+            "count": 32
+        },
+        {
+            "name": "metal_bat",
+            "series": "One Punch Man",
+            "count": 24
+        },
+        {
+            "name": "puri-puri_prisoner",
+            "series": "One Punch Man",
+            "count": 9
+        },
+        {
+            "name": "lightning_max",
+            "series": "One Punch Man",
+            "count": 3
+        },
+        {
+            "name": "mumen_rider",
+            "series": "One Punch Man",
+            "count": 75
+        },
+        {
+            "name": "fubuki_(one-punch_man)",
+            "series": "One Punch Man",
+            "count": 7897
+        },
+        {
+            "name": "mosquito_girl_(one-punch_man)",
+            "series": "One Punch Man",
+            "count": 109
+        },
+        {
+            "name": "garou_(one-punch_man)",
+            "series": "One Punch Man",
+            "count": 72
+        },
+        {
+            "name": "yugi_muto",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 387
+        },
+        {
+            "name": "yami_yugi",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 219
+        },
+        {
+            "name": "joey_wheeler",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 173
+        },
+        {
+            "name": "tea_gardner",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 2540
+        },
+        {
+            "name": "tristan_taylor",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 35
+        },
+        {
+            "name": "maximillion_pegasus",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 9
+        },
+        {
+            "name": "marik_ishtar",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 117
+        },
+        {
+            "name": "jaden_yuki",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 439
+        },
+        {
+            "name": "chazz_princeton",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 56
+        },
+        {
+            "name": "syrus_truesdale",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 54
+        },
+        {
+            "name": "alexis_rhodes",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 2988
+        },
+        {
+            "name": "yubel",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 169
+        },
+        {
+            "name": "camula",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 173
+        },
+        {
+            "name": "tania_(yu-gi-oh)",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 20
+        },
+        {
+            "name": "yusei_fudo",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 713
+        },
+        {
+            "name": "jack_atlas",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 323
+        },
+        {
+            "name": "crow_hogan",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 92
+        },
+        {
+            "name": "akiza_izinski",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 2008
+        },
+        {
+            "name": "yuma_tsukumo",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 94
+        },
+        {
+            "name": "tori_meadows",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 672
+        },
+        {
+            "name": "yuya_sakaki",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 62
+        },
+        {
+            "name": "serena_(yu-gi-oh!_arc-v)",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 578
+        },
+        {
+            "name": "yusaku_fujiki",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 30
+        },
+        {
+            "name": "astral_(yu-gi-oh!)",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 93
+        },
+        {
+            "name": "ai_(yu-gi-oh)",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 19
+        },
+        {
+            "name": "mai_valentine",
+            "series": "Yu-Gi-Oh!(characters)",
+            "count": 765
+        }
+    ]
+}

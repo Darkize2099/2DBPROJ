@@ -1,0 +1,243 @@
+/* Global Reset and Theme */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  color: #f8d66d;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+#choices button.choice {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  background-color: #2c2c2c;
+  font-weight: bold;
+}
+
+.choice-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.choice-group button.choice {
+  flex-grow: 1;
+  background-color: #2c2c2c;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.choice-group button.search-button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.choice-group button.search-button:hover {
+  background-color: #666;
+}
+
+
+
+#startButton, #nextButton, #shareButton {
+  background-color: #3e7e4a;
+}
+
+#startButton:hover, #nextButton:hover, #shareButton:hover {
+  background-color: #55975c;
+}
+
+#settingsButton {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f0f0f0;
+}
+
+/* Side Panel */
+#settingsPanel {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 280px;
+  height: 100%;
+  background-color: #2c2c2c;
+  color: white;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+#settingsPanel.open {
+  left: 0;
+}
+
+#closeSettings, #clearCache, #veryHardButton {
+  background-color: #3a3a3a;
+}
+
+#seriesOptions {
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  padding: 10px;
+  max-height: 250px;
+  overflow-y: auto;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#seriesOptions label {
+  display: block;
+  margin: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 8px;
+}
+
+/* Feedback text and streak area */
+#result {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+#feedbackText {
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+/* Progress bar */
+#progressBarContainer {
+  background: #444;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+#progressBar {
+  height: 20px;
+  background: linear-gradient(270deg, #00bcd4, #4caf50, #f44336, #9c27b0);
+  background-size: 600% 600%;
+  animation: animatedGradient 2.5s linear infinite;
+  width: 0%;
+  transition: width 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Post count numbers */
+.count {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.color-red { color: #f44336; }
+.color-green { color: #4caf50; }
+.color-blue { color: #2196f3; }
+.color-cyan { color: #00bcd4; }
+.color-magenta { color: #e91e63; }
+.color-yellow { color: #ffeb3b; }
+.color-orange { color: #ff9800; }
+.color-chartreuse { color: #a4e100; }
+.color-springgreen { color: #00ff7f; }
+.color-violet { color: #8e24aa; }
+.color-rose { color: #ff4081; }
+
+/* Footer */
+#credits {
+  font-size: 13px;
+  color: #999;
+  margin-top: 40px;
+}
+
+
+body.very-hard-mode h1 {
+  color: crimson;
+  text-shadow: 0 0 10px crimson;
+}
+
+
+
+.search-button {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  padding: 0;
+  margin-left: 8px;
+  border-radius: 4px;
+  background-color: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #666;
+}

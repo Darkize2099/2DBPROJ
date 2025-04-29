@@ -62,4 +62,65 @@ body {
   .game-card:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   }
-  
+  /* Hamburger button */
+#hamburgerMenuButton {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  background: #333;
+  color: white;
+
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#hamburgerMenuButton:hover {
+  background: crimson;
+  transform: scale(1.1);
+}
+
+/* Dropdown content */
+#menuContent {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  display: none;
+  z-index: 999;
+  width: 250px;
+}
+
+/* Inside the menu */
+#menuContent input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #1e1e1e;
+  color: white;
+}
+
+#menuContent button {
+  width: 100%;
+  background: crimson;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#menuContent button:hover {
+  background: darkred;
+}

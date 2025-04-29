@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+  <button id="hamburgerMenuButton" onclick="toggleMenu()">☰</button>
+
+  <div id="menuContent">
+    <input type="password" id="passwordInput" placeholder="Enter Password" />
+    <button onclick="checkPassword()">Enter Password</button>
+  </div>
 <head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9943795095069560"
+     crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doubletheblack Projects</title>
@@ -12,16 +20,16 @@
   <p>Choose One</p>
 
   <div class="game-links">
-    <a href="34higherlower/index.html" class="game-card higher-lower">
+    <a id="higherLowerLink" href="34higherlower/index.html" class="game-card higher-lower">
       <h2>Higher or Lower</h2>
       <p>Guess which character has more R34 posts.</p>
     </a>
     
-    <a href="r34dle/index.html" class="game-card r34dle">
+    <a id="r34dleLink" href="r34dle/index.html" class="game-card r34dle">
       <h2>R34dle</h2>
-      <p>Guess the exact number of posts legally diffrent from Wordle.</p>
+      <p>Guess the exact number of posts legally different from Wordle.</p>
     </a>
-  </div>
+  </div>  
   
 
   <footer>
@@ -30,5 +38,34 @@
     Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
   </p>
   </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuContent');
+      menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+    }
+    
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === 'F@v0rIt3tHeP@S$DcuT3oB0ts3xYMyuLe34r3iLrDthBu$Erw') {
+        localStorage.setItem('adFreeUnlocked', 'true');
+        applyAdFreeLinks();
+        alert('Ad-free mode unlocked!');
+      } else {
+        alert('Incorrect password.');
+      }
+    }
+    
+    function applyAdFreeLinks() {
+      document.getElementById('higherLowerLink').href = "34higherlower_protected/index.html";
+      document.getElementById('r34dleLink').href = "r34dle_protected/index.html";
+    }
+    
+    // On page load, check if already unlocked
+    document.addEventListener('DOMContentLoaded', () => {
+      if (localStorage.getItem('adFreeUnlocked') === 'true') {
+        applyAdFreeLinks();
+      }
+    });
+    </script>
 </body>
 </html>
