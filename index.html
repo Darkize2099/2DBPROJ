@@ -29,6 +29,7 @@
       <h2>R34dle</h2>
       <p>Guess the exact number of posts legally different from Wordle.</p>
     </a>
+
   </div>  
   
 
@@ -60,7 +61,6 @@
       document.getElementById('r34dleLink').href = "r34dle_protected/index.html";
     }
     
-    // On page load, check if already unlocked
     document.addEventListener('DOMContentLoaded', () => {
       if (localStorage.getItem('adFreeUnlocked') === 'true') {
         applyAdFreeLinks();
