@@ -322,71 +322,19 @@ document.addEventListener("DOMContentLoaded", () => {
     loadCharacters();
   });
 
-  document.getElementById("category-filter").addEventListener("change", e => {
-    selectedCategory = e.target.value;
-    localStorage.setItem("selectedCategory", selectedCategory);
-  
-    const inGameSearchBtn = document.getElementById("search-btn");
-    if (inGameSearchBtn) {
-      inGameSearchBtn.style.display = selectedCategory === "search" ? "none" : "inline-block";
-    }
-  
-    selectedSeries = "all";
-    localStorage.setItem("selectedSeries", selectedSeries);
-  
-    if (selectedCategory === "search") {
-      document.getElementById("series-filter").style.display = "none";
-      document.getElementById("series-label").style.display = "none";
-      document.getElementById("search-container").style.display = "block";
-    } else {
-      document.getElementById("series-filter").style.display = "block";
-      document.getElementById("series-label").style.display = "block";
-      document.getElementById("search-container").style.display = "none";
-      loadCharacters(); // Only reload if NOT search mode
-    }
-  });
+document.getElementById("category-filter").addEventListener("change", e => {
+  selectedCategory = e.target.value;
+  localStorage.setItem("selectedCategory", selectedCategory);
+  selectedSeries = "all";
+  localStorage.setItem("selectedSeries", selectedSeries);
+  loadCharacters();
+});
+
   
 
   document.getElementById("submit-guess").addEventListener("click", handleGuess);
   document.getElementById("guess-input").addEventListener("keydown", e => {
     if (e.key === "Enter") handleGuess();
-  });
-
-  document.getElementById("search-input").addEventListener("input", (e) => {
-    const query = e.target.value.toLowerCase();
-    const searchResults = document.getElementById("search-results");
-  
-    if (!query) {
-      searchResults.style.display = "none";
-      searchResults.innerHTML = "";
-      return;
-    }
-  
-    const matches = characters.filter(c => 
-      c.name.toLowerCase().includes(query.replace(/\s+/g, "_")) || 
-      (c.alias && c.alias.toLowerCase().includes(query.replace(/\s+/g, "_")))
-    );
-  
-    if (matches.length === 0) {
-      searchResults.style.display = "none";
-      searchResults.innerHTML = "";
-      return;
-    }
-  
-    searchResults.innerHTML = matches.slice(0, 10).map(c => `
-      <div class="search-result" style="padding: 5px; cursor: pointer;">${c.name.replace(/_/g, " ")} (${c.series})</div>
-    `).join("");
-    searchResults.style.display = "block";
-  
-    document.querySelectorAll(".search-result").forEach((el, idx) => {
-      el.addEventListener("click", () => {
-        currentCharacter = matches[idx];
-        displayCharacter(currentCharacter.name);
-        fetchPostCount();
-        searchResults.style.display = "none";
-        document.getElementById("search-input").value = "";
-      });
-    });
   });
   
 

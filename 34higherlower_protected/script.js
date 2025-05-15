@@ -6,6 +6,8 @@ let lastCategory = "mixed";
 let lastAdvancedSeries = [];
 let isAnimating = false;
 let startedFromSettings = false;
+let customJustApplied = false;
+
 
 
 
@@ -41,7 +43,6 @@ const postCountCache = JSON.parse(localStorage.getItem("postCountCache") || "{}"
       ...westernData.map(c => ({ ...c, category: "Western Media" }))
     ];
     
-    // Build preloadedPostCounts
     [...easternCounts, ...gamingCounts, ...westernCounts].forEach(entry => {
       preloadedPostCounts[entry.name] = entry.count;
     });
@@ -49,8 +50,8 @@ const postCountCache = JSON.parse(localStorage.getItem("postCountCache") || "{}"
     console.log("✅ Preloaded character counts:", Object.keys(preloadedPostCounts).length);
 
     populateSeriesOptions();
+    populateCharacterAutocomplete();
     
-    // (Optionally remove your "retryQueue" stuff if you want, or keep it. I'll explain below.)
 
   } catch (error) {
     console.error("Failed to preload characters or counts:", error);
@@ -89,20 +90,109 @@ document.addEventListener("DOMContentLoaded", () => {
     alert(`Very Hard Mode is now ${veryHardMode ? "ENABLED 🔥" : "DISABLED"}`);
   });
   
-  document.querySelectorAll("input[name='category']").forEach(radio => {
-    radio.addEventListener("change", (e) => {
-      const advancedOptions = document.getElementById("advancedOptions");
-      if (e.target.value === "advanced") {
-        advancedOptions.style.display = "block";
-      } else {
-        advancedOptions.style.display = "none";
-      }
-    });
-  
+document.querySelectorAll("input[name='category']").forEach(radio => {
+  radio.addEventListener("change", (e) => {
+    const value = e.target.value;
+    const customOptions = document.getElementById("customOptions");
+    const advancedOptions = document.getElementById("advancedOptions");
+    const seriesCount = document.getElementById("selectedSeriesCount");
+
+    customOptions.style.display = value === "custom" ? "block" : "none";
+    advancedOptions.style.display = value === "advanced" ? "block" : "none";
+    seriesCount.style.display = value === "advanced" ? "block" : "none";
   });
+});
+
 
 
 });
+
+document.getElementById("applyCustomRestart").addEventListener("click", async () => {
+  console.log("Apply Custom Restart clicked!");
+
+  const name1 = document.getElementById("restartCharacter1").value.trim();
+  const name2 = document.getElementById("restartCharacter2").value.trim();
+  const warning = document.getElementById("restartWarnings");
+  warning.textContent = "";
+
+  if (!name1 || !name2) {
+    warning.textContent = "⚠️ Please enter two character names.";
+    return;
+  }
+
+  const [count1, count2] = await Promise.all([fetchPostCount(name1), fetchPostCount(name2)]);
+
+  if (count1 === 0 && count2 === 0) {
+    warning.textContent = "⚠️ Could not find posts for either character.";
+    return;
+  }
+
+  const match1 = characters.find(c => c.name === name1);
+  const match2 = characters.find(c => c.name === name2);
+
+  validCharacters = [
+    { name: name1, series: match1?.series || "Unknown", count: count1 },
+    { name: name2, series: match2?.series || "Unknown", count: count2 }
+  ];
+
+  lastCategory = "custom";
+  currentStreak = 0;
+  customJustApplied = true; 
+  document.getElementById("customRestartPrompt").style.display = "none";
+  showNextRound();
+});
+
+
+document.getElementById("closeCustomBox").addEventListener("click", () => {
+  document.getElementById("customRestartPrompt").style.display = "none";
+});
+
+
+document.querySelector("input[value='custom']").addEventListener("change", () => {
+  document.getElementById("customOptions").style.display = "block";
+  document.getElementById("advancedOptions").style.display = "none";
+});
+
+document.getElementById("applySettings").addEventListener("click", async () => {
+  const selectedCategory = document.querySelector("input[name='category']:checked").value;
+  const warnings = document.getElementById("settingsWarnings");
+  warnings.textContent = "";
+
+  if (selectedCategory === "custom") {
+    const name1 = document.getElementById("customCharacter1").value.trim();
+    const name2 = document.getElementById("customCharacter2").value.trim();
+    if (!name1 || !name2) {
+      warnings.textContent = "⚠️ Please enter two character names.";
+      return;
+    }
+
+    const [count1, count2] = await Promise.all([fetchPostCount(name1), fetchPostCount(name2)]);
+
+    if (count1 === 0 && count2 === 0) {
+      warnings.textContent = "⚠️ Could not find posts for either character.";
+      return;
+    }
+
+    const match1 = characters.find(c => c.name === name1);
+    const match2 = characters.find(c => c.name === name2);
+
+    validCharacters = [
+      { name: name1, series: match1?.series || "Unknown", count: count1 },
+      { name: name2, series: match2?.series || "Unknown", count: count2 }
+    ];
+
+    lastCategory = "custom";
+    currentStreak = 0;
+    document.getElementById("customRestartPrompt").style.display = "block";
+    document.getElementById("restartCharacter1").value = name1;
+    document.getElementById("restartCharacter2").value = name2;
+    document.getElementById("settingsPanel").classList.remove("open");
+    document.getElementById("startButton").style.display = "none";
+    showNextRound();
+    return;
+  }
+});
+
 
 function encodeCharacterNameForSearch(name) {
   return name
@@ -133,56 +223,99 @@ document.querySelectorAll("input[name='category']").forEach(radio => {
 });
 
 
-document.getElementById("applySettings").addEventListener("click", () => {
-  const selectedSeries = Array.from(document.querySelectorAll(".seriesCheckbox:checked"))
-    .map(box => box.value);
-
+document.getElementById("applySettings").addEventListener("click", async () => {
   const selectedCategory = document.querySelector("input[name='category']:checked").value;
-
   const warnings = document.getElementById("settingsWarnings");
   warnings.textContent = "";
 
-  if (selectedCategory === "advanced" && selectedSeries.length === 0) {
-    warnings.textContent = "⚠️ Please select at least one series.";
+  if (selectedCategory === "custom") {
+    const name1 = document.getElementById("customCharacter1").value.trim();
+    const name2 = document.getElementById("customCharacter2").value.trim();
+    if (!name1 || !name2) {
+      warnings.textContent = "⚠️ Please enter two character names.";
+      return;
+    }
+
+    const [count1, count2] = await Promise.all([fetchPostCount(name1), fetchPostCount(name2)]);
+    if (count1 === 0 && count2 === 0) {
+      warnings.textContent = "⚠️ Could not find posts for either character.";
+      return;
+    }
+
+    const match1 = characters.find(c => c.name === name1);
+    const match2 = characters.find(c => c.name === name2);
+
+    validCharacters = [
+      { name: name1, series: match1?.series || "Unknown", count: count1 },
+      { name: name2, series: match2?.series || "Unknown", count: count2 }
+    ];
+
+    lastCategory = "custom";
+    currentStreak = 0;
+    document.getElementById("restartCharacter1").value = name1;
+    document.getElementById("restartCharacter2").value = name2;
+    document.getElementById("customRestartPrompt").style.display = "block";
+    document.getElementById("settingsPanel").classList.remove("open");
+    document.getElementById("startButton").style.display = "none";
+    showNextRound();
     return;
   }
 
-  const filtered = selectedCategory === "advanced"
-    ? characters.filter(char => selectedSeries.includes(char.series))
-    : characters;
+  let filtered = [];
+  let selectedSeries = [];
+
+  if (selectedCategory === "advanced") {
+    selectedSeries = Array.from(document.querySelectorAll(".seriesCheckbox:checked"))
+      .map(box => box.value);
+
+    if (selectedSeries.length === 0) {
+      warnings.textContent = "⚠️ Please select at least one series.";
+      return;
+    }
+
+    filtered = characters.filter(char => selectedSeries.includes(char.series));
+  } else {
+    const categoryMap = {
+      eastern: "Eastern Media",
+      gaming: "Gaming",
+      western: "Western Media"
+    };
+    filtered = selectedCategory === "mixed"
+      ? characters
+      : characters.filter(char => char.category === categoryMap[selectedCategory]);
+  }
 
   if (filtered.length < 2) {
-    warnings.textContent = "⚠️ Not enough characters in the selected series to play.";
+    warnings.textContent = "⚠️ Not enough characters in the selected category.";
     return;
   }
-
-  
 
   const progressBar = document.getElementById("progressBar");
   const progressContainer = document.getElementById("progressBarContainer");
   progressContainer.style.display = "block";
   progressBar.style.width = "0%";
 
-  getValidCharactersFromList(filtered, (progress) => {
+  const valid = await getValidCharactersFromList(filtered, (progress) => {
     progressBar.style.width = `${progress}%`;
-  }).then(valid => {
-    progressContainer.style.display = "none";
-
-    if (!valid || valid.length < 2) {
-      warnings.textContent = "⚠️ Not enough valid characters with posts found in your selection.";
-      return;
-    }
-
-    validCharacters = valid;
-    lastCategory = selectedCategory;
-    lastAdvancedSeries = selectedSeries || [];
-    currentStreak = 0;
-    document.getElementById("settingsPanel").classList.remove("open");
-    document.getElementById("startButton").style.display = "none"; 
-    showNextRound();
-
   });
+
+  progressContainer.style.display = "none";
+
+  if (!valid || valid.length < 2) {
+    warnings.textContent = "⚠️ Not enough valid characters with post data.";
+    return;
+  }
+
+  validCharacters = valid;
+  lastCategory = selectedCategory;
+  lastAdvancedSeries = selectedSeries;
+  currentStreak = 0;
+  document.getElementById("settingsPanel").classList.remove("open");
+  document.getElementById("startButton").style.display = "none";
+
+  await startGame(selectedCategory, selectedSeries);
 });
+
 
 function decodeCharacterName(name) {
   return decodeURIComponent(
@@ -193,6 +326,23 @@ function decodeCharacterName(name) {
       .replace(/%26ouml%3B/g, "ö")
   );
 }
+
+function populateCharacterAutocomplete() {
+  const datalist = document.getElementById("characterList");
+  datalist.innerHTML = ""; 
+
+  const names = [...new Set(characters.map(c => c.name))].sort();
+  names.forEach(name => {
+    const option = document.createElement("option");
+    option.value = name;
+    datalist.appendChild(option);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  populateCharacterAutocomplete();
+});
+
 
 
 function updateAdvancedSeriesCount() {
@@ -296,63 +446,6 @@ function copyShareResult() {
 
 
 window.copyShareResult = copyShareResult;
-
-
-document.getElementById("applySettings").addEventListener("click", () => {
-  const selectedCategory = document.querySelector("input[name='category']:checked").value;
-  const warnings = document.getElementById("settingsWarnings");
-  warnings.textContent = "";
-
-  let filtered = [];
-
-  if (selectedCategory === "advanced") {
-    const selectedSeries = Array.from(document.querySelectorAll(".seriesCheckbox:checked"))
-      .map(box => box.value);
-
-    if (selectedSeries.length === 0) {
-      warnings.textContent = "⚠️ Please select at least one series.";
-      return;
-    }
-
-    filtered = characters.filter(char => selectedSeries.includes(char.series));
-  } else {
-    if (selectedCategory === "mixed") {
-      filtered = characters;
-    } else {
-      const categoryMap = {
-        eastern: "Eastern Media",
-        gaming: "Gaming",
-        western: "Western Media"
-      };
-      filtered = characters.filter(char => char.category === categoryMap[selectedCategory]);
-    }
-  }
-
-  if (filtered.length < 2) {
-    warnings.textContent = "⚠️ Not enough characters in the selected series to play.";
-    return;
-  }
-
-  const progressBar = document.getElementById("progressBar");
-  const progressContainer = document.getElementById("progressBarContainer");
-  progressContainer.style.display = "block";
-  progressBar.style.width = "0%";
-
-  getValidCharactersFromList(filtered, (progress) => {
-    progressBar.style.width = `${progress}%`;
-  }).then(valid => {
-    progressContainer.style.display = "none";
-
-    if (!valid || valid.length < 2) {
-      warnings.textContent = "⚠️ Not enough valid characters with posts found in your selection.";
-      return;
-    }
-
-    validCharacters = valid;
-    document.getElementById("settingsPanel").classList.remove("open");
-    showNextRound();
-  });
-});
 
 
 function populateSeriesOptions() {
@@ -543,7 +636,13 @@ async function startGame(category = lastCategory, seriesList = lastAdvancedSerie
 
 
 function showNextRound() {
-  if (isAnimating) return; 
+  if (lastCategory === "custom" && !customJustApplied) {
+    document.getElementById("customRestartPrompt").style.display = "block";
+    return;
+  }
+
+  customJustApplied = false; 
+  if (isAnimating) return;
 
   const nextButton = document.getElementById("nextButton");
   nextButton.style.display = "none";
@@ -576,6 +675,7 @@ function showNextRound() {
     </div>
   `;
 }
+
 
 
 function searchCharacter(name, series) {
@@ -698,7 +798,7 @@ function restartGame() {
   console.log("Restarting game with previous filters...");
   seenPairs.clear();
   isAnimating = false;
-  startedFromSettings = false; // Reset it here
+  startedFromSettings = false;
 
   document.body.classList.toggle("very-hard-mode", veryHardMode);
 
@@ -707,10 +807,19 @@ function restartGame() {
   document.getElementById("nextButton").style.display = "none";
   document.getElementById("choices").innerHTML = "";
   document.getElementById("feedbackText").textContent = "";
-  document.getElementById("result").textContent = "Loading characters...";
+  document.getElementById("result").textContent = "";
+
+  if (lastCategory === "custom") {
+    document.getElementById("restartCharacter1").value = "";
+    document.getElementById("restartCharacter2").value = "";
+    document.getElementById("restartWarnings").textContent = "";
+    document.getElementById("customRestartPrompt").style.display = "block";
+    return;
+  }
 
   startGame(lastCategory, lastAdvancedSeries);
 }
+
 
 
 async function getValidCharactersFromList(charList, onProgress) {

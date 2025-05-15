@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<a href="/index.html" id="home-link"><span></span></a>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 <html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9943795095069560"
-     crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9943795095069560" crossorigin="anonymous"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>R34 Character Guessing Game</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+  <a href="/index.html" id="home-link"><span></span></a>
+
   <button id="settingsButton">☰</button>
 
   <h1>Which Character Has More Posts?</h1>
@@ -26,8 +26,9 @@
       <label><input type="radio" name="category" value="mixed" checked /> Mixed</label><br>
       <label><input type="radio" name="category" value="eastern" /> Eastern Media</label><br>
       <label><input type="radio" name="category" value="gaming" /> Gaming</label><br>
-      <label><input type="radio" name="category" value="western" /> Western Media</label>
+      <label><input type="radio" name="category" value="western" /> Western Media</label><br>
       <label><input type="radio" name="category" value="advanced" /> Advanced</label><br>
+      <label><input type="radio" name="category" value="custom" /> Custom</label><br>
     </div>
 
     <div id="advancedOptions" style="display: none;">
@@ -39,9 +40,19 @@
         </label>
         <p id="selectedSeriesCount" style="margin-top: 10px; font-size: 14px; color: #ccc; display: none;">
           Total Selected: <span id="seriesCountNumber">0</span>
-        </p>        
+        </p>
+        <div id="seriesOptions" style="max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;"></div>
       </div>
-      <div id="seriesOptions" style="max-height: 300px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;"></div>
+    </div>
+
+    <div id="customOptions" style="display: none;">
+      <h3>Custom Characters</h3>
+
+      <input type="text" id="customCharacter1" list="characterList" placeholder="Character 1 (e.g. sakura_haruno)">
+      <input type="text" id="customCharacter2" list="characterList" placeholder="Character 2 (e.g. hinata_hyuga)">
+      <datalist id="characterList"></datalist>
+
+       <p style="font-size: 0.9rem; color: #aaa;">Use exact names or aliases as they appear in the list.</p>
     </div>
 
     <div id="settingsWarnings" style="color: red;"></div>
@@ -58,21 +69,30 @@
   <button id="nextButton" disabled style="display: none;" onclick="showNextRound()">Next</button>
   <button id="restartButton" style="display: none;" onclick="if (!isAnimating) restartGame()">Restart</button>
 
-
   <div id="progressBarContainer" style="display: none; width: 80%; margin: 0 auto; background: #eee; border-radius: 10px; overflow: hidden;">
     <div id="progressBar" style="width: 0%; height: 20px; background: #4caf50;"></div>
   </div>
 
+  <div id="customRestartPrompt" style="display: none; margin-top: 20px;">
+  <h3>Enter New Custom Characters</h3>
+  <input type="text" id="restartCharacter1" list="characterList" placeholder="Character 1 (e.g. sakura_haruno)">
+  <input type="text" id="restartCharacter2" list="characterList" placeholder="Character 2 (e.g. hinata_hyuga)">
+  <button id="applyCustomRestart">Apply</button>
+  <button id="closeCustomBox" style="margin-left: 10px;">Close</button>
+  <p id="restartWarnings" style="color: red;"></p>
+</div>
+
+
   <p id="result"></p>
+
+  <footer id="credits">
+    <p>
+      <a href="/privacy.html">Privacy Policy</a> |
+      Support me on <a href="https://ko-fi.com/doubletheblack" target="_blank">Ko-fi</a> |
+      Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
+    </p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-<footer id="credits">
-  <p>
-    <a href="/privacy.html">Privacy Policy</a> |
-    Support me on <a href="https://ko-fi.com/doubletheblack" target="_blank">Ko-fi</a> |
-    Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
-  </p>
-</footer>
-
 </html>

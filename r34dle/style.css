@@ -256,40 +256,6 @@ select#series-filter {
     color: black !important;
     background-color: rgb(255, 255, 255) !important;
   }
-
-  #search-btn {
-    background: none;
-    border: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    cursor: pointer;
-  }
-  #search-btn:hover {
-    color: #FFD700;
-  }
-
-  #search-results div:hover {
-    background-color: #eee;
-  }
-
-  #search-results {
-    background-color: white;
-    color: black;
-    max-height: 150px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-  }
-  
-  #search-results div {
-    padding: 5px;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-  }
-  
-  #search-results div:hover {
-    background-color: #eee;
-  }
   
   
   #home-link {
