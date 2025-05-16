@@ -291,7 +291,7 @@ function disableInput() {
 function showShareButton() {
   if (document.getElementById("share-btn")) return;
   const shareButton = document.createElement("button");
-  shareButton.textContent = "📋 Share your R34dle!";
+  shareButton.textContent = " Share your R34dle!";
   shareButton.id = "share-btn";
   document.getElementById("game").appendChild(shareButton);
 

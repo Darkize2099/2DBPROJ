@@ -419,7 +419,8 @@ function copyShareResult() {
     eastern: "Eastern Media",
     gaming: "Gaming",
     western: "Western Media",
-    advanced: "Advanced Selection"
+    advanced: "Advanced Selection",
+    custom: "Custom Match"
   };
 
   const categoryName = categoryMap[selectedCategoryValue] || "Unknown Mode";
