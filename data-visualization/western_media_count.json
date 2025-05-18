@@ -1,0 +1,2474 @@
+{
+    "characters": [
+        {
+            "name": "looney_tunes",
+            "series": "Series",
+            "count": 11874
+        },
+        {
+            "name": "the_flintstones",
+            "series": "Series",
+            "count": 1248
+        },
+        {
+            "name": "the_jetsons",
+            "series": "Series",
+            "count": 790
+        },
+        {
+            "name": "scooby-doo",
+            "series": "Series",
+            "count": 15777
+        },
+        {
+            "name": "tom_and_jerry",
+            "series": "Series",
+            "count": 750
+        },
+        {
+            "name": "the_smurfs",
+            "series": "Series",
+            "count": 1290
+        },
+        {
+            "name": "alvin_and_the_chipmunks",
+            "series": "Series",
+            "count": 1070
+        },
+        {
+            "name": "she-ra_and_the_princesses_of_power",
+            "series": "Series",
+            "count": 4534
+        },
+        {
+            "name": "transformers",
+            "series": "Series",
+            "count": 8880
+        },
+        {
+            "name": "g.i._joe",
+            "series": "Series",
+            "count": 929
+        },
+        {
+            "name": "ducktales",
+            "series": "Series",
+            "count": 1390
+        },
+        {
+            "name": "chip_%26%23039%3Bn_dale_rescue_rangers",
+            "series": "Series",
+            "count": 4017
+        },
+        {
+            "name": "talespin",
+            "series": "Series",
+            "count": 2307
+        },
+        {
+            "name": "darkwing_duck",
+            "series": "Series",
+            "count": 364
+        },
+        {
+            "name": "tiny_toon_adventures",
+            "series": "Series",
+            "count": 3578
+        },
+        {
+            "name": "animaniacs",
+            "series": "Series",
+            "count": 4117
+        },
+        {
+            "name": "pinky_and_the_brain",
+            "series": "Series",
+            "count": 286
+        },
+        {
+            "name": "dc",
+            "series": "Series",
+            "count": 137916
+        },
+        {
+            "name": "batman_(series)",
+            "series": "Series",
+            "count": 39390
+        },
+        {
+            "name": "superman_(series)",
+            "series": "Series",
+            "count": 20008
+        },
+        {
+            "name": "winnie_the_pooh_(franchise)",
+            "series": "Series",
+            "count": 1361
+        },
+        {
+            "name": "teenage_mutant_ninja_turtles",
+            "series": "Series",
+            "count": 9691
+        },
+        {
+            "name": "x-men",
+            "series": "Series",
+            "count": 32350
+        },
+        {
+            "name": "spider-man_(series)",
+            "series": "Series",
+            "count": 39426
+        },
+        {
+            "name": "gargoyles",
+            "series": "Series",
+            "count": 3544
+        },
+        {
+            "name": "freakazoid!",
+            "series": "Series",
+            "count": 58
+        },
+        {
+            "name": "reboot",
+            "series": "Series",
+            "count": 175
+        },
+        {
+            "name": "ninjago",
+            "series": "Series",
+            "count": 1363
+        },
+        {
+            "name": "beast_wars",
+            "series": "Series",
+            "count": 339
+        },
+        {
+            "name": "powerpuff_girls",
+            "series": "Series",
+            "count": 3926
+        },
+        {
+            "name": "johnny_test_(series)",
+            "series": "Series",
+            "count": 1250
+        },
+        {
+            "name": "venture_brothers",
+            "series": "Series",
+            "count": 822
+        },
+        {
+            "name": "johnny_bravo_(series)",
+            "series": "Series",
+            "count": 690
+        },
+        {
+            "name": "dexter%26%23039%3Bs_laboratory",
+            "series": "Series",
+            "count": 5039
+        },
+        {
+            "name": "courage_the_cowardly_dog",
+            "series": "Series",
+            "count": 842
+        },
+        {
+            "name": "rugrats",
+            "series": "Series",
+            "count": 477
+        },
+        {
+            "name": "hey_arnold!",
+            "series": "Series",
+            "count": 739
+        },
+        {
+            "name": "rocko%26%23039%3Bs_modern_life",
+            "series": "Series",
+            "count": 1150
+        },
+        {
+            "name": "daria",
+            "series": "Series",
+            "count": 608
+        },
+        {
+            "name": "south_park",
+            "series": "Series",
+            "count": 1919
+        },
+        {
+            "name": "king_of_the_hill",
+            "series": "Series",
+            "count": 968
+        },
+        {
+            "name": "family_guy",
+            "series": "Series",
+            "count": 9661
+        },
+        {
+            "name": "futurama",
+            "series": "Series",
+            "count": 3933
+        },
+        {
+            "name": "samurai_jack",
+            "series": "Series",
+            "count": 1222
+        },
+        {
+            "name": "justice_league",
+            "series": "Series",
+            "count": 8144
+        },
+        {
+            "name": "the_grim_adventures_of_billy_and_mandy",
+            "series": "Series",
+            "count": 2137
+        },
+        {
+            "name": "codename:_kids_next_door",
+            "series": "Series",
+            "count": 579
+        },
+        {
+            "name": "foster%26%23039%3Bs_home_for_imaginary_friends",
+            "series": "Series",
+            "count": 5676
+        },
+        {
+            "name": "avatar_the_last_airbender",
+            "series": "Series",
+            "count": 28697
+        },
+        {
+            "name": "the_legend_of_korra",
+            "series": "Series",
+            "count": 14426
+        },
+        {
+            "name": "ben_10",
+            "series": "Series",
+            "count": 22277
+        },
+        {
+            "name": "star_wars",
+            "series": "Series",
+            "count": 41583
+        },
+        {
+            "name": "the_boondocks",
+            "series": "Series",
+            "count": 229
+        },
+        {
+            "name": "american_dad",
+            "series": "Series",
+            "count": 4459
+        },
+        {
+            "name": "the_cleveland_show",
+            "series": "Series",
+            "count": 622
+        },
+        {
+            "name": "phineas_and_ferb",
+            "series": "Series",
+            "count": 2484
+        },
+        {
+            "name": "gravity_falls",
+            "series": "Series",
+            "count": 11053
+        },
+        {
+            "name": "adventure_time",
+            "series": "Series",
+            "count": 23247
+        },
+        {
+            "name": "regular_show",
+            "series": "Series",
+            "count": 3488
+        },
+        {
+            "name": "the_amazing_world_of_gumball",
+            "series": "Series",
+            "count": 11901
+        },
+        {
+            "name": "the_amazing_digital_circus",
+            "series": "Series",
+            "count": 9907
+        },
+        {
+            "name": "my_life_as_a_teenage_robot",
+            "series": "Series",
+            "count": 6922
+        },
+        {
+            "name": "my_little_pony",
+            "series": "Series",
+            "count": 251043
+        },
+        {
+            "name": "steven_universe",
+            "series": "Series",
+            "count": 29828
+        },
+        {
+            "name": "rick_and_morty",
+            "series": "Series",
+            "count": 5339
+        },
+        {
+            "name": "bojack_horseman",
+            "series": "Series",
+            "count": 1130
+        },
+        {
+            "name": "archer_(series)",
+            "series": "Series",
+            "count": 465
+        },
+        {
+            "name": "bob%26%23039%3Bs_burgers",
+            "series": "Series",
+            "count": 489
+        },
+        {
+            "name": "star_vs_the_forces_of_evil",
+            "series": "Series",
+            "count": 11394
+        },
+        {
+            "name": "we_bare_bears",
+            "series": "Series",
+            "count": 1068
+        },
+        {
+            "name": "over_the_garden_wall",
+            "series": "Series",
+            "count": 92
+        },
+        {
+            "name": "infinity_train",
+            "series": "Series",
+            "count": 550
+        },
+        {
+            "name": "the_owl_house",
+            "series": "Series",
+            "count": 15097
+        },
+        {
+            "name": "amphibia",
+            "series": "Series",
+            "count": 6189
+        },
+        {
+            "name": "craig_of_the_creek",
+            "series": "Series",
+            "count": 165
+        },
+        {
+            "name": "primal_(series)",
+            "series": "Series",
+            "count": 150
+        },
+        {
+            "name": "arcane",
+            "series": "Series",
+            "count": 7636
+        },
+        {
+            "name": "inside_job",
+            "series": "Series",
+            "count": 976
+        },
+        {
+            "name": "solar_opposites",
+            "series": "Series",
+            "count": 100
+        },
+        {
+            "name": "bluey_(series)",
+            "series": "Series",
+            "count": 2933
+        },
+        {
+            "name": "big_mouth_(universe)",
+            "series": "Series",
+            "count": 261
+        },
+        {
+            "name": "smiling_friends",
+            "series": "Series",
+            "count": 800
+        },
+        {
+            "name": "invincible",
+            "series": "Series",
+            "count": 5479
+        },
+        {
+            "name": "hazbin_hotel",
+            "series": "Series",
+            "count": 20653
+        },
+        {
+            "name": "helluva_boss",
+            "series": "Series",
+            "count": 50120
+        },
+        {
+            "name": "murder_drones",
+            "series": "Series",
+            "count": 6121
+        },
+        {
+            "name": "the_simpsons",
+            "series": "Series",
+            "count": 11315
+        },
+        {
+            "name": "miss._lucy_(kinkymation)",
+            "series": "Magical Girl Lucy",
+            "count": 95
+        },
+        {
+            "name": "jacques_(kinkymation)",
+            "series": "Magical Girl Lucy",
+            "count": 88
+        },
+        {
+            "name": "stan_smith",
+            "series": "American Dad",
+            "count": 454
+        },
+        {
+            "name": "francine_smith",
+            "series": "American Dad",
+            "count": 2618
+        },
+        {
+            "name": "hayley_smith",
+            "series": "American Dad",
+            "count": 1289
+        },
+        {
+            "name": "steve_smith",
+            "series": "American Dad",
+            "count": 911
+        },
+        {
+            "name": "roger_smith",
+            "series": "American Dad",
+            "count": 354
+        },
+        {
+            "name": "klaus_heissler",
+            "series": "American Dad",
+            "count": 82
+        },
+        {
+            "name": "jeff_fischer",
+            "series": "American Dad",
+            "count": 104
+        },
+        {
+            "name": "avery_bullock",
+            "series": "American Dad",
+            "count": 22
+        },
+        {
+            "name": "terry_bates",
+            "series": "American Dad",
+            "count": 5
+        },
+        {
+            "name": "greg_corbin",
+            "series": "American Dad",
+            "count": 5
+        },
+        {
+            "name": "brian_lewis",
+            "series": "American Dad",
+            "count": 9
+        },
+        {
+            "name": "schmuely_lonstein",
+            "series": "American Dad",
+            "count": 65
+        },
+        {
+            "name": "esther_lonstein",
+            "series": "American Dad",
+            "count": 22
+        },
+        {
+            "name": "barry_robinson",
+            "series": "American Dad",
+            "count": 12
+        },
+        {
+            "name": "akiko_yoshida",
+            "series": "American Dad",
+            "count": 61
+        },
+        {
+            "name": "homer_simpson",
+            "series": "The Simpsons",
+            "count": 1362
+        },
+        {
+            "name": "marge_simpson",
+            "series": "The Simpsons",
+            "count": 6480
+        },
+        {
+            "name": "bart_simpson",
+            "series": "The Simpsons",
+            "count": 1902
+        },
+        {
+            "name": "lisa_simpson",
+            "series": "The Simpsons",
+            "count": 1945
+        },
+        {
+            "name": "maggie_simpson",
+            "series": "The Simpsons",
+            "count": 308
+        },
+        {
+            "name": "abraham_simpson",
+            "series": "The Simpsons",
+            "count": 37
+        },
+        {
+            "name": "mona_simpson",
+            "series": "The Simpsons",
+            "count": 5
+        },
+        {
+            "name": "patty_bouvier",
+            "series": "The Simpsons",
+            "count": 231
+        },
+        {
+            "name": "selma_bouvier",
+            "series": "The Simpsons",
+            "count": 343
+        },
+        {
+            "name": "milhouse_van_houten",
+            "series": "The Simpsons",
+            "count": 228
+        },
+        {
+            "name": "nelson_muntz",
+            "series": "The Simpsons",
+            "count": 47
+        },
+        {
+            "name": "ralph_wiggum",
+            "series": "The Simpsons",
+            "count": 9
+        },
+        {
+            "name": "martin_prince",
+            "series": "The Simpsons",
+            "count": 5
+        },
+        {
+            "name": "edna_krabappel",
+            "series": "The Simpsons",
+            "count": 388
+        },
+        {
+            "name": "seymour_skinner",
+            "series": "The Simpsons",
+            "count": 122
+        },
+        {
+            "name": "superintendent_chalmers",
+            "series": "The Simpsons",
+            "count": 26
+        },
+        {
+            "name": "ned_flanders",
+            "series": "The Simpsons",
+            "count": 302
+        },
+        {
+            "name": "maude_flanders",
+            "series": "The Simpsons",
+            "count": 339
+        },
+        {
+            "name": "rod_flanders",
+            "series": "The Simpsons",
+            "count": 23
+        },
+        {
+            "name": "todd_flanders",
+            "series": "The Simpsons",
+            "count": 22
+        },
+        {
+            "name": "moe_szyslak",
+            "series": "The Simpsons",
+            "count": 188
+        },
+        {
+            "name": "barney_gumble",
+            "series": "The Simpsons",
+            "count": 79
+        },
+        {
+            "name": "carl_carlson",
+            "series": "The Simpsons",
+            "count": 75
+        },
+        {
+            "name": "lenny_leonard",
+            "series": "The Simpsons",
+            "count": 61
+        },
+        {
+            "name": "apu_nahasapeemapetilon",
+            "series": "The Simpsons",
+            "count": 38
+        },
+        {
+            "name": "manjula_nahasapeemapetilon",
+            "series": "The Simpsons",
+            "count": 142
+        },
+        {
+            "name": "hans_moleman",
+            "series": "The Simpsons",
+            "count": 2
+        },
+        {
+            "name": "gil_gunderson",
+            "series": "The Simpsons",
+            "count": 5
+        },
+        {
+            "name": "helen_lovejoy",
+            "series": "The Simpsons",
+            "count": 106
+        },
+        {
+            "name": "reverend_lovejoy",
+            "series": "The Simpsons",
+            "count": 3
+        },
+        {
+            "name": "agnes_skinner",
+            "series": "The Simpsons",
+            "count": 14
+        },
+        {
+            "name": "cletus_spuckler",
+            "series": "The Simpsons",
+            "count": 10
+        },
+        {
+            "name": "brandine_spuckler",
+            "series": "The Simpsons",
+            "count": 14
+        },
+        {
+            "name": "sideshow_mel",
+            "series": "The Simpsons",
+            "count": 14
+        },
+        {
+            "name": "kent_brockman",
+            "series": "The Simpsons",
+            "count": 8
+        },
+        {
+            "name": "krusty_the_clown",
+            "series": "The Simpsons",
+            "count": 62
+        },
+        {
+            "name": "sideshow_bob",
+            "series": "The Simpsons",
+            "count": 34
+        },
+        {
+            "name": "rainier_wolfcastle",
+            "series": "The Simpsons",
+            "count": 18
+        },
+        {
+            "name": "troy_mcclure",
+            "series": "The Simpsons",
+            "count": 4
+        },
+        {
+            "name": "disco_stu",
+            "series": "The Simpsons",
+            "count": 5
+        },
+        {
+            "name": "chief_wiggum",
+            "series": "The Simpsons",
+            "count": 91
+        },
+        {
+            "name": "mayor_quimby",
+            "series": "The Simpsons",
+            "count": 19
+        },
+        {
+            "name": "professor_frink",
+            "series": "The Simpsons",
+            "count": 22
+        },
+        {
+            "name": "montgomery_burns",
+            "series": "The Simpsons",
+            "count": 94
+        },
+        {
+            "name": "waylon_smithers",
+            "series": "The Simpsons",
+            "count": 60
+        },
+        {
+            "name": "lindsey_naegle",
+            "series": "The Simpsons",
+            "count": 27
+        },
+        {
+            "name": "fat_tony",
+            "series": "The Simpsons",
+            "count": 27
+        },
+        {
+            "name": "cookie_kwan",
+            "series": "The Simpsons",
+            "count": 20
+        },
+        {
+            "name": "jasper_beardly",
+            "series": "The Simpsons",
+            "count": 7
+        },
+        {
+            "name": "jeff_albertson",
+            "series": "The Simpsons",
+            "count": 22
+        },
+        {
+            "name": "kearney_zzyzwicz",
+            "series": "The Simpsons",
+            "count": 19
+        },
+        {
+            "name": "jessica_lovejoy",
+            "series": "The Simpsons",
+            "count": 110
+        },
+        {
+            "name": "gina_vendetti",
+            "series": "The Simpsons",
+            "count": 9
+        },
+        {
+            "name": "greta_wolfcastle",
+            "series": "The Simpsons",
+            "count": 18
+        },
+        {
+            "name": "mary_spuckler",
+            "series": "The Simpsons",
+            "count": 7
+        },
+        {
+            "name": "annika_van_houten",
+            "series": "The Simpsons",
+            "count": 9
+        },
+        {
+            "name": "laura_powers",
+            "series": "The Simpsons",
+            "count": 34
+        },
+        {
+            "name": "lurleen_lumpkin",
+            "series": "The Simpsons",
+            "count": 34
+        },
+        {
+            "name": "peter_griffin",
+            "series": "Family Guy",
+            "count": 851
+        },
+        {
+            "name": "lois_griffin",
+            "series": "Family Guy",
+            "count": 4674
+        },
+        {
+            "name": "meg_griffin",
+            "series": "Family Guy",
+            "count": 2704
+        },
+        {
+            "name": "chris_griffin",
+            "series": "Family Guy",
+            "count": 763
+        },
+        {
+            "name": "stewie_griffin",
+            "series": "Family Guy",
+            "count": 74
+        },
+        {
+            "name": "brian_griffin",
+            "series": "Family Guy",
+            "count": 1803
+        },
+        {
+            "name": "glenn_quagmire",
+            "series": "Family Guy",
+            "count": 405
+        },
+        {
+            "name": "cleveland_brown",
+            "series": "Family Guy",
+            "count": 124
+        },
+        {
+            "name": "joe_swanson",
+            "series": "Family Guy",
+            "count": 63
+        },
+        {
+            "name": "bonnie_swanson",
+            "series": "Family Guy",
+            "count": 285
+        },
+        {
+            "name": "cleveland_brown_jr.",
+            "series": "Family Guy",
+            "count": 6
+        },
+        {
+            "name": "loretta_brown",
+            "series": "Family Guy",
+            "count": 5
+        },
+        {
+            "name": "mort_goldman",
+            "series": "Family Guy",
+            "count": 4
+        },
+        {
+            "name": "angela_(family_guy)",
+            "series": "Family Guy",
+            "count": 11
+        },
+        {
+            "name": "john_herbert",
+            "series": "Family Guy",
+            "count": 5
+        },
+        {
+            "name": "principal_shepherd",
+            "series": "Family Guy",
+            "count": 7
+        },
+        {
+            "name": "neil_goldman",
+            "series": "Family Guy",
+            "count": 42
+        },
+        {
+            "name": "tom_tucker",
+            "series": "Family Guy",
+            "count": 7
+        },
+        {
+            "name": "diane_simmons",
+            "series": "Family Guy",
+            "count": 27
+        },
+        {
+            "name": "tricia_takanawa",
+            "series": "Family Guy",
+            "count": 78
+        },
+        {
+            "name": "patty_patterson",
+            "series": "Family Guy",
+            "count": 83
+        },
+        {
+            "name": "ruth_cochamer",
+            "series": "Family Guy",
+            "count": 21
+        },
+        {
+            "name": "connie_d%26%23039%3Bamico",
+            "series": "Family Guy",
+            "count": 179
+        },
+        {
+            "name": "donna_tubbs",
+            "series": "Family Guy",
+            "count": 299
+        },
+        {
+            "name": "philip_j_fry",
+            "series": "Futurama",
+            "count": 759
+        },
+        {
+            "name": "turanga_leela",
+            "series": "Futurama",
+            "count": 2504
+        },
+        {
+            "name": "bender_bending_rodriguez",
+            "series": "Futurama",
+            "count": 368
+        },
+        {
+            "name": "hubert_j_farnsworth",
+            "series": "Futurama",
+            "count": 125
+        },
+        {
+            "name": "john_a._zoidberg",
+            "series": "Futurama",
+            "count": 126
+        },
+        {
+            "name": "amy_wong",
+            "series": "Futurama",
+            "count": 1238
+        },
+        {
+            "name": "hermes_conrad",
+            "series": "Futurama",
+            "count": 47
+        },
+        {
+            "name": "cubert_farnsworth",
+            "series": "Futurama",
+            "count": 4
+        },
+        {
+            "name": "zapp_brannigan",
+            "series": "Futurama",
+            "count": 178
+        },
+        {
+            "name": "kif_kroker",
+            "series": "Futurama",
+            "count": 96
+        },
+        {
+            "name": "nibbler",
+            "series": "Futurama",
+            "count": 109
+        },
+        {
+            "name": "scruffy_(futurama)",
+            "series": "Futurama",
+            "count": 11
+        },
+        {
+            "name": "elzar",
+            "series": "Futurama",
+            "count": 5
+        },
+        {
+            "name": "labarbara_conrad",
+            "series": "Futurama",
+            "count": 47
+        },
+        {
+            "name": "dwight_conrad",
+            "series": "Futurama",
+            "count": 4
+        },
+        {
+            "name": "morbo_(futurama)",
+            "series": "Futurama",
+            "count": 11
+        },
+        {
+            "name": "hypnotoad",
+            "series": "Futurama",
+            "count": 15
+        },
+        {
+            "name": "rick_sanchez",
+            "series": "Rick and Morty",
+            "count": 508
+        },
+        {
+            "name": "morty_smith",
+            "series": "Rick and Morty",
+            "count": 1644
+        },
+        {
+            "name": "summer_smith",
+            "series": "Rick and Morty",
+            "count": 1785
+        },
+        {
+            "name": "beth_smith",
+            "series": "Rick and Morty",
+            "count": 1426
+        },
+        {
+            "name": "jerry_smith",
+            "series": "Rick and Morty",
+            "count": 190
+        },
+        {
+            "name": "space_beth",
+            "series": "Rick and Morty",
+            "count": 127
+        },
+        {
+            "name": "doofus_rick",
+            "series": "Rick and Morty",
+            "count": 6
+        },
+        {
+            "name": "pickle_rick",
+            "series": "Rick and Morty",
+            "count": 78
+        },
+        {
+            "name": "tammy_gueterman",
+            "series": "Rick and Morty",
+            "count": 33
+        },
+        {
+            "name": "birdperson",
+            "series": "Rick and Morty",
+            "count": 32
+        },
+        {
+            "name": "finn_the_human",
+            "series": "Adventure Time",
+            "count": 5716
+        },
+        {
+            "name": "jake_the_dog",
+            "series": "Adventure Time",
+            "count": 978
+        },
+        {
+            "name": "mr._fox_(adventure_time)",
+            "series": "Adventure Time",
+            "count": 35
+        },
+        {
+            "name": "princess_bubblegum",
+            "series": "Adventure Time",
+            "count": 7642
+        },
+        {
+            "name": "marceline_abadeer",
+            "series": "Adventure Time",
+            "count": 1414
+        },
+        {
+            "name": "ice_king",
+            "series": "Adventure Time",
+            "count": 235
+        },
+        {
+            "name": "betty_grof",
+            "series": "Adventure Time",
+            "count": 279
+        },
+        {
+            "name": "simon_petrikov",
+            "series": "Adventure Time",
+            "count": 639
+        },
+        {
+            "name": "bmo",
+            "series": "Adventure Time",
+            "count": 260
+        },
+        {
+            "name": "lumpy_space_princess",
+            "series": "Adventure Time",
+            "count": 195
+        },
+        {
+            "name": "lady_rainicorn",
+            "series": "Adventure Time",
+            "count": 114
+        },
+        {
+            "name": "peppermint_butler",
+            "series": "Adventure Time",
+            "count": 96
+        },
+        {
+            "name": "fionna_the_human_girl",
+            "series": "Adventure Time",
+            "count": 3840
+        },
+        {
+            "name": "cinnamon_bun",
+            "series": "Adventure Time",
+            "count": 71
+        },
+        {
+            "name": "starchy_(adventure_time)",
+            "series": "Adventure Time",
+            "count": 10
+        },
+        {
+            "name": "earl_lemongrab",
+            "series": "Adventure Time",
+            "count": 88
+        },
+        {
+            "name": "root_beer_guy",
+            "series": "Adventure Time",
+            "count": 4
+        },
+        {
+            "name": "gunter_(adventure_time)",
+            "series": "Adventure Time",
+            "count": 6
+        },
+        {
+            "name": "hunson_abadeer",
+            "series": "Adventure Time",
+            "count": 41
+        },
+        {
+            "name": "tree_trunks",
+            "series": "Adventure Time",
+            "count": 27
+        },
+        {
+            "name": "mr._pig",
+            "series": "Adventure Time",
+            "count": 11
+        },
+        {
+            "name": "flame_princess",
+            "series": "Adventure Time",
+            "count": 1427
+        },
+        {
+            "name": "magic_man",
+            "series": "Adventure Time",
+            "count": 20
+        },
+        {
+            "name": "king_of_ooo",
+            "series": "Adventure Time",
+            "count": 4
+        },
+        {
+            "name": "billy_(adventure_time)",
+            "series": "Adventure Time",
+            "count": 7
+        },
+        {
+            "name": "golbetty",
+            "series": "Adventure Time",
+            "count": 46
+        },
+        {
+            "name": "fern_the_human",
+            "series": "Adventure Time",
+            "count": 82
+        },
+        {
+            "name": "susan_strong",
+            "series": "Adventure Time",
+            "count": 470
+        },
+        {
+            "name": "minerva_campbell",
+            "series": "Adventure Time",
+            "count": 175
+        },
+        {
+            "name": "huntress_wizard",
+            "series": "Adventure Time",
+            "count": 944
+        },
+        {
+            "name": "aang",
+            "series": "Avatar: The Last Airbender",
+            "count": 1910
+        },
+        {
+            "name": "katara",
+            "series": "Avatar: The Last Airbender",
+            "count": 7535
+        },
+        {
+            "name": "sokka",
+            "series": "Avatar: The Last Airbender",
+            "count": 1869
+        },
+        {
+            "name": "toph_bei_fong",
+            "series": "Avatar: The Last Airbender",
+            "count": 5590
+        },
+        {
+            "name": "zuko",
+            "series": "Avatar: The Last Airbender",
+            "count": 2371
+        },
+        {
+            "name": "appa",
+            "series": "Avatar: The Last Airbender",
+            "count": 150
+        },
+        {
+            "name": "momo_(avatar)",
+            "series": "Avatar: The Last Airbender",
+            "count": 124
+        },
+        {
+            "name": "ozai",
+            "series": "Avatar: The Last Airbender",
+            "count": 206
+        },
+        {
+            "name": "azula",
+            "series": "Avatar: The Last Airbender",
+            "count": 8238
+        },
+        {
+            "name": "mai_(avatar)",
+            "series": "Avatar: The Last Airbender",
+            "count": 1674
+        },
+        {
+            "name": "ty_lee",
+            "series": "Avatar: The Last Airbender",
+            "count": 3875
+        },
+        {
+            "name": "iroh",
+            "series": "Avatar: The Last Airbender",
+            "count": 256
+        },
+        {
+            "name": "suki",
+            "series": "Avatar: The Last Airbender",
+            "count": 1178
+        },
+        {
+            "name": "combustion_man",
+            "series": "Avatar: The Last Airbender",
+            "count": 61
+        },
+        {
+            "name": "hakoda",
+            "series": "Avatar: The Last Airbender",
+            "count": 59
+        },
+        {
+            "name": "pakku",
+            "series": "Avatar: The Last Airbender",
+            "count": 17
+        },
+        {
+            "name": "king_bumi",
+            "series": "Avatar: The Last Airbender",
+            "count": 17
+        },
+        {
+            "name": "kyoshi",
+            "series": "Avatar: The Last Airbender",
+            "count": 91
+        },
+        {
+            "name": "piandao",
+            "series": "Avatar: The Last Airbender",
+            "count": 8
+        },
+        {
+            "name": "jeong_jeong",
+            "series": "Avatar: The Last Airbender",
+            "count": 3
+        },
+        {
+            "name": "ruby_rose",
+            "series": "RWBY",
+            "count": 10742
+        },
+        {
+            "name": "weiss_schnee",
+            "series": "RWBY",
+            "count": 8526
+        },
+        {
+            "name": "blake_belladonna",
+            "series": "RWBY",
+            "count": 6754
+        },
+        {
+            "name": "yang_xiao_long",
+            "series": "RWBY",
+            "count": 11214
+        },
+        {
+            "name": "jaune_arc",
+            "series": "RWBY",
+            "count": 2598
+        },
+        {
+            "name": "nora_valkyrie",
+            "series": "RWBY",
+            "count": 1887
+        },
+        {
+            "name": "pyrrha_nikos",
+            "series": "RWBY",
+            "count": 3531
+        },
+        {
+            "name": "lie_ren",
+            "series": "RWBY",
+            "count": 352
+        },
+        {
+            "name": "sun_wukong",
+            "series": "RWBY",
+            "count": 470
+        },
+        {
+            "name": "neptune_vasilias",
+            "series": "RWBY",
+            "count": 62
+        },
+        {
+            "name": "scarlet_davids",
+            "series": "RWBY",
+            "count": 3
+        },
+        {
+            "name": "sage_ayana",
+            "series": "RWBY",
+            "count": 17
+        },
+        {
+            "name": "penny_polendina",
+            "series": "RWBY",
+            "count": 1200
+        },
+        {
+            "name": "ciel_soleil",
+            "series": "RWBY",
+            "count": 185
+        },
+        {
+            "name": "reese_chloris",
+            "series": "RWBY",
+            "count": 47
+        },
+        {
+            "name": "arslan_altan",
+            "series": "RWBY",
+            "count": 100
+        },
+        {
+            "name": "glynda_goodwitch",
+            "series": "RWBY",
+            "count": 1136
+        },
+        {
+            "name": "qrow_branwen",
+            "series": "RWBY",
+            "count": 262
+        },
+        {
+            "name": "ironwood",
+            "series": "RWBY",
+            "count": 51
+        },
+        {
+            "name": "winter_schnee",
+            "series": "RWBY",
+            "count": 1326
+        },
+        {
+            "name": "taiyang_xiao_long",
+            "series": "RWBY",
+            "count": 399
+        },
+        {
+            "name": "raven_branwen",
+            "series": "RWBY",
+            "count": 1241
+        },
+        {
+            "name": "cinder_fall",
+            "series": "RWBY",
+            "count": 1639
+        },
+        {
+            "name": "mercury_black",
+            "series": "RWBY",
+            "count": 54
+        },
+        {
+            "name": "emerald_sustrai",
+            "series": "RWBY",
+            "count": 1207
+        },
+        {
+            "name": "roman_torchwick",
+            "series": "RWBY",
+            "count": 65
+        },
+        {
+            "name": "neopolitan_(rwby)",
+            "series": "RWBY",
+            "count": 14
+        },
+        {
+            "name": "salem_(rwby)",
+            "series": "RWBY",
+            "count": 1147
+        },
+        {
+            "name": "tyrian_callows",
+            "series": "RWBY",
+            "count": 10
+        },
+        {
+            "name": "hazel_rainart",
+            "series": "RWBY",
+            "count": 24
+        },
+        {
+            "name": "wumpus",
+            "series": "Discord",
+            "count": 48
+        },
+        {
+            "name": "charlie_morningstar_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 5482
+        },
+        {
+            "name": "vaggie_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 3115
+        },
+        {
+            "name": "husk_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 928
+        },
+        {
+            "name": "niffty",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 820
+        },
+        {
+            "name": "alastor_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 2111
+        },
+        {
+            "name": "lucifer_morningstar_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 908
+        },
+        {
+            "name": "sir_pentious_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 479
+        },
+        {
+            "name": "vox_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 1263
+        },
+        {
+            "name": "valentino_(hazbin_hotel)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 1095
+        },
+        {
+            "name": "velvette",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 737
+        },
+        {
+            "name": "blitzo_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 3153
+        },
+        {
+            "name": "moxxie_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 5749
+        },
+        {
+            "name": "millie_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 6058
+        },
+        {
+            "name": "loona_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 28590
+        },
+        {
+            "name": "stolas_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 3146
+        },
+        {
+            "name": "stella_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 2207
+        },
+        {
+            "name": "octavia_(helluva_boss)",
+            "series": "Helluva Boss & Hazbin Hotel",
+            "count": 1710
+        },
+        {
+            "name": "master_splinter",
+            "series": "TMNT",
+            "count": 1432
+        },
+        {
+            "name": "april_o%26%23039%3Bneil",
+            "series": "TMNT",
+            "count": 4381
+        },
+        {
+            "name": "leonardo_(tmnt)",
+            "series": "TMNT",
+            "count": 936
+        },
+        {
+            "name": "michelangelo_(tmnt)",
+            "series": "TMNT",
+            "count": 686
+        },
+        {
+            "name": "raphael_(tmnt)",
+            "series": "TMNT",
+            "count": 800
+        },
+        {
+            "name": "donatello_(tmnt)",
+            "series": "TMNT",
+            "count": 655
+        },
+        {
+            "name": "casey_jones",
+            "series": "TMNT",
+            "count": 159
+        },
+        {
+            "name": "bugs_bunny",
+            "series": "Looney Tunes",
+            "count": 2773
+        },
+        {
+            "name": "daffy_duck",
+            "series": "Looney Tunes",
+            "count": 736
+        },
+        {
+            "name": "porky_pig",
+            "series": "Looney Tunes",
+            "count": 115
+        },
+        {
+            "name": "elmer_fudd",
+            "series": "Looney Tunes",
+            "count": 65
+        },
+        {
+            "name": "tweety_bird",
+            "series": "Looney Tunes",
+            "count": 38
+        },
+        {
+            "name": "sylvester_(looney_tunes)",
+            "series": "Looney Tunes",
+            "count": 22
+        },
+        {
+            "name": "yosemite_sam",
+            "series": "Looney Tunes",
+            "count": 43
+        },
+        {
+            "name": "marvin_the_martian",
+            "series": "Looney Tunes",
+            "count": 280
+        },
+        {
+            "name": "foghorn_leghorn",
+            "series": "Looney Tunes",
+            "count": 182
+        },
+        {
+            "name": "pepe_le_pew",
+            "series": "Looney Tunes",
+            "count": 636
+        },
+        {
+            "name": "speedy_gonzales",
+            "series": "Looney Tunes",
+            "count": 71
+        },
+        {
+            "name": "tasmanian_devil_(looney_tunes)",
+            "series": "Looney Tunes",
+            "count": 101
+        },
+        {
+            "name": "wile_e._coyote",
+            "series": "Looney Tunes",
+            "count": 448
+        },
+        {
+            "name": "road_runner_(looney_tunes)",
+            "series": "Looney Tunes",
+            "count": 194
+        },
+        {
+            "name": "lola_bunny",
+            "series": "Looney Tunes",
+            "count": 6682
+        },
+        {
+            "name": "kinkymation",
+            "series": "Artist",
+            "count": 6359
+        },
+        {
+            "name": "cutesexyrobutts",
+            "series": "Artist",
+            "count": 1544
+        },
+        {
+            "name": "steven_quartz_universe",
+            "series": "Steven Universe",
+            "count": 3269
+        },
+        {
+            "name": "garnet_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 2125
+        },
+        {
+            "name": "ruby_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 556
+        },
+        {
+            "name": "sapphire_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 735
+        },
+        {
+            "name": "amethyst_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 2490
+        },
+        {
+            "name": "pearl_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 4318
+        },
+        {
+            "name": "white_diamond_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 449
+        },
+        {
+            "name": "yellow_diamond_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 518
+        },
+        {
+            "name": "blue_diamond_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 1811
+        },
+        {
+            "name": "pink_diamond_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 396
+        },
+        {
+            "name": "rose_quartz_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 554
+        },
+        {
+            "name": "opal_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 114
+        },
+        {
+            "name": "sugilite_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 57
+        },
+        {
+            "name": "sardonyx_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 90
+        },
+        {
+            "name": "alexandrite_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 22
+        },
+        {
+            "name": "stevonnie",
+            "series": "Steven Universe",
+            "count": 390
+        },
+        {
+            "name": "rainbow_quartz_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 32
+        },
+        {
+            "name": "sunstone_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 18
+        },
+        {
+            "name": "obsidian_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 22
+        },
+        {
+            "name": "smoky_quartz_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 15
+        },
+        {
+            "name": "peridot_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 5946
+        },
+        {
+            "name": "lapis_lazuli_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 4770
+        },
+        {
+            "name": "bismuth_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 97
+        },
+        {
+            "name": "jasper_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 1817
+        },
+        {
+            "name": "spinel_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 1524
+        },
+        {
+            "name": "holly_blue_agate",
+            "series": "Steven Universe",
+            "count": 194
+        },
+        {
+            "name": "topaz_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 43
+        },
+        {
+            "name": "blue_pearl_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 344
+        },
+        {
+            "name": "yellow_pearl_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 228
+        },
+        {
+            "name": "white_pearl_(steven_universe)",
+            "series": "Steven Universe",
+            "count": 17
+        },
+        {
+            "name": "greg_universe",
+            "series": "Steven Universe",
+            "count": 1112
+        },
+        {
+            "name": "priyanka_maheswaran",
+            "series": "Steven Universe",
+            "count": 1807
+        },
+        {
+            "name": "twilight_sparkle_(mlp)",
+            "series": "My Little Pony",
+            "count": 26971
+        },
+        {
+            "name": "rainbow_dash_(mlp)",
+            "series": "My Little Pony",
+            "count": 21348
+        },
+        {
+            "name": "sprout_cloverleaf_(mlp)",
+            "series": "My Little Pony",
+            "count": 102
+        },
+        {
+            "name": "pinkie_pie_(mlp)",
+            "series": "My Little Pony",
+            "count": 17010
+        },
+        {
+            "name": "applejack_(mlp)",
+            "series": "My Little Pony",
+            "count": 16143
+        },
+        {
+            "name": "rarity_(mlp)",
+            "series": "My Little Pony",
+            "count": 19884
+        },
+        {
+            "name": "fluttershy_(mlp)",
+            "series": "My Little Pony",
+            "count": 23074
+        },
+        {
+            "name": "spike_(mlp)",
+            "series": "My Little Pony",
+            "count": 8708
+        },
+        {
+            "name": "princess_celestia_(mlp)",
+            "series": "My Little Pony",
+            "count": 15261
+        },
+        {
+            "name": "berry_punch_(mlp)",
+            "series": "My Little Pony",
+            "count": 494
+        },
+        {
+            "name": "princess_luna_(mlp)",
+            "series": "My Little Pony",
+            "count": 15348
+        },
+        {
+            "name": "princess_cadance_(mlp)",
+            "series": "My Little Pony",
+            "count": 6085
+        },
+        {
+            "name": "shining_armor_(mlp)",
+            "series": "My Little Pony",
+            "count": 6183
+        },
+        {
+            "name": "discord_(mlp)",
+            "series": "My Little Pony",
+            "count": 2209
+        },
+        {
+            "name": "starlight_glimmer",
+            "series": "My Little Pony",
+            "count": 2991
+        },
+        {
+            "name": "trixie_(mlp)",
+            "series": "My Little Pony",
+            "count": 5305
+        },
+        {
+            "name": "sunset_shimmer",
+            "series": "My Little Pony",
+            "count": 4010
+        },
+        {
+            "name": "apple_bloom_(mlp)",
+            "series": "My Little Pony",
+            "count": 3269
+        },
+        {
+            "name": "scootaloo_(mlp)",
+            "series": "My Little Pony",
+            "count": 2959
+        },
+        {
+            "name": "sweetie_belle_(mlp)",
+            "series": "My Little Pony",
+            "count": 3883
+        },
+        {
+            "name": "zecora_(mlp)",
+            "series": "My Little Pony",
+            "count": 2061
+        },
+        {
+            "name": "cheerilee_(mlp)",
+            "series": "My Little Pony",
+            "count": 1179
+        },
+        {
+            "name": "granny_smith_(mlp)",
+            "series": "My Little Pony",
+            "count": 127
+        },
+        {
+            "name": "diamond_tiara_(mlp)",
+            "series": "My Little Pony",
+            "count": 681
+        },
+        {
+            "name": "silver_spoon_(mlp)",
+            "series": "My Little Pony",
+            "count": 541
+        },
+        {
+            "name": "snips_(mlp)",
+            "series": "My Little Pony",
+            "count": 140
+        },
+        {
+            "name": "snails_(mlp)",
+            "series": "My Little Pony",
+            "count": 329
+        },
+        {
+            "name": "lyra_heartstrings_(mlp)",
+            "series": "My Little Pony",
+            "count": 2033
+        },
+        {
+            "name": "bonbon_(mlp)",
+            "series": "My Little Pony",
+            "count": 977
+        },
+        {
+            "name": "fleetfoot_(mlp)",
+            "series": "My Little Pony",
+            "count": 235
+        },
+        {
+            "name": "spitfire_(mlp)",
+            "series": "My Little Pony",
+            "count": 2010
+        },
+        {
+            "name": "sweetie_drops",
+            "series": "My Little Pony",
+            "count": 82
+        },
+        {
+            "name": "derpy_hooves",
+            "series": "My Little Pony",
+            "count": 2803
+        },
+        {
+            "name": "octavia_melody",
+            "series": "My Little Pony",
+            "count": 2282
+        },
+        {
+            "name": "vinyl_scratch_(mlp)",
+            "series": "My Little Pony",
+            "count": 3699
+        },
+        {
+            "name": "king_sombra_(mlp)",
+            "series": "My Little Pony",
+            "count": 1945
+        },
+        {
+            "name": "queen_chrysalis_(mlp)",
+            "series": "My Little Pony",
+            "count": 6259
+        },
+        {
+            "name": "cozy_glow_(mlp)",
+            "series": "My Little Pony",
+            "count": 210
+        },
+        {
+            "name": "maud_pie_(mlp)",
+            "series": "My Little Pony",
+            "count": 1438
+        },
+        {
+            "name": "limestone_pie_(mlp)",
+            "series": "My Little Pony",
+            "count": 591
+        },
+        {
+            "name": "marble_pie_(mlp)",
+            "series": "My Little Pony",
+            "count": 1090
+        },
+        {
+            "name": "babs_seed_(mlp)",
+            "series": "My Little Pony",
+            "count": 473
+        },
+        {
+            "name": "gabby_(mlp)",
+            "series": "My Little Pony",
+            "count": 352
+        },
+        {
+            "name": "gilda_(mlp)",
+            "series": "My Little Pony",
+            "count": 1881
+        },
+        {
+            "name": "somnambula_(mlp)",
+            "series": "My Little Pony",
+            "count": 240
+        },
+        {
+            "name": "mistmane_(mlp)",
+            "series": "My Little Pony",
+            "count": 5
+        },
+        {
+            "name": "flash_magnus_(mlp)",
+            "series": "My Little Pony",
+            "count": 17
+        },
+        {
+            "name": "meadowbrook_(mlp)",
+            "series": "My Little Pony",
+            "count": 25
+        },
+        {
+            "name": "rockhoof_(mlp)",
+            "series": "My Little Pony",
+            "count": 29
+        },
+        {
+            "name": "stygian_(mlp)",
+            "series": "My Little Pony",
+            "count": 19
+        },
+        {
+            "name": "tempest_shadow_(mlp)",
+            "series": "My Little Pony",
+            "count": 976
+        },
+        {
+            "name": "sandbar_(mlp)",
+            "series": "My Little Pony",
+            "count": 385
+        },
+        {
+            "name": "optimus_prime",
+            "series": "Transformers",
+            "count": 581
+        },
+        {
+            "name": "bumblebee_(transformers)",
+            "series": "Transformers",
+            "count": 392
+        },
+        {
+            "name": "ironhide",
+            "series": "Transformers",
+            "count": 28
+        },
+        {
+            "name": "ratchet_(transformers)",
+            "series": "Transformers",
+            "count": 111
+        },
+        {
+            "name": "jazz_(transformers)",
+            "series": "Transformers",
+            "count": 49
+        },
+        {
+            "name": "wheeljack",
+            "series": "Transformers",
+            "count": 35
+        },
+        {
+            "name": "cliffjumper",
+            "series": "Transformers",
+            "count": 43
+        },
+        {
+            "name": "arcee",
+            "series": "Transformers",
+            "count": 2061
+        },
+        {
+            "name": "prowl_(transformers)",
+            "series": "Transformers",
+            "count": 69
+        },
+        {
+            "name": "sideswipe",
+            "series": "Transformers",
+            "count": 26
+        },
+        {
+            "name": "sunstreaker",
+            "series": "Transformers",
+            "count": 23
+        },
+        {
+            "name": "mirage_(transformers)",
+            "series": "Transformers",
+            "count": 42
+        },
+        {
+            "name": "trailbreaker",
+            "series": "Transformers",
+            "count": 8
+        },
+        {
+            "name": "hound_(transformers)",
+            "series": "Transformers",
+            "count": 12
+        },
+        {
+            "name": "ultra_magnus",
+            "series": "Transformers",
+            "count": 51
+        },
+        {
+            "name": "blaster_(transformers)",
+            "series": "Transformers",
+            "count": 11
+        },
+        {
+            "name": "kup_(transformers)",
+            "series": "Transformers",
+            "count": 3
+        },
+        {
+            "name": "hot_rod",
+            "series": "Transformers",
+            "count": 47
+        },
+        {
+            "name": "springer",
+            "series": "Transformers",
+            "count": 19
+        },
+        {
+            "name": "perceptor",
+            "series": "Transformers",
+            "count": 42
+        },
+        {
+            "name": "metroplex",
+            "series": "Transformers",
+            "count": 9
+        },
+        {
+            "name": "jetfire",
+            "series": "Transformers",
+            "count": 48
+        },
+        {
+            "name": "bulkhead",
+            "series": "Transformers",
+            "count": 51
+        },
+        {
+            "name": "elita_one",
+            "series": "Transformers",
+            "count": 349
+        },
+        {
+            "name": "megatron",
+            "series": "Transformers",
+            "count": 554
+        },
+        {
+            "name": "starscream",
+            "series": "Transformers",
+            "count": 464
+        },
+        {
+            "name": "soundwave",
+            "series": "Transformers",
+            "count": 228
+        },
+        {
+            "name": "shockwave_(transformers)",
+            "series": "Transformers",
+            "count": 163
+        },
+        {
+            "name": "thundercracker",
+            "series": "Transformers",
+            "count": 47
+        },
+        {
+            "name": "skywarp",
+            "series": "Transformers",
+            "count": 70
+        },
+        {
+            "name": "ravage_(transformers)",
+            "series": "Transformers",
+            "count": 8
+        },
+        {
+            "name": "laserbeak",
+            "series": "Transformers",
+            "count": 12
+        },
+        {
+            "name": "rumble_(transformers)",
+            "series": "Transformers",
+            "count": 13
+        },
+        {
+            "name": "frenzy_(transformers)",
+            "series": "Transformers",
+            "count": 21
+        },
+        {
+            "name": "barricade_(transformers)",
+            "series": "Transformers",
+            "count": 17
+        },
+        {
+            "name": "blackout_(transformers)",
+            "series": "Transformers",
+            "count": 6
+        },
+        {
+            "name": "lugnut",
+            "series": "Transformers",
+            "count": 18
+        },
+        {
+            "name": "lockdown_(transformers)",
+            "series": "Transformers",
+            "count": 8
+        },
+        {
+            "name": "scorponok_(beast_wars)",
+            "series": "Transformers",
+            "count": 3
+        },
+        {
+            "name": "tarn_(transformers)",
+            "series": "Transformers",
+            "count": 25
+        },
+        {
+            "name": "slipstream",
+            "series": "Transformers",
+            "count": 196
+        },
+        {
+            "name": "motormaster_(transformers)",
+            "series": "Transformers",
+            "count": 7
+        },
+        {
+            "name": "cyclonus",
+            "series": "Transformers",
+            "count": 24
+        },
+        {
+            "name": "galvatron",
+            "series": "Transformers",
+            "count": 23
+        },
+        {
+            "name": "unicron",
+            "series": "Transformers",
+            "count": 15
+        },
+        {
+            "name": "primus",
+            "series": "Transformers",
+            "count": 6
+        },
+        {
+            "name": "waspinator",
+            "series": "Transformers",
+            "count": 22
+        },
+        {
+            "name": "grimlock_(transformers)",
+            "series": "Transformers",
+            "count": 73
+        },
+        {
+            "name": "silverbolt",
+            "series": "Transformers",
+            "count": 49
+        },
+        {
+            "name": "pomni_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 6001
+        },
+        {
+            "name": "jax_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 2538
+        },
+        {
+            "name": "ragatha_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 1742
+        },
+        {
+            "name": "kinger_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 229
+        },
+        {
+            "name": "gangle_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 424
+        },
+        {
+            "name": "zooble_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 136
+        },
+        {
+            "name": "caine_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 584
+        },
+        {
+            "name": "bubble_(the_amazing_digital_circus)",
+            "series": "The Amazing Digital Circus",
+            "count": 151
+        },
+        {
+            "name": "kaufmo_(abstracted)",
+            "series": "The Amazing Digital Circus",
+            "count": 170
+        },
+        {
+            "name": "gangle_with_thick_ribbons",
+            "series": "The Amazing Digital Circus",
+            "count": 64
+        },
+        {
+            "name": "uzi_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 1712
+        },
+        {
+            "name": "v_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 1903
+        },
+        {
+            "name": "n_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 1842
+        },
+        {
+            "name": "j_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 1249
+        },
+        {
+            "name": "doll_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 354
+        },
+        {
+            "name": "tessa_elliot",
+            "series": "Murder Drones",
+            "count": 390
+        },
+        {
+            "name": "khan_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 46
+        },
+        {
+            "name": "cyn_(murder_drones)",
+            "series": "Murder Drones",
+            "count": 632
+        },
+        {
+            "name": "lily_(duolingo)",
+            "series": "Duolingo",
+            "count": 815
+        },
+        {
+            "name": "zari_(duolingo)",
+            "series": "Duolingo",
+            "count": 312
+        },
+        {
+            "name": "eddy_(duolingo)",
+            "series": "Duolingo",
+            "count": 34
+        },
+        {
+            "name": "lin_(duolingo)",
+            "series": "Duolingo",
+            "count": 26
+        },
+        {
+            "name": "duo_(duolingo)",
+            "series": "Duolingo",
+            "count": 251
+        },
+        {
+            "name": "oscar_(duolingo)",
+            "series": "Duolingo",
+            "count": 11
+        },
+        {
+            "name": "falstaff_(duolingo)",
+            "series": "Duolingo",
+            "count": 28
+        },
+        {
+            "name": "bea_(duolingo)",
+            "series": "Duolingo",
+            "count": 33
+        }
+    ]
+}

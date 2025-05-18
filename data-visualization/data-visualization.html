@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+  try {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) document.body.classList.add(`${savedTheme}-theme`);
+  } catch (e) {}
+</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualization</title>
+  <link rel="stylesheet" href="data-visualization.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="data-visualization.js"></script>
+</head>
+<body>
+  <a href="/index.html" id="home-link"><span></span></a>
+  <div id="hamburgerMenu" onclick="toggleMenu()">☰</div>
+  <div id="menuContent">
+    <h3>Select Category</h3>
+    <button onclick="showSeriesBreakdown('Eastern Media')">Eastern</button>
+    <button onclick="showSeriesBreakdown('Gaming')">Gaming</button>
+    <button onclick="showSeriesBreakdown('Western Media')">Western</button>
+    <br><br>
+    <h3>Theme</h3>
+<select id="themeSelector">
+  <option value="dark">Dark</option>
+  <option value="light">Light</option>
+  <option value="custom">Pastelek</option>
+</select>
+    <div id="chartResizeControls">
+  <h3>Chart Size</h3>
+  <div class="resize-button-group">
+    <button class="resize-btn" onclick="resizeChart('decrease')">−</button>
+    <button class="resize-btn" onclick="resizeChart('increase')">+</button>
+  </div>
+</div>
+    <button onclick="showCategoryBreakdown()">Back to Category View</button>
+
+  </div>
+
+<div class="chart-wrapper">
+  <canvas id="mainChart"></canvas>
+  <div id="customLegend" class="legend-scrollbox"></div>
+  <div id="legendControls">
+  <label for="sortLegend">Sort Legend:</label>
+  <select id="sortLegend">
+    <option value="alpha">Alphabetical (A–Z)</option>
+    <option value="desc">Biggest → Smallest</option>
+    <option value="asc">Smallest → Biggest</option>
+  </select>
+</div>
+
+</div>
+
+  <button id="backButton" style="display:none;">⬅ Back</button>
+
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menuContent');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+<footer id="credits">
+  <p>
+    <a href="/privacy.html">Privacy Policy</a> |
+    Support me on <a href="https://ko-fi.com/doubletheblack" target="_blank">Ko-fi</a> |
+    Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
+  </p>
+</footer>
+
+</html>

@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <button id="hamburgerMenuButton" onclick="toggleMenu()">☰</button>
-
-  <div id="menuContent">
-    <input type="password" id="passwordInput" placeholder="Enter Password" />
-    <button onclick="checkPassword()">Enter Password</button>
-  </div>
 <head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9943795095069560"
      crossorigin="anonymous"></script>
@@ -16,6 +10,14 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 <body>
+
+  <button id="hamburgerMenuButton" onclick="toggleMenu()">☰</button>
+
+  <div id="menuContent" style="display: none;">
+    <input type="password" id="passwordInput" placeholder="Enter Password" />
+    <button onclick="checkPassword()">Enter Password</button>
+  </div>
+
   <h1>Doubletheblack Projects</h1>
   <p>Choose One</p>
 
@@ -30,42 +32,51 @@
       <p>Guess the exact number of posts legally different from Wordle.</p>
     </a>
 
+<a id="dataBreakdownLink" href="data-visualization/data-visualization.html" class="game-card data-breakdown" style="display: none;">
+  <h2>Data Breakdown</h2>
+  <p>Explore post counts by category, series, and character.</p>
+</a>
+
+
   </div>  
-  
 
   <footer>
-    <p>Made by Doubletheblack</p>
-    Support me on <a href="https://ko-fi.com/doubletheblack" target="_blank">Ko-fi</a> |
-    Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
-  </p>
+    <p>
+      Made by Doubletheblack<br>
+      Support me on <a href="https://ko-fi.com/doubletheblack" target="_blank">Ko-fi</a> |
+      Subscribe on <a href="https://www.youtube.com/@doubletheblack" target="_blank">YouTube</a>
+    </p>
   </footer>
+
   <script>
     function toggleMenu() {
       const menu = document.getElementById('menuContent');
       menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
     }
-    
+
     function checkPassword() {
       const password = document.getElementById('passwordInput').value;
       if (password === 'F@v0rIt3tHeP@S$DcuT3oB0ts3xYMyuLe34r3iLrDthBu$Erw') {
         localStorage.setItem('adFreeUnlocked', 'true');
         applyAdFreeLinks();
-        alert('Ad-free mode unlocked!');
+        document.getElementById('dataBreakdownLink').style.display = 'block';
+        alert('huh');
       } else {
         alert('Incorrect password.');
       }
     }
-    
+
     function applyAdFreeLinks() {
       document.getElementById('higherLowerLink').href = "34higherlower_protected/index.html";
       document.getElementById('r34dleLink').href = "r34dle_protected/index.html";
     }
-    
+
     document.addEventListener('DOMContentLoaded', () => {
       if (localStorage.getItem('adFreeUnlocked') === 'true') {
         applyAdFreeLinks();
+        document.getElementById('dataBreakdownLink').style.display = 'block';
       }
     });
-    </script>
+  </script>
 </body>
 </html>

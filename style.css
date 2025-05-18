@@ -124,3 +124,14 @@ body {
 #menuContent button:hover {
   background: darkred;
 }
+
+.game-card.data-breakdown:hover {
+  border-color: dodgerblue;
+  background-color: rgba(30, 144, 255, 0.2); 
+}
+
+.game-card.data-breakdown:hover {
+  border-color: dodgerblue;
+  background-color: rgba(30, 144, 255, 0.2);
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.4);
+}

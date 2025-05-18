@@ -1,0 +1,255 @@
+/* ========== Global ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* ========== Themes ========== */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+body.custom-theme {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Theme-aware Buttons */
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+body.dark-theme button {
+  background-color: #444;
+  color: white;
+}
+body.dark-theme button:hover {
+  background-color: #666;
+}
+
+body.light-theme button {
+  background-color: #ddd;
+  color: black;
+}
+body.light-theme button:hover {
+  background-color: #bbb;
+}
+
+body.custom-theme button {
+  background-color: #684b8b;
+  color: white;
+}
+body.custom-theme button:hover {
+  background-color: #38154e;
+}
+
+/* ========== Home Link ========== */
+#home-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 999;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: background 0.3s ease;
+}
+#home-link span::before {
+  content: "Home";
+  transition: opacity 0.2s ease;
+}
+#home-link:hover span::before {
+  content: "doubletheblack";
+}
+
+/* ========== Hamburger Menu ========== */
+#hamburgerMenu {
+  font-size: 24px;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* ========== Sidebar ========== */
+#menuContent {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 220px;
+}
+
+/* Sidebar Theme Colors */
+body.dark-theme #menuContent {
+  background-color: #2c2c2c;
+  color: white;
+}
+body.light-theme #menuContent {
+  background-color: #ffffff;
+  color: black;
+}
+body.custom-theme #menuContent {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+}
+
+/* ========== Chart Canvas ========== */
+#mainChart {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Chart container layout */
+.chart-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+canvas {
+  margin: 80px auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background: white;
+}
+
+.chartjs-render-monitor {
+  overflow-y: auto !important;
+  max-height: 600px;
+}
+
+/* ========== Chart Resize Buttons ========== */
+#chartResizeControls {
+  margin-top: 10px;
+}
+.resize-button-group {
+  display: flex;
+  gap: 5px;
+}
+.resize-btn {
+  width: 40px;
+  height: 30px;
+  font-size: 18px;
+  padding: 2px;
+}
+
+/* ========== Legend ========== */
+#customLegend {
+  max-height: 450px;
+  overflow-y: auto;
+  width: 280px;
+  margin: 30px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+body.dark-theme #customLegend {
+  background-color: #2c2c2c;
+}
+body.light-theme #customLegend {
+  background-color: white;
+}
+body.custom-theme #customLegend {
+  background-color: #202040;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 4px 6px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+}
+
+.legend-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.legend-color-box {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 3px;
+}
+
+.legend-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #888;
+  visibility: hidden;
+  position: absolute;
+  right: 6px;
+}
+
+.legend-item:hover .legend-toggle {
+  visibility: visible;
+}
+
+.legend-label {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========== Sort Dropdown ========== */
+#legendControls {
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+#sortLegend {
+  margin-left: 6px;
+  padding: 2px 6px;
+}
+
+/* ========== Footer ========== */
+#credits {
+  font-size: 13px;
+  color: #999;
+  margin-top: 40px;
+  text-align: center;
+}
