@@ -79,7 +79,7 @@ function getRandomCharacter() {
   const unused = filtered.filter(c => !usedCharacters.has(c.name));
 
   if (unused.length === 0) {
-    document.getElementById("feedback").textContent = `🎉 You've guessed all characters in "${selectedSeries}". Streak has been reset!`;
+    document.getElementById("feedback").textContent = `You've guessed all characters in "${selectedSeries}". Streak has been reset!`;
     currentStreak = 0;
     usedCharacters.clear();
     updateStreakDisplay();
@@ -109,17 +109,14 @@ function getDailyCharacter() {
   
     const character = characters.find(c => c.name === name);
   
-    // Set character name
     display.innerHTML = `
       ${name.replace(/_/g, " ")}
     `;
   
-    // Set series text
     seriesDisplay.textContent = character ? `Series: ${character.series}` : "";
   
 
   
-    // Longest Streak
     const longestDisplay = document.getElementById("longest");
     if (character) {
       const streak = longestStreaks[character.series] || 0;
@@ -138,17 +135,29 @@ async function fetchPostCount() {
     const text = await response.text();
     const match = text.match(/<posts count="(\d+)"/);
     if (!match) {
-      document.getElementById("feedback").textContent = `⚠️ No data found for "${searchName}"`;
+      document.getElementById("feedback").textContent = `No data found for "${searchName}"`;
       return;
     }
 
     const postCount = parseInt(match[1], 10);
     setupPostCountGame(postCount);
   } catch (error) {
-    console.error("❌ Failed to fetch post count:", error);
-    document.getElementById("feedback").textContent = "⚠️ Error fetching post count.";
+    console.error("Failed to fetch post count:", error);
+    document.getElementById("feedback").textContent = "Error fetching post count.";
   }
 }
+
+function showPopup(message) {
+  const popupOverlay = document.getElementById("popup-overlay");
+  const popupMessage = document.getElementById("popup-message");
+  popupMessage.textContent = message;
+  popupOverlay.style.display = "flex";
+}
+
+document.getElementById("popup-close").addEventListener("click", () => {
+  document.getElementById("popup-overlay").style.display = "none";
+});
+
 
 let simulatedPostCount = 0;
 let maxAttempts = 0;
@@ -251,24 +260,25 @@ function handleGuess() {
       localStorage.setItem("longestStreaks", JSON.stringify(longestStreaks));
     }
 
-    document.getElementById("feedback").textContent = `🎉 Correct! ${currentCharacter.name} has ${simulatedPostCount} posts.`;
+    document.getElementById("feedback").textContent = `Correct! ${currentCharacter.name} has ${simulatedPostCount} posts.`;
     document.getElementById("streak").textContent = `Streak: ${currentStreak}`;
     document.getElementById("longest").textContent = `Longest (${series}): ${longestStreaks[series]}`;
     disableInput();
   } else if (attemptsLeft <= 0) {
     currentStreak = 0;
-    document.getElementById("feedback").textContent = `❌ Out of attempts! The correct number was ${simulatedPostCount}.`;
+    document.getElementById("feedback").textContent = `Out of attempts! The correct number was ${simulatedPostCount}.`;
     updateStreakDisplay();
     disableInput();
   } else {
-    document.getElementById("feedback").textContent = "❌ Not quite, try again!";
+    document.getElementById("feedback").textContent = "Not quite, try again!";
   }
 
   input.value = "";
   showShareButton();
 
-  if (isDailyMode()) {
-    localStorage.setItem("lastDaily", new Date().toISOString().slice(0, 10));
+   if (isDailyMode()) {
+    const today = new Date().toISOString().slice(0, 10);
+    localStorage.setItem("lastDailyCompleted", today);
     document.getElementById("daily-btn").disabled = true;
     document.getElementById("daily-btn").textContent = "Daily Completed";
   }
@@ -291,7 +301,7 @@ function disableInput() {
 function showShareButton() {
   if (document.getElementById("share-btn")) return;
   const shareButton = document.createElement("button");
-  shareButton.textContent = "📋 Share your R34dle!";
+  shareButton.textContent = " Share your R34dle!";
   shareButton.id = "share-btn";
   document.getElementById("game").appendChild(shareButton);
 
@@ -310,32 +320,58 @@ function showShareButton() {
     const result = emojiHistory.map(row => row.map(c => emojiMap[c] || "⬛").join("")).join("\n");
     const text = `R34dle – ${currentCharacter.name.replace(/_/g, " ")}\n\n${result}`;
     navigator.clipboard.writeText(text).then(() => {
-      shareButton.textContent = "✅ Copied to clipboard!";
+      shareButton.textContent = "Copied to clipboard!";
     });
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("daily-btn").addEventListener("click", async () => {
+  const today = new Date().toISOString().slice(0, 10);
+  const lastCompleted = localStorage.getItem("lastDailyCompleted");
+
+  if (lastCompleted === today) {
+    document.getElementById("feedback").textContent = "You've already completed today's daily.";
+    return;
+  }
+
+  currentCharacter = getDailyCharacter();
+  if (!currentCharacter) {
+    document.getElementById("feedback").textContent = "No character for today.";
+    return;
+  }
+
+  document.getElementById("restart-btn").style.display = "none";
+  document.getElementById("guess-input").disabled = false;
+  document.getElementById("submit-guess").disabled = false;
+  document.getElementById("guess-input").value = "";
+  document.getElementById("feedback").textContent = "";
+  const oldShareBtn = document.getElementById("share-btn");
+  if (oldShareBtn) oldShareBtn.remove();
+
+  displayCharacter(currentCharacter.name);
+  await fetchPostCount();
+});
   document.getElementById("series-filter").addEventListener("change", e => {
     selectedSeries = e.target.value;
     localStorage.setItem("selectedSeries", selectedSeries);
-    loadCharacters();
+    restartGame();
   });
 
-document.getElementById("category-filter").addEventListener("change", e => {
+  document.getElementById("category-filter").addEventListener("change", e => {
   selectedCategory = e.target.value;
   localStorage.setItem("selectedCategory", selectedCategory);
   selectedSeries = "all";
   localStorage.setItem("selectedSeries", selectedSeries);
-  loadCharacters();
+  restartGame();
 });
-
   
 
   document.getElementById("submit-guess").addEventListener("click", handleGuess);
   document.getElementById("guess-input").addEventListener("keydown", e => {
     if (e.key === "Enter") handleGuess();
   });
+
   
 
   document.getElementById("restart-btn").addEventListener("click", () => {
@@ -365,42 +401,47 @@ document.getElementById("category-filter").addEventListener("change", e => {
   });
   
 
-  document.getElementById("daily-btn").addEventListener("click", async () => {
-    const today = new Date().toISOString().slice(0, 10);
-    const lastPlayed = localStorage.getItem("lastDaily");
+document.getElementById("daily-btn").addEventListener("click", async () => {
+  const today = new Date().toISOString().slice(0, 10);
+  const lastCompleted = localStorage.getItem("lastDailyCompleted");
 
-    if (lastPlayed === today) {
-      document.getElementById("feedback").textContent = "✅ You've already completed today's daily.";
-      return;
-    }
+  if (lastCompleted === today) {
+    document.getElementById("feedback").textContent = "You've already completed today's daily.";
+    return;
+  }
 
-    currentCharacter = getDailyCharacter();
-    if (!currentCharacter) {
-      document.getElementById("feedback").textContent = "⚠️ No character for today.";
-      return;
-    }
+  currentCharacter = getDailyCharacter();
+  if (!currentCharacter) {
+    document.getElementById("feedback").textContent = "No character for today.";
+    return;
+  }
 
-    displayCharacter(currentCharacter.name);
-    await fetchPostCount();
+  document.getElementById("restart-btn").style.display = "none";
+  document.getElementById("guess-input").disabled = false;
+  document.getElementById("submit-guess").disabled = false;
+  document.getElementById("guess-input").value = "";
+  document.getElementById("feedback").textContent = "";
+  const oldShareBtn = document.getElementById("share-btn");
+  if (oldShareBtn) oldShareBtn.remove();
 
-    localStorage.setItem("lastDaily", today);
-    document.getElementById("daily-btn").disabled = true;
-    document.getElementById("daily-btn").textContent = "Daily Completed";
-  });
+  displayCharacter(currentCharacter.name);
+  await fetchPostCount();
+});
+
 
   document.getElementById("rules-btn").addEventListener("click", () => {
-    alert("R34dle Rules:\n\n• Guess the Rule34 post count!\n• Hints: green = exact, yellow = close, red = off.\n• Get it right before you're out of attempts!\n• Try daily mode once per day!");
+     showPopup("R34dle Rules:\n\n• Guess the Rule34 post count!\n• Hints: green = exact, yellow = close, red = off.\n• Get it right before you're out of attempts!\n• Try daily mode once per day!");
   });
 
-  (function checkDailyCompletion() {
-    const today = new Date().toISOString().slice(0, 10);
-    const lastPlayed = localStorage.getItem("lastDaily");
-    if (lastPlayed === today) {
-      const dailyBtn = document.getElementById("daily-btn");
-      if (dailyBtn) {
-        dailyBtn.disabled = true;
-        dailyBtn.textContent = "Daily Completed";
-      }
+(function checkDailyCompletion() {
+  const today = new Date().toISOString().slice(0, 10);
+  const lastPlayed = localStorage.getItem("lastDailyCompleted");
+  if (lastPlayed === today) {
+    const dailyBtn = document.getElementById("daily-btn");
+    if (dailyBtn) {
+      dailyBtn.disabled = true;
+      dailyBtn.textContent = "Daily Completed";
+    }
     }
   })();
   

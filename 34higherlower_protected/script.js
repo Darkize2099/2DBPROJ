@@ -47,7 +47,7 @@ const postCountCache = JSON.parse(localStorage.getItem("postCountCache") || "{}"
       preloadedPostCounts[entry.name] = entry.count;
     });
 
-    console.log("✅ Preloaded character counts:", Object.keys(preloadedPostCounts).length);
+    console.log("Preloaded character counts:", Object.keys(preloadedPostCounts).length);
 
     populateSeriesOptions();
     populateCharacterAutocomplete();
@@ -87,7 +87,23 @@ document.addEventListener("DOMContentLoaded", () => {
     currentStreak = 0;
     veryHardButton.textContent = veryHardMode ? "Disable Very Hard Mode" : "Enable Very Hard Mode";
     document.body.classList.toggle("very-hard-mode", veryHardMode);
-    alert(`Very Hard Mode is now ${veryHardMode ? "ENABLED 🔥" : "DISABLED"}`);
+    showPopupMessage(veryHardMode ? "Very Hard Mode ENABLED" : "Very Hard Mode DISABLED");
+        function showPopupMessage(message) {
+   const popup = document.createElement("div");
+   popup.className = "custom-popup";
+   popup.textContent = message;
+    document.body.appendChild(popup);
+
+   setTimeout(() => {
+      popup.classList.add("visible");
+    }, 10); // slight delay to trigger animation
+
+   setTimeout(() => {
+      popup.classList.remove("visible");
+    setTimeout(() => popup.remove(), 300); // clean up
+  }, 3000);
+}
+
   });
   
 document.querySelectorAll("input[name='category']").forEach(radio => {
@@ -103,6 +119,21 @@ document.querySelectorAll("input[name='category']").forEach(radio => {
   });
 });
 
+function showPopupMessage(message) {
+  const popup = document.createElement("div");
+  popup.className = "custom-popup";
+  popup.textContent = message;
+  document.body.appendChild(popup);
+
+  setTimeout(() => {
+    popup.classList.add("visible");
+  }, 10);
+
+  setTimeout(() => {
+    popup.classList.remove("visible");
+    setTimeout(() => popup.remove(), 300);
+  }, 3000);
+}
 
 
 });
@@ -116,14 +147,14 @@ document.getElementById("applyCustomRestart").addEventListener("click", async ()
   warning.textContent = "";
 
   if (!name1 || !name2) {
-    warning.textContent = "⚠️ Please enter two character names.";
+    warning.textContent = "Please enter two character names.";
     return;
   }
 
   const [count1, count2] = await Promise.all([fetchPostCount(name1), fetchPostCount(name2)]);
 
   if (count1 === 0 && count2 === 0) {
-    warning.textContent = "⚠️ Could not find posts for either character.";
+    warning.textContent = "Could not find posts for either character.";
     return;
   }
 
@@ -141,6 +172,22 @@ document.getElementById("applyCustomRestart").addEventListener("click", async ()
   document.getElementById("customRestartPrompt").style.display = "none";
   showNextRound();
 });
+
+function showPopupMessage(message) {
+  const popup = document.createElement("div");
+  popup.className = "custom-popup";
+  popup.textContent = message;
+  document.body.appendChild(popup);
+
+  setTimeout(() => {
+    popup.classList.add("visible");
+  }, 10);
+
+  setTimeout(() => {
+    popup.classList.remove("visible");
+    setTimeout(() => popup.remove(), 300);
+  }, 3000);
+}
 
 
 document.getElementById("closeCustomBox").addEventListener("click", () => {
@@ -162,14 +209,14 @@ document.getElementById("applySettings").addEventListener("click", async () => {
     const name1 = document.getElementById("customCharacter1").value.trim();
     const name2 = document.getElementById("customCharacter2").value.trim();
     if (!name1 || !name2) {
-      warnings.textContent = "⚠️ Please enter two character names.";
+      warnings.textContent = "Please enter two character names.";
       return;
     }
 
     const [count1, count2] = await Promise.all([fetchPostCount(name1), fetchPostCount(name2)]);
 
     if (count1 === 0 && count2 === 0) {
-      warnings.textContent = "⚠️ Could not find posts for either character.";
+      warnings.textContent = "Could not find posts for either character.";
       return;
     }
 
@@ -232,13 +279,13 @@ document.getElementById("applySettings").addEventListener("click", async () => {
     const name1 = document.getElementById("customCharacter1").value.trim();
     const name2 = document.getElementById("customCharacter2").value.trim();
     if (!name1 || !name2) {
-      warnings.textContent = "⚠️ Please enter two character names.";
+      warnings.textContent = "Please enter two character names.";
       return;
     }
 
     const [count1, count2] = await Promise.all([fetchPostCount(name1), fetchPostCount(name2)]);
     if (count1 === 0 && count2 === 0) {
-      warnings.textContent = "⚠️ Could not find posts for either character.";
+      warnings.textContent = "Could not find posts for either character.";
       return;
     }
 
@@ -269,7 +316,7 @@ document.getElementById("applySettings").addEventListener("click", async () => {
       .map(box => box.value);
 
     if (selectedSeries.length === 0) {
-      warnings.textContent = "⚠️ Please select at least one series.";
+      warnings.textContent = "Please select at least one series.";
       return;
     }
 
@@ -286,7 +333,7 @@ document.getElementById("applySettings").addEventListener("click", async () => {
   }
 
   if (filtered.length < 2) {
-    warnings.textContent = "⚠️ Not enough characters in the selected category.";
+    warnings.textContent = "Not enough characters in the selected category.";
     return;
   }
 
@@ -302,7 +349,7 @@ document.getElementById("applySettings").addEventListener("click", async () => {
   progressContainer.style.display = "none";
 
   if (!valid || valid.length < 2) {
-    warnings.textContent = "⚠️ Not enough valid characters with post data.";
+    warnings.textContent = "Not enough valid characters with post data.";
     return;
   }
 
@@ -424,7 +471,7 @@ function copyShareResult() {
   };
 
   const categoryName = categoryMap[selectedCategoryValue] || "Unknown Mode";
-  const emoji = veryHardMode ? "🔥" : "🔍";
+  const emoji = veryHardMode ? "" : "";
   const modeTitle = veryHardMode ? "Very Hard Mode" : "R34 Guessing Game";
 
   let seriesInfo = "";
@@ -440,7 +487,8 @@ function copyShareResult() {
   const message = `${emoji} ${modeTitle} - ${categoryName}${seriesInfo}\nStreak: ${currentStreak}\n${"🟩".repeat(currentStreak)}${"⬛".repeat(Math.max(0, 8 - currentStreak))}\nhttps://doubletheblack.com/34higherlower/index.html`;
 
   navigator.clipboard.writeText(message).then(() => {
-    alert("Score copied to clipboard!");
+    showPopupMessage("Score copied to clipboard!");
+
   });
 }
 
@@ -729,7 +777,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
 
   if (choiceCount >= otherCount) {
     currentStreak++;
-    document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
+    document.getElementById("result").textContent = `Correct! Streak: ${currentStreak}`;
     
     feedbackText.innerHTML = `
       <div style="display: flex; justify-content: center; gap: 40px;">
@@ -743,7 +791,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
       const otherEl = document.getElementById("otherCount");
       animateCount(chosenEl, choiceCount);
       animateCount(otherEl, otherCount, 800, () => {
-        document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
+        document.getElementById("result").textContent = `Correct! Streak: ${currentStreak}`;
         setTimeout(() => {
           isAnimating = false;
           nextButton.disabled = false;
@@ -759,7 +807,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
     shareButton.style.display = "none";
 
   } else {
-    document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
+    document.getElementById("result").textContent = `Wrong! Game Over. Streak: ${currentStreak}`;
     
     feedbackText.innerHTML = `
       <div style="display: flex; justify-content: center; gap: 40px;">
@@ -773,7 +821,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
       const otherEl = document.getElementById("otherCount");
       animateCount(chosenEl, choiceCount);
       animateCount(otherEl, otherCount, 800, () => {
-        document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
+        document.getElementById("result").textContent = `Wrong! Game Over. Streak: ${currentStreak}`;
         setTimeout(() => {
           isAnimating = false;
           shareButton.style.display = "inline-block";

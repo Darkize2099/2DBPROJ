@@ -256,6 +256,40 @@ select#series-filter {
     color: black !important;
     background-color: rgb(255, 255, 255) !important;
   }
+
+  #search-btn {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  #search-btn:hover {
+    color: #FFD700;
+  }
+
+  #search-results div:hover {
+    background-color: #eee;
+  }
+
+  #search-results {
+    background-color: white;
+    color: black;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+  }
+  
+  #search-results div {
+    padding: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+  
+  #search-results div:hover {
+    background-color: #eee;
+  }
   
   
   #home-link {
@@ -283,4 +317,38 @@ select#series-filter {
     content: "doubletheblack";
   }
   
-  
+  .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-box {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border: 2px solid #72a4f2;
+  font-family: Inter, sans-serif;
+}
+
+#popup-box button {
+  margin-top: 1rem;
+  background: #72a4f2;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

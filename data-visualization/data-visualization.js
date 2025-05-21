@@ -173,7 +173,6 @@ canvas.style.height = `${chartSize}px`;
 
   if (currentChart) currentChart.destroy();
 
-  // Show back button if there's history
   const backBtn = document.getElementById("backButton");
   if (chartHistory.length > 0) {
     backBtn.style.display = "inline-block";

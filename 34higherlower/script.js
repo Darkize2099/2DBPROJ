@@ -46,12 +46,10 @@ const postCountCache = JSON.parse(localStorage.getItem("postCountCache") || "{}"
       preloadedPostCounts[entry.name] = entry.count;
     });
 
-    console.log("✅ Preloaded character counts:", Object.keys(preloadedPostCounts).length);
+    console.log("Preloaded character counts:", Object.keys(preloadedPostCounts).length);
 
     populateSeriesOptions();
     
-    // (Optionally remove your "retryQueue" stuff if you want, or keep it. I'll explain below.)
-
   } catch (error) {
     console.error("Failed to preload characters or counts:", error);
   }
@@ -86,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentStreak = 0;
     veryHardButton.textContent = veryHardMode ? "Disable Very Hard Mode" : "Enable Very Hard Mode";
     document.body.classList.toggle("very-hard-mode", veryHardMode);
-    alert(`Very Hard Mode is now ${veryHardMode ? "ENABLED 🔥" : "DISABLED"}`);
+    showPopupMessage(veryHardMode ? "Very Hard Mode ENABLED" : "Very Hard Mode DISABLED");
   });
   
   document.querySelectorAll("input[name='category']").forEach(radio => {
@@ -103,6 +101,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+  function showPopupMessage(message) {
+   const popup = document.createElement("div");
+   popup.className = "custom-popup";
+   popup.textContent = message;
+    document.body.appendChild(popup);
+
+   setTimeout(() => {
+      popup.classList.add("visible");
+    }, 10); // slight delay to trigger animation
+
+   setTimeout(() => {
+      popup.classList.remove("visible");
+    setTimeout(() => popup.remove(), 300); // clean up
+  }, 3000);}
 
 function encodeCharacterNameForSearch(name) {
   return name
@@ -143,7 +156,7 @@ document.getElementById("applySettings").addEventListener("click", () => {
   warnings.textContent = "";
 
   if (selectedCategory === "advanced" && selectedSeries.length === 0) {
-    warnings.textContent = "⚠️ Please select at least one series.";
+    warnings.textContent = "Please select at least one series.";
     return;
   }
 
@@ -152,7 +165,7 @@ document.getElementById("applySettings").addEventListener("click", () => {
     : characters;
 
   if (filtered.length < 2) {
-    warnings.textContent = "⚠️ Not enough characters in the selected series to play.";
+    warnings.textContent = "Not enough characters in the selected series to play.";
     return;
   }
 
@@ -169,7 +182,7 @@ document.getElementById("applySettings").addEventListener("click", () => {
     progressContainer.style.display = "none";
 
     if (!valid || valid.length < 2) {
-      warnings.textContent = "⚠️ Not enough valid characters with posts found in your selection.";
+      warnings.textContent = "Not enough valid characters with posts found in your selection.";
       return;
     }
 
@@ -273,7 +286,7 @@ function copyShareResult() {
   };
 
   const categoryName = categoryMap[selectedCategoryValue] || "Unknown Mode";
-  const emoji = veryHardMode ? "🔥" : "🔍";
+  const emoji = veryHardMode ? "" : "";
   const modeTitle = veryHardMode ? "Very Hard Mode" : "R34 Guessing Game";
 
   let seriesInfo = "";
@@ -289,7 +302,8 @@ function copyShareResult() {
   const message = `${emoji} ${modeTitle} - ${categoryName}${seriesInfo}\nStreak: ${currentStreak}\n${"🟩".repeat(currentStreak)}${"⬛".repeat(Math.max(0, 8 - currentStreak))}\nhttps://doubletheblack.com/34higherlower/index.html`;
 
   navigator.clipboard.writeText(message).then(() => {
-    alert("Score copied to clipboard!");
+    showPopupMessage("Score copied to clipboard!");
+
   });
 }
 
@@ -310,7 +324,7 @@ document.getElementById("applySettings").addEventListener("click", () => {
       .map(box => box.value);
 
     if (selectedSeries.length === 0) {
-      warnings.textContent = "⚠️ Please select at least one series.";
+      warnings.textContent = "Please select at least one series.";
       return;
     }
 
@@ -329,7 +343,7 @@ document.getElementById("applySettings").addEventListener("click", () => {
   }
 
   if (filtered.length < 2) {
-    warnings.textContent = "⚠️ Not enough characters in the selected series to play.";
+    warnings.textContent = "Not enough characters in the selected series to play.";
     return;
   }
 
@@ -344,7 +358,7 @@ document.getElementById("applySettings").addEventListener("click", () => {
     progressContainer.style.display = "none";
 
     if (!valid || valid.length < 2) {
-      warnings.textContent = "⚠️ Not enough valid characters with posts found in your selection.";
+      warnings.textContent = "Not enough valid characters with posts found in your selection.";
       return;
     }
 
@@ -628,7 +642,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
 
   if (choiceCount >= otherCount) {
     currentStreak++;
-    document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
+    document.getElementById("result").textContent = `Correct! Streak: ${currentStreak}`;
     
     feedbackText.innerHTML = `
       <div style="display: flex; justify-content: center; gap: 40px;">
@@ -642,7 +656,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
       const otherEl = document.getElementById("otherCount");
       animateCount(chosenEl, choiceCount);
       animateCount(otherEl, otherCount, 800, () => {
-        document.getElementById("result").textContent = `✅ Correct! Streak: ${currentStreak}`;
+        document.getElementById("result").textContent = `Correct! Streak: ${currentStreak}`;
         setTimeout(() => {
           isAnimating = false;
           nextButton.disabled = false;
@@ -658,7 +672,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
     shareButton.style.display = "none";
 
   } else {
-    document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
+    document.getElementById("result").textContent = `Wrong! Game Over. Streak: ${currentStreak}`;
     
     feedbackText.innerHTML = `
       <div style="display: flex; justify-content: center; gap: 40px;">
@@ -672,7 +686,7 @@ function checkAnswer(choiceCount, otherCount, chosenName) {
       const otherEl = document.getElementById("otherCount");
       animateCount(chosenEl, choiceCount);
       animateCount(otherEl, otherCount, 800, () => {
-        document.getElementById("result").textContent = `❌ Wrong! Game Over. Streak: ${currentStreak}`;
+        document.getElementById("result").textContent = `Wrong! Game Over. Streak: ${currentStreak}`;
         setTimeout(() => {
           isAnimating = false;
           shareButton.style.display = "inline-block";
