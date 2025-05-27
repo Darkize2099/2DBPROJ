@@ -298,6 +298,19 @@ function disableInput() {
   document.getElementById("restart-btn").style.display = "inline-block";
 }
 
+function restartGame() {
+  document.getElementById("restart-btn").style.display = "none";
+  document.getElementById("guess-input").disabled = false;
+  document.getElementById("submit-guess").disabled = false;
+  document.getElementById("guess-input").value = "";
+  document.getElementById("feedback").textContent = "";
+  const oldShareBtn = document.getElementById("share-btn");
+  if (oldShareBtn) oldShareBtn.remove();
+  updateStreakDisplay();
+  loadCharacters();
+}
+
+
 function showShareButton() {
   if (document.getElementById("share-btn")) return;
   const shareButton = document.createElement("button");
@@ -386,6 +399,16 @@ document.addEventListener("DOMContentLoaded", () => {
     loadCharacters();
   });
 
+  document.getElementById("apply-btn").addEventListener("click", () => {
+  restartGame();
+  document.getElementById("sidebar").classList.remove("show"); // close menu
+});
+
+document.getElementById("close-sidebar-btn").addEventListener("click", () => {
+  document.getElementById("sidebar").classList.remove("show");
+});
+
+
   document.getElementById("hamburger").addEventListener("click", () => {
     document.getElementById("sidebar").classList.toggle("show");
   });
@@ -444,6 +467,7 @@ document.getElementById("daily-btn").addEventListener("click", async () => {
     }
     }
   })();
+  
   
 
   loadCharacters();

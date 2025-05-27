@@ -298,6 +298,19 @@ function disableInput() {
   document.getElementById("restart-btn").style.display = "inline-block";
 }
 
+function restartGame() {
+  document.getElementById("restart-btn").style.display = "none";
+  document.getElementById("guess-input").disabled = false;
+  document.getElementById("submit-guess").disabled = false;
+  document.getElementById("guess-input").value = "";
+  document.getElementById("feedback").textContent = "";
+  const oldShareBtn = document.getElementById("share-btn");
+  if (oldShareBtn) oldShareBtn.remove();
+  updateStreakDisplay();
+  loadCharacters();
+}
+
+
 function showShareButton() {
   if (document.getElementById("share-btn")) return;
   const shareButton = document.createElement("button");
@@ -357,6 +370,16 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("selectedSeries", selectedSeries);
     restartGame();
   });
+
+  document.getElementById("apply-btn").addEventListener("click", () => {
+  restartGame();
+  document.getElementById("sidebar").classList.remove("show"); 
+});
+
+document.getElementById("close-sidebar-btn").addEventListener("click", () => {
+  document.getElementById("sidebar").classList.remove("show");
+});
+
 
   document.getElementById("category-filter").addEventListener("change", e => {
     selectedCategory = e.target.value;
