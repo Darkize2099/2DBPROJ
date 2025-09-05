@@ -310,3 +310,86 @@ body.very-hard-mode h1 {
   opacity: 1;
   transform: translateX(-50%) scale(1);
 }
+
+
+/* Default: Classic theme */
+:root {
+  --bg-color: #aae5a3;
+  --panel-bg: #ffffff;
+  --border-color: #333;
+  --text-color: #000;
+  --link-color: #0055aa;
+  --link-visited: #660099;
+  --button-bg: #ddd;
+  --button-hover: #ccc;
+  --input-bg: #fff;
+  --input-text: #000;
+}
+
+/* Dark (R34-like) theme */
+body.dark-theme {
+  --bg-color: #1a1a1a;
+  --panel-bg: #2a2a2a;
+  --border-color: #444;
+  --text-color: #ddd;
+  --link-color: #66ccff;
+  --link-visited: #aa88ff;
+  --button-bg: #333;
+  --button-hover: #444;
+  --input-bg: #2a2a2a;
+  --input-text: #ddd;
+}
+
+/* Apply variables globally */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+a { color: var(--link-color); }
+a:visited { color: var(--link-visited); }
+
+.panel, .card, #settingsPanel {
+  background-color: var(--panel-bg);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+button {
+  background-color: var(--button-bg);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+button:hover { background-color: var(--button-hover); }
+
+select, input[type="text"], input[type="number"], textarea {
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+  padding: 4px;
+}
+
+:root {
+  --header-color: #000;   /* black in classic */
+  --menu-text: #000;      /* black in classic */
+}
+
+body.dark-theme {
+  --header-color: #ddd;   /* light gray in dark */
+  --menu-text: #ddd;      /* light gray in dark */
+}
+
+/* Main title */
+h1 {
+  color: var(--header-color);
+}
+
+/* Hamburger menu panel text */
+#settingsPanel, #settingsPanel label, #settingsPanel h2, #settingsPanel h3, #settingsPanel p {
+  color: var(--menu-text);
+}
+

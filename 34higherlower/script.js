@@ -760,3 +760,25 @@ async function getValidCharactersFromList(charList, onProgress) {
 
   return temp;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggle = document.getElementById("themeToggle");
+
+  // Check saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggle.textContent = "Switch to Classic Theme";
+  }
+
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+      themeToggle.textContent = "Switch to Classic Theme";
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeToggle.textContent = "Switch to Dark Theme";
+      localStorage.setItem("theme", "classic");
+    }
+  });
+});

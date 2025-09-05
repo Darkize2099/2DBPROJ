@@ -126,6 +126,33 @@ function getDailyCharacter() {
     }
   }
 
+// Add at the top of your script
+const preloadedPostCounts = {};
+
+// Preload all counts from JSON files
+async function preloadCounts() {
+  try {
+    const [easternCountsRes, gamingCountsRes, westernCountsRes] = await Promise.all([
+      fetch("eastern_media_count.json"),
+      fetch("gaming_count.json"),
+      fetch("western_media_count.json")
+    ]);
+
+    const easternCounts = (await easternCountsRes.json()).characters;
+    const gamingCounts = (await gamingCountsRes.json()).characters;
+    const westernCounts = (await westernCountsRes.json()).characters;
+
+    [...easternCounts, ...gamingCounts, ...westernCounts].forEach(entry => {
+      preloadedPostCounts[entry.name] = entry.count;
+    });
+
+    console.log("Preloaded character counts:", Object.keys(preloadedPostCounts).length);
+  } catch (err) {
+    console.error("Failed to preload counts:", err);
+  }
+}
+
+// Modify fetchPostCount to use the fallback
 async function fetchPostCount() {
   const searchName = currentCharacter.alias || currentCharacter.name;
   const url = `https://api.rule34.xxx/index.php?page=dapi&s=post&q=index&tags=${encodeURIComponent(searchName)}&limit=1`;
@@ -134,16 +161,28 @@ async function fetchPostCount() {
     const response = await fetch(url);
     const text = await response.text();
     const match = text.match(/<posts count="(\d+)"/);
-    if (!match) {
-      document.getElementById("feedback").textContent = `No data found for "${searchName}"`;
+
+    if (match) {
+      const postCount = parseInt(match[1], 10);
+      setupPostCountGame(postCount);
       return;
     }
 
-    const postCount = parseInt(match[1], 10);
-    setupPostCountGame(postCount);
+    // If API returns nothing, fall back to preloaded counts
+    if (preloadedPostCounts[searchName] !== undefined) {
+      setupPostCountGame(preloadedPostCounts[searchName]);
+      return;
+    }
+
+    document.getElementById("feedback").textContent = `No data found for "${searchName}"`;
   } catch (error) {
-    console.error("Failed to fetch post count:", error);
-    document.getElementById("feedback").textContent = "Error fetching post count.";
+    console.warn("API failed, using fallback counts if available.", error);
+
+    if (preloadedPostCounts[searchName] !== undefined) {
+      setupPostCountGame(preloadedPostCounts[searchName]);
+    } else {
+      document.getElementById("feedback").textContent = `Error fetching post count for "${searchName}".`;
+    }
   }
 }
 
@@ -517,9 +556,11 @@ document.getElementById("daily-btn").addEventListener("click", async () => {
       dailyBtn.disabled = true;
       dailyBtn.textContent = "Daily Completed";
     }
-    }
-  })();
-  
+  }
+})();
 
-  loadCharacters();
+// Preload counts first, then load characters
+preloadCounts().then(() => {
+  loadCharacters(); // Only load characters after counts are ready
+});
 });
